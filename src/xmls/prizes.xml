@@ -1,0 +1,188 @@
+﻿<prizes>
+	<!--
+	<prize>
+		<id>1</id>
+		<numOfItems>1</numOfItems>
+		<itemChance>1</itemChance>
+		<money>10</money>
+		<moneyChance>0.5</moneyChance>
+		<ingredient1>1</ingredient1>
+		<ingredient1Chance>0.1</ingredient1Chance>
+		<ingredient2>2</ingredient2>
+		<ingredient2Chance>0.1</ingredient2Chance>
+		<ingredient3>3</ingredient3>
+		<ingredient3Chance>0.1</ingredient3Chance>
+		<ingredient4>4</ingredient4>
+		<ingredient4Chance>0.1</ingredient4Chance>
+	</prize>
+	-->
+	<prize>
+		<id>1</id>
+		<numofitems>0</numofitems> <!-- prise for the first mission  -->
+		<itemchance>0</itemchance>
+		<money>10</money>
+		<moneychance>1</moneychance>
+		<ingredient1>10</ingredient1>
+		<ingredient1chance>1</ingredient1chance>
+		<ingredient2>10</ingredient2>
+		<ingredient2chance>1</ingredient2chance>
+		<ingredient3>10</ingredient3>
+		<ingredient3chance>1</ingredient3chance>
+		<ingredient4>10</ingredient4>
+		<ingredient4chance>1</ingredient4chance>
+		<fixed>1</fixed>  <!-- for fixed prize in missions -->
+	</prize>
+	
+	
+	
+	<prize>
+		<id>2</id>
+		<numofitems>1</numofitems> <!-- treasure boxes  first level -->
+		<itemchance>0.07</itemchance>
+		<money>10</money>
+		<moneychance>1</moneychance>
+		<ingredient1>10</ingredient1>
+		<ingredient1chance>0.75</ingredient1chance>
+		<ingredient2>10</ingredient2>
+		<ingredient2chance>0.75</ingredient2chance>
+		<ingredient3>10</ingredient3>
+		<ingredient3chance>0.75</ingredient3chance>
+		<ingredient4>10</ingredient4>
+		<ingredient4chance>0.75</ingredient4chance>		
+	</prize>	
+	<prize>
+		<id>3</id>
+		<numofitems>1</numofitems>   <!-- enemy prises  first level -->
+		<itemchance>0.02</itemchance>
+		<money>5</money>
+		<moneychance>1</moneychance>
+		<ingredient1>5</ingredient1>
+		<ingredient1chance>0.1</ingredient1chance>
+		<ingredient2>5</ingredient2>
+		<ingredient2chance>0.1</ingredient2chance>
+		<ingredient3>5</ingredient3>
+		<ingredient3chance>0.1</ingredient3chance>
+		<ingredient4>5</ingredient4>
+		<ingredient4chance>0.1</ingredient4chance>		
+	</prize>
+	
+	
+	
+	
+	<prize>
+		<id>4</id>
+		<numofitems>0</numofitems> <!--   prize for finishing find treasure quest -->
+		<itemchance>0</itemchance>
+		<money>20</money>
+		<moneychance>1</moneychance>
+		<ingredient1>0</ingredient1>
+		<ingredient1chance>0</ingredient1chance>
+		<ingredient2>0</ingredient2>
+		<ingredient2chance>0</ingredient2chance>
+		<ingredient3>0</ingredient3>
+		<ingredient3chance>0</ingredient3chance>
+		<ingredient4>0</ingredient4>
+		<ingredient4chance>0</ingredient4chance>
+		<fixed>1</fixed>		
+	</prize>
+	<prize>
+		<id>5</id>
+		<numofitems>0</numofitems>   <!--   prize for finishing kill monster quest -->
+		<itemchance>0</itemchance>
+		<money>30</money>
+		<moneychance>1</moneychance>
+		<ingredient1>0</ingredient1>
+		<ingredient1chance>0</ingredient1chance>
+		<ingredient2>0</ingredient2>
+		<ingredient2chance>0</ingredient2chance>
+		<ingredient3>0</ingredient3>
+		<ingredient3chance>0</ingredient3chance>
+		<ingredient4>0</ingredient4>
+		<ingredient4chance>0</ingredient4chance>
+		<fixed>1</fixed>		
+	</prize>
+	<prize>
+		<id>6</id>
+		<numofitems>0</numofitems>  <!--   prize for finishing kill boss quest -->
+		<itemchance>0</itemchance>
+		<money>40</money>
+		<moneychance>1</moneychance>
+		<ingredient1>0</ingredient1>
+		<ingredient1chance>0</ingredient1chance>
+		<ingredient2>0</ingredient2>
+		<ingredient2chance>0</ingredient2chance>
+		<ingredient3>0</ingredient3>
+		<ingredient3chance>0</ingredient3chance>
+		<ingredient4>0</ingredient4>
+		<ingredient4chance>0</ingredient4chance>
+		<fixed>1</fixed>				
+	</prize>
+	<prize>
+		<id>7</id>
+		<numofitems>0</numofitems>  <!--   prize for finishing kill all quest -->
+		<itemchance>0</itemchance>
+		<money>50</money>
+		<moneychance>1</moneychance>
+		<ingredient1>0</ingredient1>
+		<ingredient1chance>0</ingredient1chance>
+		<ingredient2>0</ingredient2>
+		<ingredient2chance>0</ingredient2chance>
+		<ingredient3>0</ingredient3>
+		<ingredient3chance>0</ingredient3chance>
+		<ingredient4>0</ingredient4>
+		<ingredient4chance>0</ingredient4chance>
+		<fixed>1</fixed>				
+	</prize>
+	
+	
+	<prize>
+		<id>9</id>
+		<numofitems>1</numofitems>
+		<itemchance>0.2</itemchance>
+		<money>10</money>
+		<moneychance>1</moneychance>
+		<ingredient1>1</ingredient1>
+		<ingredient1chance>0.95</ingredient1chance>
+		<ingredient2>2</ingredient2>
+		<ingredient2chance>0.95</ingredient2chance>
+		<ingredient3>3</ingredient3>
+		<ingredient3chance>0.75</ingredient3chance>
+		<ingredient4>4</ingredient4>
+		<ingredient4chance>0.5</ingredient4chance>
+	</prize>
+	<prize>
+		<id>10</id>
+		<numofitems>1</numofitems>
+		<itemchance>0.3</itemchance>
+		<money>10</money>
+		<moneychance>1</moneychance>
+		<ingredient1>1</ingredient1>
+		<ingredient1chance>0.95</ingredient1chance>
+		<ingredient2>2</ingredient2>
+		<ingredient2chance>0.95</ingredient2chance>
+		<ingredient3>3</ingredient3>
+		<ingredient3chance>0.95</ingredient3chance>
+		<ingredient4>4</ingredient4>
+		<ingredient4chance>0.75</ingredient4chance>
+	</prize>
+	<prize>
+		<id>11</id>
+		<numofitems>1</numofitems>
+		<itemchance>0.3</itemchance>
+		<money>10</money>
+		<moneychance>1</moneychance>
+		<ingredient1>1</ingredient1>
+		<ingredient1chance>0.95</ingredient1chance>
+		<ingredient2>2</ingredient2>
+		<ingredient2chance>0.95</ingredient2chance>
+		<ingredient3>3</ingredient3>
+		<ingredient3chance>0.95</ingredient3chance>
+		<ingredient4>4</ingredient4>
+		<ingredient4chance>0.95</ingredient4chance>
+	</prize>	
+	<prize>
+		<id>100</id>
+		<money>-100</money>
+		<moneychance>1</moneychance>
+	</prize>
+</prizes>

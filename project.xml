@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<project>
+	
+	<meta title="BambaRedKeep" package="com.sample.bambaredkeep" version="1.0.0" company="Company Name" />
+	<app main="Main" path="Export" file="BambaRedKeep" />
+	
+	<source path="src" />
+	
+	<haxelib name="lime" />
+	<haxelib name="openfl"/>	
+	<assets path="assets"/>
+	
+</project>

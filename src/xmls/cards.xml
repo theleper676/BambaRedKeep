@@ -1,0 +1,2848 @@
+﻿
+<cards>
+	<!-- card class prop
+	<card>
+		<id> </id>
+		<name> </name>
+		<desc> </desc>
+		<cost> </cost>
+		<damage> </damage>
+		<moveDir> </moveDir>
+		<attackString> </attackString>
+		<defenseAmount> </defenseAmount>
+		<regenerateAmount> </regenerateAmount>
+		<healAmount> </healAmount>
+	</card>
+	-->	
+	<card>
+		<id>1</id>
+		<name>ימינה</name>
+		<desc>"כל קוסם צריך לחש המזיז אותו ימינה" (מתוך ספר ההתחלות)</desc>
+		<graphicsname>right</graphicsname>
+		<movedir>2</movedir>
+		<ponanimname>move</ponanimname>			
+		<animlength>1.2</animlength>
+		<animdelay>0.3</animdelay>
+	</card>
+	<card>
+		<id>2</id>
+		<name>שמאלה</name>
+		<desc>"כל קוסם צריך לחש המזיז אותו שמאלה" (מתוך ספר ההתחלות)</desc>
+		<graphicsname>left</graphicsname>
+		<movedir>4</movedir>
+		<ponanimname>move</ponanimname>			
+		<animlength>1.2</animlength>
+		<animdelay>0.3</animdelay>
+	</card>	
+	<card>
+		<id>3</id>
+		<name>למעלה</name>
+		<desc>"כל קוסם צריך לחש המזיז אותו למעלה" (מתוך ספר ההתחלות)</desc>
+		<graphicsname>up</graphicsname>
+		<movedir>1</movedir>
+		<ponanimname>move</ponanimname>			
+		<animlength>1.2</animlength>
+		<animdelay>0.3</animdelay>
+	</card>
+	<card>
+		<id>4</id>
+		<name>למטה</name>
+		<desc>"כל קוסם צריך לחש המזיז אותו למטה" (מתוך ספר ההתחלות)</desc>
+		<graphicsname>down</graphicsname>
+		<movedir>3</movedir>
+		<ponanimname>move</ponanimname>			
+		<animlength>1.2</animlength>
+		<animdelay>0.3</animdelay>
+	</card>
+	<card>
+		<id>5</id>
+		<name>חסימה</name>
+		<desc>"המגן הזה יגן בפני כל וכל" (מתוך מבוא לקוסמות, הקדמה)</desc>
+		<graphicsname>block</graphicsname>
+		<defenseamount>1000</defenseamount>
+		<ponanimname>block</ponanimname>				
+	</card>
+	<card>
+		<id>10</id>
+		<magicid>80</magicid>
+		<name>חידוש קסם</name>
+		<desc>"קסם בסיסי זה יעלה את נקודות הקסם של המשתמש" (מתוך מבוא לקוסמות, הקדמה)</desc>
+		<regenerateamount>20</regenerateamount>
+		<upgradeto>11</upgradeto>
+		<upgradedesc>תוספת של יותר נקודות קסם בכל שימוש</upgradedesc>
+		<ingredient1>40</ingredient1>
+		<ingredient2>100</ingredient2>
+		<ingredient3>50</ingredient3>
+		<ingredient4>110</ingredient4>		
+	</card>
+	<card>
+		<id>11</id>
+		<magicid>80</magicid>
+		<name>חידוש קסם</name>
+		<upgradelevel>level2</upgradelevel>
+		<desc>"קסם בסיסי זה יעלה את נקודות הקסם של המשתמש" (מתוך מבוא לקוסמות, הקדמה)</desc>
+		<regenerateamount>40</regenerateamount>
+		<minlevel>6</minlevel>
+		<upgradeto>12</upgradeto>
+		<upgradedesc>תוספת של יותר נקודות קסם בכל שימוש</upgradedesc>
+		<ingredient1>150</ingredient1>
+		<ingredient2>270</ingredient2>
+		<ingredient3>140</ingredient3>
+		<ingredient4>300</ingredient4>		
+	</card>
+	<card>
+		<id>12</id>
+		<magicid>80</magicid>
+		<name>חידוש קסם</name>
+		<upgradelevel>level3</upgradelevel>
+		<desc>"קסם בסיסי זה יעלה את נקודות הקסם של המשתמש" (מתוך מבוא לקוסמות, הקדמה)</desc>
+		<regenerateamount>60</regenerateamount>
+		<minlevel>12</minlevel>
+		<upgradeto>13</upgradeto>
+		<upgradedesc>תוספת של יותר נקודות קסם בכל שימוש</upgradedesc>
+		<ingredient1>210</ingredient1>
+		<ingredient2>300</ingredient2>
+		<ingredient3>165</ingredient3>
+		<ingredient4>200</ingredient4>		
+	</card>
+	<card>
+		<id>13</id>
+		<magicid>80</magicid>
+		<name>חידוש קסם</name>
+		<upgradelevel>level5</upgradelevel>
+		<desc>"קסם בסיסי זה יעלה את נקודות הקסם של המשתמש" (מתוך מבוא לקוסמות, הקדמה)</desc>
+		<regenerateamount>80</regenerateamount>
+		<minlevel>18</minlevel>		
+		<upgradeto>-99</upgradeto>			
+	</card>	
+	<card>
+		<id>20</id>
+		<magicid>81</magicid>
+		<name>ריפוי</name>
+		<desc>"קוסם חייב לדעת לפחות קסם אחד שיעלה את האנרגיה שלו " (מתוך לחשי הריפוי)</desc>
+		<cost>50</cost>
+		<healamount>15</healamount>
+		<upgradeto>21</upgradeto>
+		<upgradedesc>הקסם יוסיף עוד יותר אנרגיה, אך גם יעלה יותר נקודות קסם</upgradedesc>
+		<ingredient1>150</ingredient1>
+		<ingredient2>185</ingredient2>
+		<ingredient3>165</ingredient3>
+		<ingredient4>75</ingredient4>		
+	</card>
+	<card>
+		<id>21</id>
+		<magicid>81</magicid>
+		<name>ריפוי</name>
+		<upgradelevel>level2</upgradelevel>
+		<desc>"קוסם חייב לדעת לפחות קסם אחד שיעלה את האנרגיה שלו " (מתוך לחשי הריפוי)</desc>
+		<cost>75</cost>
+		<healamount>25</healamount>
+		<minlevel>14</minlevel>
+		<upgradeto>22</upgradeto>
+		<upgradedesc>הקסם יוסיף עוד יותר אנרגיה, אך גם יעלה יותר נקודות קסם</upgradedesc>
+		<ingredient1>150</ingredient1>
+		<ingredient2>200</ingredient2>
+		<ingredient3>180</ingredient3>
+		<ingredient4>275</ingredient4>
+	</card>
+	<card>
+		<id>22</id>
+		<magicid>81</magicid>
+		<name>ריפוי</name>
+		<upgradelevel>level4</upgradelevel>
+		<desc>"קוסם חייב לדעת לפחות קסם אחד שיעלה את האנרגיה שלו " (מתוך לחשי הריפוי)</desc>
+		<cost>100</cost>
+		<healamount>35</healamount>
+		<minlevel>18</minlevel>
+		<upgradeto>-99</upgradeto>	
+	</card>
+	<card>
+		<id>100</id>	
+		<magicid>1</magicid>		
+		<name>עשן שחור</name>
+		<desc>"אין עשן בלי אש" (אמרה עממית)</desc>
+		<cost>15</cost>
+		<damage>10</damage>
+		<upgradeto>101</upgradeto>
+		<upgradedesc>עבור עוד 5 נקודות קסם, הקסם מקבל תוספת של 5 נקודות לנזק</upgradedesc>
+		<ingredient1>10</ingredient1>
+		<ingredient2>0</ingredient2>
+		<ingredient3>5</ingredient3>
+		<ingredient4>0</ingredient4>
+	</card>
+	<card>
+		<id>101</id>
+		<magicid>1</magicid>
+		<name>עשן שחור</name>
+		<upgradelevel>level2</upgradelevel>
+		<desc>"אין עשן בלי אש" (אמרה עממית)</desc>
+		<cost>20</cost>
+		<damage>15</damage>
+		<minlevel>2</minlevel>
+		<upgradeto>102</upgradeto>
+		<upgradedesc>עבור 5 נקודות קסם פחות, הקסם עושה אותה כמות של נזק</upgradedesc>
+		<ingredient1>80</ingredient1>
+		<ingredient2>60</ingredient2>
+		<ingredient3>90</ingredient3>
+		<ingredient4>50</ingredient4>		
+	</card>
+	<card>
+		<id>102</id>
+		<magicid>1</magicid>
+		<name>עשן שחור</name>
+		<upgradelevel>level4</upgradelevel>
+		<desc>"אין עשן בלי אש" (אמרה עממית)</desc>
+		<cost>15</cost>
+		<damage>15</damage>
+		<minlevel>5</minlevel>
+		<upgradeto>-99</upgradeto>	
+	</card>
+	<card>
+		<id>105</id>
+		<magicid>2</magicid>
+		<name>כדור אש</name>
+		<desc>"החלק הקשה ביותר הוא לגרום לאש להשאר בצורת כדור" (מתוך מבוא לקוסמות)</desc>
+		<cost>20</cost>
+		<damage>20</damage>		
+		<upgradeto>106</upgradeto>
+		<upgradedesc>עבור עוד 5 נקודות קסם, הקסם מקבל תוספת של 5 נקודות לנזק</upgradedesc>
+		<ingredient1>0</ingredient1>
+		<ingredient2>15</ingredient2>
+		<ingredient3>0</ingredient3>
+		<ingredient4>30</ingredient4>		
+	</card>
+	<card>
+		<id>106</id>
+		<magicid>2</magicid>
+		<name>כדור אש</name>
+		<upgradelevel>level2</upgradelevel>
+		<desc>"החלק הקשה ביותר הוא לגרום לאש להשאר בצורת כדור" (מתוך מבוא לקוסמות)</desc>
+		<cost>25</cost>
+		<damage>25</damage>		
+		<upgradeto>107</upgradeto>
+		<minlevel>3</minlevel>
+		<upgradedesc>עבור 5 נקודות קסם פחות, הקסם עושה אותה כמות של נזק</upgradedesc>
+		<ingredient1>60</ingredient1>
+		<ingredient2>80</ingredient2>
+		<ingredient3>50</ingredient3>
+		<ingredient4>100</ingredient4>		
+	</card>
+	<card>
+		<id>107</id>
+		<magicid>2</magicid>
+		<name>כדור אש</name>
+		<upgradelevel>level4</upgradelevel>
+		<desc>"החלק הקשה ביותר הוא לגרום לאש להשאר בצורת כדור" (מתוך מבוא לקוסמות)</desc>
+		<cost>25</cost>
+		<damage>20</damage>		
+		<minlevel>7</minlevel>
+		<upgradeto>-99</upgradeto>			
+	</card>
+	<card>
+		<id>110</id>
+		<magicid>3</magicid>
+		<name>קרן שמש</name>
+		<desc>"מי יוכל לכוחה האדיר של השמש?" (מתוך יומני הקוסם גרנדל)</desc>
+		<cost>30</cost>
+		<damage>30</damage>			
+		<upgradeto>111</upgradeto>
+		<upgradedesc>עבור עוד 5 נקודות קסם, הקסם מקבל תוספת של 5 נקודות לנזק</upgradedesc>
+		<ingredient1>80</ingredient1>
+		<ingredient2>60</ingredient2>
+		<ingredient3>90</ingredient3>
+		<ingredient4>50</ingredient4>		
+	</card>	
+	<card>
+		<id>111</id>
+		<magicid>3</magicid>
+		<name>קרן שמש</name>
+		<upgradelevel>level2</upgradelevel>
+		<desc>"מי יוכל לכוחה האדיר של השמש?" (מתוך יומני הקוסם גרנדל)</desc>
+		<cost>35</cost>
+		<damage>35</damage>
+		<minlevel>5</minlevel>
+		<upgradeto>112</upgradeto>
+		<upgradedesc>עבור 5 נקודות קסם פחות, הקסם עושה אותה כמות של נזק</upgradedesc>
+		<ingredient1>145</ingredient1>
+		<ingredient2>125</ingredient2>
+		<ingredient3>130</ingredient3>
+		<ingredient4>140</ingredient4>
+	</card>
+	<card>
+		<id>112</id>
+		<magicid>3</magicid>
+		<name>קרן שמש</name>
+		<upgradelevel>level4</upgradelevel>
+		<desc>"מי יוכל לכוחה האדיר של השמש?" (מתוך יומני הקוסם גרנדל)</desc>
+		<cost>30</cost>
+		<damage>35</damage>
+		<minlevel>9</minlevel>	
+		<upgradeto>-99</upgradeto>		
+	</card>	
+	<card>
+		<id>115</id>
+		<magicid>4</magicid>
+		<name>רוח חמה</name>
+		<desc>"הטעות הנפוצה ביותר היא לחשוב שרוח זה דבר קר" (מתוך מבוא לקוסמות חלק ב')</desc>
+		<cost>35</cost>
+		<damage>25</damage>			
+		<upgradeto>116</upgradeto>
+		<upgradedesc>עבור עוד 5 נקודות קסם, הקסם מקבל תוספת של 5 נקודות לנזק</upgradedesc>
+		<ingredient1>60</ingredient1>
+		<ingredient2>80</ingredient2>
+		<ingredient3>50</ingredient3>
+		<ingredient4>100</ingredient4>	
+	</card>
+	<card>
+		<id>116</id>
+		<magicid>4</magicid>
+		<name>רוח חמה</name>
+		<upgradelevel>level2</upgradelevel>
+		<desc>"הטעות הנפוצה ביותר היא לחשוב שרוח זה דבר קר" (מתוך מבוא לקוסמות חלק ב')</desc>
+		<cost>40</cost>
+		<damage>30</damage>
+		<minlevel>7</minlevel>
+		<upgradeto>117</upgradeto>
+		<upgradedesc>עבור 5 נקודות קסם פחות, הקסם עושה אותה כמות של נזק</upgradedesc>
+		<ingredient1>205</ingredient1>
+		<ingredient2>225</ingredient2>
+		<ingredient3>220</ingredient3>
+		<ingredient4>250</ingredient4>
+	</card>
+	<card>
+		<id>117</id>
+		<magicid>4</magicid>
+		<name>רוח חמה</name>
+		<desc>"הטעות הנפוצה ביותר היא לחשוב שרוח זה דבר קר" (מתוך מבוא לקוסמות חלק ב')</desc>
+		<upgradelevel>level4</upgradelevel>
+		<desc>התקפה</desc>
+		<cost>35</cost>
+		<damage>30</damage>
+		<minlevel>11</minlevel>
+		<upgradeto>-99</upgradeto>	
+	</card>	
+	<card>
+		<id>120</id>
+		<magicid>5</magicid>
+		<name>חומת אש</name>
+		<desc>"איש לא יצליח לטפס על החומה הזאת" (מתוך הרצאה)</desc>
+		<cost>40</cost>
+		<damage>35</damage>
+		<upgradeto>121</upgradeto>
+		<upgradedesc>עבור עוד 5 נקודות קסם, הקסם מקבל תוספת של 5 נקודות לנזק</upgradedesc>
+		<ingredient1>95</ingredient1>
+		<ingredient2>175</ingredient2>
+		<ingredient3>80</ingredient3>
+		<ingredient4>190</ingredient4>		
+	</card>
+	<card>
+		<id>121</id>
+		<magicid>5</magicid>
+		<name>חומת אש</name>
+		<desc>"איש לא יצליח לטפס על החומה הזאת" (מתוך הרצאה)</desc>
+		<upgradelevel>level2</upgradelevel>
+		<cost>45</cost>
+		<damage>40</damage>
+		<minlevel>9</minlevel>
+		<upgradeto>122</upgradeto>
+		<upgradedesc>עבור 5 נקודות קסם פחות, הקסם עושה אותה כמות של נזק</upgradedesc>
+		<ingredient1>200</ingredient1>
+		<ingredient2>280</ingredient2>
+		<ingredient3>195</ingredient3>
+		<ingredient4>245</ingredient4>
+	</card>
+	<card>
+		<id>122</id>
+		<magicid>5</magicid>
+		<name>חומת אש</name>
+		<upgradelevel>level4</upgradelevel>
+		<desc>"איש לא יצליח לטפס על החומה הזאת" (מתוך הרצאה)</desc>
+		<cost>40</cost>
+		<damage>40</damage>
+		<minlevel>13</minlevel>
+		<upgradeto>-99</upgradeto>	
+	</card>
+	<card>
+		<id>125</id>
+		<magicid>6</magicid>
+		<name>מטאור</name>
+		<desc>"אש יכולה להגיע מכל מקום, אפילו מהחלל" (מתוך המדריך הקצר לאש, מהדורה מורחבת)</desc>
+		<cost>45</cost>
+		<damage>45</damage>		
+		<upgradeto>126</upgradeto>
+		<upgradedesc>עבור עוד 5 נקודות קסם, הקסם מקבל תוספת של 5 נקודות לנזק</upgradedesc>
+		<ingredient1>155</ingredient1>
+		<ingredient2>275</ingredient2>
+		<ingredient3>170</ingredient3>
+		<ingredient4>300</ingredient4>	
+	</card>
+	<card>
+		<id>126</id>
+		<magicid>6</magicid>
+		<name>מטאור</name>
+		<upgradelevel>level2</upgradelevel>
+		<desc>"אש יכולה להגיע מכל מקום, אפילו מהחלל" (מתוך המדריך הקצר לאש, מהדורה מורחבת)</desc>
+		<cost>50</cost>
+		<damage>50</damage>
+		<minlevel>11</minlevel>
+		<upgradeto>127</upgradeto>
+		<upgradedesc>עבור 5 נקודות קסם פחות, הקסם עושה אותה כמות של נזק</upgradedesc>
+		<ingredient1>120</ingredient1>
+		<ingredient2>300</ingredient2>
+		<ingredient3>120</ingredient3>
+		<ingredient4>200</ingredient4>
+	</card>
+	<card>
+		<id>127</id>
+		<magicid>6</magicid>
+		<name>מטאור</name>
+		<upgradelevel>level4</upgradelevel>
+		<desc>"אש יכולה להגיע מכל מקום, אפילו מהחלל" (מתוך המדריך הקצר לאש, מהדורה מורחבת)</desc>
+		<cost>45</cost>
+		<damage>50</damage>		
+		<minlevel>14</minlevel>
+		<upgradeto>-99</upgradeto>	
+	</card>
+	<card>
+		<id>130</id>
+		<magicid>7</magicid>
+		<name>חרקי האש</name>
+		<desc>"כבר בימי הקדם השתמשו בחרקים האלה כדי להאיר את הבית בלילה" (מתוך ההיטוריה של הקוסמות, כרך ט')</desc>
+		<cost>50</cost>
+		<damage>45</damage>
+		<upgradeto>131</upgradeto>
+		<upgradedesc>עבור עוד 5 נקודות קסם, הקסם מקבל תוספת של 5 נקודות לנזק</upgradedesc>
+		<ingredient1>150</ingredient1>
+		<ingredient2>330</ingredient2>
+		<ingredient3>145</ingredient3>
+		<ingredient4>295</ingredient4>
+	</card>
+	<card>
+		<id>131</id>
+		<magicid>7</magicid>
+		<name>חרקי האש</name>
+		<upgradelevel>level2</upgradelevel>
+		<desc>"כבר בימי הקדם השתמשו בחרקים האלה כדי להאיר את הבית בלילה" (מתוך ההיטוריה של הקוסמות, כרך ט')</desc>
+		<cost>55</cost>
+		<damage>50</damage>
+		<minlevel>13</minlevel>
+		<upgradeto>132</upgradeto>
+		<upgradedesc>עבור 5 נקודות קסם פחות, הקסם עושה אותה כמות של נזק</upgradedesc>
+		<ingredient1>150</ingredient1>
+		<ingredient2>125</ingredient2>
+		<ingredient3>140</ingredient3>
+		<ingredient4>375</ingredient4>		
+	</card>
+	<card>
+		<id>132</id>
+		<magicid>7</magicid>
+		<name>חרקי האש</name>
+		<upgradelevel>level4</upgradelevel>
+		<desc>"כבר בימי הקדם השתמשו בחרקים האלה כדי להאיר את הבית בלילה" (מתוך ההיטוריה של הקוסמות, כרך ט')</desc>
+		<cost>50</cost>
+		<damage>50</damage>
+		<minlevel>16</minlevel>
+		<upgradeto>-99</upgradeto>	
+	</card>
+	<card>
+		<id>135</id>
+		<magicid>8</magicid>
+		<name>מטר אש</name>
+		<desc>"לא אחד ולא חמישה - גשם אדיר של מטאורים יירד על ראשכם" (מתוך רישומי מלחמות המכשפים)</desc>
+		<cost>55</cost>
+		<damage>50</damage>
+		<upgradeto>136</upgradeto>
+		<upgradedesc>עבור עוד 5 נקודות קסם, הקסם מקבל תוספת של 5 נקודות לנזק</upgradedesc>
+		<ingredient1>150</ingredient1>
+		<ingredient2>185</ingredient2>
+		<ingredient3>165</ingredient3>
+		<ingredient4>75</ingredient4>
+	</card>
+	<card>
+		<id>136</id>
+		<magicid>8</magicid>
+		<name>מטר אש</name>
+		<upgradelevel>level2</upgradelevel>
+		<desc>"לא אחד ולא חמישה - גשם אדיר של מטאורים יירד על ראשכם" (מתוך רישומי מלחמות המכשפים)</desc>
+		<cost>60</cost>
+		<damage>55</damage>
+		<minlevel>14</minlevel>
+		<upgradeto>137</upgradeto>
+		<upgradedesc>עבור 5 נקודות קסם פחות, הקסם עושה אותה כמות של נזק</upgradedesc>
+		<ingredient1>280</ingredient1>
+		<ingredient2>250</ingredient2>
+		<ingredient3>210</ingredient3>
+		<ingredient4>100</ingredient4>
+	</card>
+	<card>
+		<id>137</id>
+		<magicid>8</magicid>
+		<name>מטר אש</name>
+		<upgradelevel>level4</upgradelevel>
+		<desc>"לא אחד ולא חמישה - גשם אדיר של מטאורים יירד על ראשכם" (מתוך רישומי מלחמות המכשפים)</desc>
+		<cost>55</cost>
+		<damage>55</damage>
+		<minlevel>16</minlevel>
+		<upgradeto>-99</upgradeto>	
+	</card>
+	<card>
+		<id>140</id>
+		<magicid>9</magicid>
+		<name>הר געש</name>
+		<desc>"האש נמצאת גם במקומות שאיש לא חושב עליהם, ואפילו מתחת לרגלינו" (מתוך מבוא לקוסמות, חלק ג')</desc>
+		<cost>60</cost>
+		<damage>55</damage>
+		<upgradeto>141</upgradeto>
+		<upgradedesc>עבור עוד 5 נקודות קסם, הקסם מקבל תוספת של 5 נקודות לנזק</upgradedesc>
+		<ingredient1>190</ingredient1>
+		<ingredient2>375</ingredient2>
+		<ingredient3>160</ingredient3>
+		<ingredient4>330</ingredient4>
+	</card>
+	<card>
+		<id>141</id>
+		<magicid>9</magicid>
+		<name>הר געש</name>
+		<desc>"האש נמצאת גם במקומות שאיש לא חושב עליהם, ואפילו מתחת לרגלינו" (מתוך מבוא לקוסמות, חלק ג')</desc>
+		<upgradelevel>level2</upgradelevel>
+		<cost>65</cost>
+		<damage>60</damage>
+		<minlevel>17</minlevel>
+		<upgradeto>142</upgradeto>
+		<upgradedesc>עבור 5 נקודות קסם פחות, הקסם עושה אותה כמות של נזק</upgradedesc>
+		<ingredient1>220</ingredient1>
+		<ingredient2>350</ingredient2>
+		<ingredient3>230</ingredient3>
+		<ingredient4>370</ingredient4>
+	</card>
+	<card>
+		<id>142</id>
+		<magicid>9</magicid>
+		<name>הר געש</name>
+		<upgradelevel>level4</upgradelevel>
+		<desc>"האש נמצאת גם במקומות שאיש לא חושב עליהם, ואפילו מתחת לרגלינו" (מתוך מבוא לקוסמות, חלק ג'))</desc>
+		<cost>60</cost>
+		<damage>60</damage>
+		<minlevel>19</minlevel>
+		<upgradeto>-99</upgradeto>	
+	</card>
+	<card>
+		<id>145</id>
+		<magicid>10</magicid>
+		<name>סופר נובה</name>
+		<desc>"חשב את הסיכוי של פרפר לעמוד בסופר נובה" (מתוך מבחן מסכם לקוסמות)</desc>
+		<cost>65</cost>
+		<damage>55</damage>
+		<upgradeto>146</upgradeto>
+		<upgradedesc>עבור עוד 5 נקודות קסם, הקסם מקבל תוספת של 5 נקודות לנזק</upgradedesc>
+		<ingredient1>170</ingredient1>
+		<ingredient2>100</ingredient2>
+		<ingredient3>180</ingredient3>
+		<ingredient4>200</ingredient4>
+	</card>
+	<card>
+		<id>146</id>
+		<magicid>10</magicid>
+		<name>סופר נובה</name>
+		<upgradelevel>level2</upgradelevel>
+		<desc>"חשב את הסיכוי של פרפר לעמוד בסופר נובה" (מתוך מבחן מסכם לקוסמות)</desc>
+		<cost>70</cost>
+		<damage>60</damage>
+		<minlevel>19</minlevel>
+		<upgradeto>147</upgradeto>
+		<upgradedesc>עבור 5 נקודות קסם פחות, הקסם עושה אותה כמות של נזק</upgradedesc>
+		<ingredient1>300</ingredient1>
+		<ingredient2>550</ingredient2>
+		<ingredient3>275</ingredient3>
+		<ingredient4>500</ingredient4>
+	</card>
+	<card>
+		<id>147</id>
+		<magicid>10</magicid>
+		<name>סופר נובה</name>
+		<upgradelevel>level4</upgradelevel>
+		<desc>"חשב את הסיכוי של פרפר לעמוד בסופר נובה" (מתוך מבחן מסכם לקוסמות)</desc>
+		<cost>65</cost>
+		<damage>60</damage>
+		<minlevel>20</minlevel>
+		<upgradeto>-99</upgradeto>	
+	</card>
+	<card>
+		<id>200</id>
+		<magicid>31</magicid>
+		<name>פתיתי שלג</name>
+		<desc>"פתיתי השלג מקפיאים, הם קרים והם קרים" (שיר ילדים)</desc>
+		<cost>15</cost>
+		<damage>10</damage>
+		<upgradeto>201</upgradeto>
+		<upgradedesc>עבור עוד 5 נקודות קסם, הקסם מקבל תוספת של 5 נקודות לנזק</upgradedesc>
+		<ingredient1>10</ingredient1>
+		<ingredient2>0</ingredient2>
+		<ingredient3>5</ingredient3>
+		<ingredient4>0</ingredient4>
+	</card>	
+	<card>
+		<id>201</id>
+		<magicid>31</magicid>
+		<name>פתיתי שלג</name>
+		<upgradelevel>level2</upgradelevel>
+		<desc>"פתיתי השלג מקפיאים, הם קרים והם קרים" (שיר ילדים)</desc>
+		<cost>20</cost>
+		<damage>15</damage>
+		<minlevel>2</minlevel>
+		<upgradeto>202</upgradeto>
+		<upgradedesc>עבור 5 נקודות קסם פחות, הקסם עושה אותה כמות של נזק</upgradedesc>
+		<ingredient1>80</ingredient1>
+		<ingredient2>60</ingredient2>
+		<ingredient3>90</ingredient3>
+		<ingredient4>50</ingredient4>
+	</card>
+	<card>
+		<id>202</id>
+		<magicid>31</magicid>
+		<name>פתיתי שלג</name>
+		<upgradelevel>level4</upgradelevel>
+		<desc>"פתיתי השלג מקפיאים, הם קרים והם קרים" (שיר ילדים)</desc>
+		<cost>15</cost>
+		<damage>15</damage>
+		<minlevel>5</minlevel>	
+		<upgradeto>-99</upgradeto>		
+	</card>
+	<card>
+		<id>205</id>
+		<magicid>32</magicid>
+		<name>כדור קרח</name>
+		<desc>"הסוד הוא ללבוש כפפות עבות" (מתוך המבוא לקוסמות)</desc>
+		<cost>25</cost>
+		<damage>20</damage>
+		<upgradeto>206</upgradeto>
+		<upgradedesc>עבור עוד 5 נקודות קסם, הקסם מקבל תוספת של 5 נקודות לנזק</upgradedesc>
+		<ingredient1>0</ingredient1>
+		<ingredient2>15</ingredient2>
+		<ingredient3>0</ingredient3>
+		<ingredient4>30</ingredient4>		
+	</card>
+	<card>
+		<id>206</id>
+		<magicid>32</magicid>
+		<name>כדור קרח</name>
+		<upgradelevel>level2</upgradelevel>
+		<desc>"הסוד הוא ללבוש כפפות עבות" (מתוך המבוא לקוסמות)</desc>
+		<cost>30</cost>
+		<damage>25</damage>
+		<minlevel>3</minlevel>
+		<upgradeto>207</upgradeto>
+		<upgradedesc>עבור 5 נקודות קסם פחות, הקסם עושה אותה כמות של נזק</upgradedesc>
+		<ingredient1>60</ingredient1>
+		<ingredient2>80</ingredient2>
+		<ingredient3>50</ingredient3>
+		<ingredient4>100</ingredient4>	
+	</card>
+	<card>
+		<id>207</id>
+		<magicid>32</magicid>
+		<name>כדור קרח</name>
+		<upgradelevel>level4</upgradelevel>
+		<desc>"הסוד הוא ללבוש כפפות עבות" (מתוך המבוא לקוסמות)</desc>
+		<cost>25</cost>
+		<damage>25</damage>
+		<minlevel>7</minlevel>
+		<upgradeto>-99</upgradeto>	
+	</card>	
+	<card>
+		<id>210</id>
+		<magicid>33</magicid>
+		<name>ברד</name>
+		<desc>"תזכורת - לא לשכוח קסדה" (מתוך יומנו של הקוסם גרנדל)</desc>
+		<cost>30</cost>
+		<damage>30</damage>
+		<upgradeto>211</upgradeto>
+		<upgradedesc>עבור עוד 5 נקודות קסם, הקסם מקבל תוספת של 5 נקודות לנזק</upgradedesc>
+		<ingredient1>80</ingredient1>
+		<ingredient2>60</ingredient2>
+		<ingredient3>90</ingredient3>
+		<ingredient4>50</ingredient4>
+	</card>
+	<card>
+		<id>211</id>
+		<magicid>33</magicid>
+		<name>ברד</name>
+		<desc>"תזכורת - לא לשכוח קסדה" (מתוך יומנו של הקוסם גרנדל)</desc>
+		<upgradelevel>level2</upgradelevel>
+		<cost>35</cost>
+		<damage>35</damage>
+		<minlevel>5</minlevel>
+		<upgradeto>212</upgradeto>
+		<upgradedesc>עבור 5 נקודות קסם פחות, הקסם עושה אותה כמות של נזק</upgradedesc>
+		<ingredient1>145</ingredient1>
+		<ingredient2>125</ingredient2>
+		<ingredient3>130</ingredient3>
+		<ingredient4>140</ingredient4>
+	</card>
+	<card>
+		<id>212</id>
+		<magicid>33</magicid>
+		<name>ברד</name>
+		<upgradelevel>level4</upgradelevel>
+		<desc>"תזכורת - לא לשכוח קסדה" (מתוך יומנו של הקוסם גרנדל)</desc>
+		<cost>30</cost>
+		<damage>35</damage>
+		<minlevel>9</minlevel>
+		<upgradeto>-99</upgradeto>	
+	</card>
+	<card>
+		<id>215</id>
+		<magicid>34</magicid>
+		<name>חרקרח</name>
+		<desc>"וכנראה שאז נכנס בטעות יתוש לתוך המקרר של השיקויים..." (מתוך מכתב הסבר למנהל)</desc>
+		<cost>35</cost>
+		<damage>25</damage>
+		<upgradeto>216</upgradeto>
+		<upgradedesc>עבור עוד 5 נקודות קסם, הקסם מקבל תוספת של 5 נקודות לנזק</upgradedesc>
+		<ingredient1>60</ingredient1>
+		<ingredient2>80</ingredient2>
+		<ingredient3>50</ingredient3>
+		<ingredient4>100</ingredient4>		
+	</card>
+	<card>
+		<id>216</id>
+		<magicid>34</magicid>
+		<name>חרקרח</name>
+		<upgradelevel>level2</upgradelevel>
+		<desc>"וכנראה שאז נכנס בטעות יתוש לתוך המקרר של השיקויים..." (מתוך מכתב הסבר למנהל)</desc>
+		<cost>40</cost>
+		<damage>30</damage>
+		<upgradeto>217</upgradeto>
+		<minlevel>7</minlevel>
+		<upgradedesc>עבור 5 נקודות קסם פחות, הקסם עושה אותה כמות של נזק</upgradedesc>
+		<ingredient1>205</ingredient1>
+		<ingredient2>225</ingredient2>
+		<ingredient3>220</ingredient3>
+		<ingredient4>250</ingredient4>	
+	</card>
+	<card>
+		<id>217</id>
+		<magicid>34</magicid>
+		<name>חרקרח</name>
+		<upgradelevel>level4</upgradelevel>
+		<desc>"וכנראה שאז נכנס בטעות יתוש לתוך המקרר של השיקויים..." (מתוך מכתב הסבר למנהל)</desc>
+		<cost>35</cost>
+		<damage>30</damage>
+		<minlevel>11</minlevel>
+		<upgradeto>-99</upgradeto>			
+	</card>
+	<card>
+		<id>220</id>
+		<magicid>35</magicid>
+		<name>חצי קרח</name>
+		<desc>"זה קר, זה קטן , זה דוקר, זה נפלא" (מתוך מלחמות המכשפים, כרך ל')</desc>
+		<cost>40</cost>
+		<damage>35</damage>
+		<upgradeto>221</upgradeto>
+		<upgradedesc>עבור עוד 5 נקודות קסם, הקסם מקבל תוספת של 5 נקודות לנזק</upgradedesc>
+		<ingredient1>95</ingredient1>
+		<ingredient2>175</ingredient2>
+		<ingredient3>80</ingredient3>
+		<ingredient4>190</ingredient4>		
+	</card>
+	<card>
+		<id>221</id>
+		<magicid>35</magicid>
+		<name>חצי קרח</name>
+		<upgradelevel>level2</upgradelevel>
+		<desc>"זה קר, זה קטן , זה דוקר, זה נפלא" (מתוך מלחמות המכשפים, כרך ל')</desc>
+		<cost>45</cost>
+		<damage>40</damage>
+		<minlevel>9</minlevel>
+		<upgradeto>222</upgradeto>
+		<upgradedesc>עבור 5 נקודות קסם פחות, הקסם עושה אותה כמות של נזק</upgradedesc>
+		<ingredient1>200</ingredient1>
+		<ingredient2>280</ingredient2>
+		<ingredient3>195</ingredient3>
+		<ingredient4>245</ingredient4>
+	</card>
+	<card>
+		<id>222</id>
+		<magicid>35</magicid>
+		<name>חצי קרח</name>
+		<upgradelevel>level4</upgradelevel>
+		<desc>"זה קר, זה קטן , זה דוקר, זה נפלא" (מתוך מלחמות המכשפים, כרך ל')</desc>
+		<cost>35</cost>
+		<damage>40</damage>
+		<minlevel>13</minlevel>
+		<upgradeto>-99</upgradeto>	
+	</card>
+	<card>
+		<id>225</id>	
+		<magicid>36</magicid>		
+		<name>רוח קרה</name>
+		<desc>"בנוסף, קסם זה פשוט מצויין בימים החמים של הקיץ" (מתוך מבוא לקוסמות, כרך ד')</desc>
+		<cost>45</cost>
+		<damage>45</damage>
+		<upgradeto>226</upgradeto>
+		<upgradedesc>עבור עוד 5 נקודות קסם, הקסם מקבל תוספת של 5 נקודות לנזק</upgradedesc>
+		<ingredient1>155</ingredient1>
+		<ingredient2>275</ingredient2>
+		<ingredient3>170</ingredient3>
+		<ingredient4>300</ingredient4>
+	</card>
+	<card>
+		<id>226</id>
+		<magicid>36</magicid>
+		<name>רוח קרה</name>
+		<upgradelevel>level2</upgradelevel>
+		<desc>"בנוסף, קסם זה פשוט מצויין בימים החמים של הקיץ" (מתוך מבוא לקוסמות, כרך ד')</desc>
+		<cost>50</cost>
+		<damage>50</damage>
+		<minlevel>11</minlevel>
+		<upgradeto>227</upgradeto>
+		<upgradedesc>עבור 5 נקודות קסם פחות, הקסם עושה אותה כמות של נזק</upgradedesc>
+		<ingredient1>120</ingredient1>
+		<ingredient2>300</ingredient2>
+		<ingredient3>120</ingredient3>
+		<ingredient4>200</ingredient4>		
+	</card>
+	<card>
+		<id>227</id>
+		<magicid>36</magicid>
+		<name>רוח קרה</name>
+		<upgradelevel>level4</upgradelevel>
+		<desc>"בנוסף, קסם זה פשוט מצויין בימים החמים של הקיץ" (מתוך מבוא לקוסמות, כרך ד')</desc>
+		<cost>45</cost>
+		<damage>50</damage>
+		<minlevel>14</minlevel>
+		<upgradeto>-99</upgradeto>	
+	</card>	
+	<card>
+		<id>230</id>
+		<magicid>37</magicid>
+		<name>חומת קרח</name>
+		<desc>"זה היה הדבר המרשים ביותר שראיתי בחיי" (מתוך יומני מסעות גולגיבל)</desc>
+		<cost>50</cost>
+		<damage>45</damage>
+		<upgradeto>231</upgradeto>
+		<upgradedesc>עבור עוד 5 נקודות קסם, הקסם מקבל תוספת של 5 נקודות לנזק</upgradedesc>
+		<ingredient1>150</ingredient1>
+		<ingredient2>330</ingredient2>
+		<ingredient3>145</ingredient3>
+		<ingredient4>295</ingredient4>
+	</card>
+	<card>
+		<id>231</id>
+		<magicid>37</magicid>
+		<name>חומת קרח</name>
+		<upgradelevel>level2</upgradelevel>
+		<desc>"זה היה הדבר המרשים ביותר שראיתי בחיי" (מתוך יומני מסעות גולגיבל)</desc>
+		<cost>55</cost>
+		<damage>50</damage>
+		<minlevel>13</minlevel>
+		<upgradeto>232</upgradeto>
+		<upgradedesc>עבור 5 נקודות קסם פחות, הקסם עושה אותה כמות של נזק</upgradedesc>
+		<ingredient1>150</ingredient1>
+		<ingredient2>125</ingredient2>
+		<ingredient3>140</ingredient3>
+		<ingredient4>375</ingredient4>		
+	</card>
+	<card>
+		<id>232</id>
+		<magicid>37</magicid>
+		<name>חומת קרח</name>
+		<upgradelevel>level4</upgradelevel>
+		<desc>"זה היה הדבר המרשים ביותר שראיתי בחיי" (מתוך יומני מסעות גולגיבל)</desc>
+		<cost>50</cost>
+		<damage>50</damage>
+		<minlevel>16</minlevel>
+		<upgradeto>-99</upgradeto>	
+	</card>
+	<card>
+		<id>235</id>
+		<magicid>38</magicid>
+		<name>נחל קפוא</name>
+		<desc>"בפעם האחרונה - אל תנסו ללכת על הנחל, אלא בחורף" (מתוך שלט אזהרה)</desc>
+		<cost>55</cost>
+		<damage>50</damage>
+		<upgradeto>236</upgradeto>
+		<upgradedesc>עבור עוד 5 נקודות קסם, הקסם מקבל תוספת של 5 נקודות לנזק</upgradedesc>
+		<ingredient1>150</ingredient1>
+		<ingredient2>185</ingredient2>
+		<ingredient3>165</ingredient3>
+		<ingredient4>75</ingredient4>
+	</card>
+	<card>
+		<id>236</id>
+		<magicid>38</magicid>
+		<name>נחל קפוא</name>
+		<upgradelevel>level2</upgradelevel>
+		<desc>"בפעם האחרונה - אל תנסו ללכת על הנחל, אלא בחורף" (מתוך שלט אזהרה)</desc>
+		<cost>60</cost>
+		<damage>55</damage>
+		<minlevel>14</minlevel>
+		<upgradeto>237</upgradeto>
+		<upgradedesc>עבור 5 נקודות קסם פחות, הקסם עושה אותה כמות של נזק</upgradedesc>
+		<ingredient1>280</ingredient1>
+		<ingredient2>250</ingredient2>
+		<ingredient3>210</ingredient3>
+		<ingredient4>100</ingredient4>
+	</card>
+	<card>
+		<id>237</id>
+		<magicid>38</magicid>
+		<name>נחל קפוא</name>
+		<upgradelevel>level4</upgradelevel>
+		<desc>"בפעם האחרונה - אל תנסו ללכת על הנחל, אלא בחורף" (מתוך שלט אזהרה)</desc>
+		<cost>55</cost>
+		<damage>55</damage>
+		<minlevel>16</minlevel>
+		<upgradeto>-99</upgradeto>	
+	</card>
+	<card>
+		<id>240</id>
+		<magicid>39</magicid>
+		<name>כידון קרח</name>
+		<desc>"מה זה משנה נטיף או זקיף? העיקר שהוא עף לצדדים" (מתוך הרצאה למתקדמים)</desc>
+		<cost>60</cost>
+		<damage>55</damage>
+		<upgradeto>241</upgradeto>
+		<upgradedesc>עבור עוד 5 נקודות קסם, הקסם מקבל תוספת של 5 נקודות לנזק</upgradedesc>
+		<ingredient1>190</ingredient1>
+		<ingredient2>375</ingredient2>
+		<ingredient3>160</ingredient3>
+		<ingredient4>330</ingredient4>
+	</card>
+	<card>
+		<id>241</id>
+		<magicid>39</magicid>
+		<name>כידון קרח</name>
+		<upgradelevel>level2</upgradelevel>
+		<desc>"מה זה משנה נטיף או זקיף? העיקר שהוא עף לצדדים" (מתוך הרצאה למתקדמים)</desc>
+		<cost>65</cost>
+		<damage>60</damage>
+		<minlevel>17</minlevel>
+		<upgradeto>242</upgradeto>
+		<upgradedesc>עבור 5 נקודות קסם פחות, הקסם עושה אותה כמות של נזק</upgradedesc>
+		<ingredient1>220</ingredient1>
+		<ingredient2>350</ingredient2>
+		<ingredient3>230</ingredient3>
+		<ingredient4>370</ingredient4>
+	</card>
+	<card>
+		<id>242</id>
+		<magicid>39</magicid>
+		<name>כידון קרח</name>
+		<upgradelevel>level4</upgradelevel>
+		<desc>"מה זה משנה נטיף או זקיף? העיקר שהוא עף לצדדים" (מתוך הרצאה למתקדמים)</desc>
+		<cost>60</cost>
+		<damage>60</damage>
+		<minlevel>19</minlevel>
+		<upgradeto>-99</upgradeto>	
+	</card>
+	<card>
+		<id>245</id>
+		<magicid>40</magicid>
+		<name>מפולת</name>
+		<desc>"יש רק דבר אחד שאתה יכול לעשות מול מפולת שלגים - לא להיות שם" (מתוך מבוא לקוסמות, כרך ל')</desc>
+		<cost>65</cost>
+		<damage>55</damage>
+		<upgradeto>246</upgradeto>
+		<upgradedesc>עבור עוד 5 נקודות קסם, הקסם מקבל תוספת של 5 נקודות לנזק</upgradedesc>
+		<ingredient1>170</ingredient1>
+		<ingredient2>100</ingredient2>
+		<ingredient3>180</ingredient3>
+		<ingredient4>200</ingredient4>
+	</card>
+	<card>
+		<id>246</id>
+		<magicid>40</magicid>
+		<name>מפולת</name>
+		<upgradelevel>level2</upgradelevel>
+		<desc>"יש רק דבר אחד שאתה יכול לעשות מול מפולת שלגים - לא להיות שם" (מתוך מבוא לקוסמות, כרך ל')</desc>
+		<cost>70</cost>
+		<damage>60</damage>
+		<minlevel>19</minlevel>
+		<upgradeto>247</upgradeto>
+		<upgradedesc>עבור 5 נקודות קסם פחות, הקסם עושה אותה כמות של נזק</upgradedesc>
+		<ingredient1>300</ingredient1>
+		<ingredient2>550</ingredient2>
+		<ingredient3>275</ingredient3>
+		<ingredient4>500</ingredient4>
+	</card>
+	<card>
+		<id>247</id>
+		<magicid>40</magicid>
+		<name>מפולת</name>
+		<upgradelevel>level4</upgradelevel>
+		<desc>"יש רק דבר אחד שאתה יכול לעשות מול מפולת שלגים - לא להיות שם" (מתוך מבוא לקוסמות, כרך ל')</desc>
+		<cost>65</cost>
+		<damage>60</damage>
+		<minlevel>20</minlevel>
+		<upgradeto>-99</upgradeto>	
+	</card>
+	<card>
+		<id>300</id>	
+		<magicid>51</magicid>		
+		<name>צמח מטפס</name>
+		<desc>"אסור לנו לזלזל בעוצמה של הצומח" (מתוך מבוא לקוסמות)</desc>
+		<cost>15</cost>
+		<damage>10</damage>
+		<upgradeto>301</upgradeto>
+		<upgradedesc>עבור עוד 5 נקודות קסם, הקסם מקבל תוספת של 5 נקודות לנזק</upgradedesc>
+		<ingredient1>10</ingredient1>
+		<ingredient2>0</ingredient2>
+		<ingredient3>5</ingredient3>
+		<ingredient4>0</ingredient4>
+	</card>
+	<card>
+		<id>301</id>
+		<magicid>51</magicid>
+		<name>צמח מטפס</name>
+		<upgradelevel>level2</upgradelevel>
+		<desc>"אסור לנו לזלזל בעוצמה של הצומח" (מתוך מבוא לקוסמות)</desc>
+		<cost>20</cost>
+		<damage>15</damage>
+		<minlevel>2</minlevel>
+		<upgradeto>302</upgradeto>
+		<upgradedesc>עבור 5 נקודות קסם פחות, הקסם עושה אותה כמות של נזק</upgradedesc>
+		<ingredient1>80</ingredient1>
+		<ingredient2>60</ingredient2>
+		<ingredient3>90</ingredient3>
+		<ingredient4>50</ingredient4>		
+	</card>
+	<card>
+		<id>302</id>
+		<magicid>51</magicid>
+		<name>צמח מטפס</name>
+		<upgradelevel>level4</upgradelevel>
+		<desc>"אסור לנו לזלזל בעוצמה של הצומח" (מתוך מבוא לקוסמות)</desc>
+		<cost>15</cost>
+		<damage>15</damage>
+		<minlevel>5</minlevel>
+		<upgradeto>-99</upgradeto>	
+	</card>
+	<card>
+		<id>305</id>
+		<magicid>52</magicid>
+		<name>בוץ רותח</name>
+		<desc>"זה רק בוץ, זה לא מזיק" (מתוך משפטים אחרונים של קוסמים לא זהירים)</desc>
+		<cost>25</cost>
+		<damage>20</damage>
+		<upgradeto>306</upgradeto>
+		<upgradedesc>עבור עוד 5 נקודות קסם, הקסם מקבל תוספת של 5 נקודות לנזק</upgradedesc>
+		<ingredient1>0</ingredient1>
+		<ingredient2>15</ingredient2>
+		<ingredient3>0</ingredient3>
+		<ingredient4>30</ingredient4>	
+	</card>
+	<card>
+		<id>306</id>
+		<magicid>52</magicid>
+		<name>בוץ רותח</name>
+		<upgradelevel>level2</upgradelevel>
+		<desc>"זה רק בוץ, זה לא מזיק" (מתוך משפטים אחרונים של קוסמים לא זהירים)</desc>
+		<cost>30</cost>
+		<damage>25</damage>
+		<minlevel>3</minlevel>
+		<upgradeto>307</upgradeto>
+		<upgradedesc>עבור 5 נקודות קסם פחות, הקסם עושה אותה כמות של נזק</upgradedesc>
+		<ingredient1>60</ingredient1>
+		<ingredient2>80</ingredient2>
+		<ingredient3>50</ingredient3>
+		<ingredient4>100</ingredient4>	
+	</card>
+	<card>
+		<id>307</id>
+		<magicid>52</magicid>
+		<name>בוץ רותח</name>
+		<upgradelevel>level4</upgradelevel>
+		<desc>"זה רק בוץ, זה לא מזיק" (מתוך משפטים אחרונים של קוסמים לא זהירים)</desc>
+		<cost>25</cost>
+		<damage>25</damage>
+		<minlevel>7</minlevel>
+		<upgradeto>-99</upgradeto>	
+	</card>
+	<card>
+		<id>310</id>
+		<magicid>53</magicid>
+		<name>בלוטים</name>
+		<desc>"במקור קסם זה נועד כדי ללכוד סנאים" (מתוך ההיסטוריה של הקוסמות, כרך י')</desc>
+		<cost>30</cost>
+		<damage>30</damage>
+		<upgradeto>311</upgradeto>
+		<upgradedesc>עבור עוד 5 נקודות קסם, הקסם מקבל תוספת של 5 נקודות לנזק</upgradedesc>
+		<ingredient1>80</ingredient1>
+		<ingredient2>60</ingredient2>
+		<ingredient3>90</ingredient3>
+		<ingredient4>50</ingredient4>
+	</card>	
+	<card>
+		<id>311</id>
+		<magicid>53</magicid>
+		<name>בלוטים</name>
+		<upgradelevel>level2</upgradelevel>
+		<desc>"במקור קסם זה נועד כדי ללכוד סנאים" (מתוך ההיסטוריה של הקוסמות, כרך י')</desc>
+		<cost>35</cost>
+		<damage>35</damage>
+		<minlevel>5</minlevel>
+		<upgradeto>312</upgradeto>
+		<upgradedesc>עבור 5 נקודות קסם פחות, הקסם עושה אותה כמות של נזק</upgradedesc>
+		<ingredient1>145</ingredient1>
+		<ingredient2>125</ingredient2>
+		<ingredient3>130</ingredient3>
+		<ingredient4>140</ingredient4>
+	</card>
+	<card>
+		<id>312</id>
+		<magicid>53</magicid>
+		<name>בלוטים</name>
+		<upgradelevel>level4</upgradelevel>
+		<desc>"במקור קסם זה נועד כדי ללכוד סנאים" (מתוך ההיסטוריה של הקוסמות, כרך י')</desc>
+		<cost>30</cost>
+		<damage>35</damage>
+		<minlevel>9</minlevel>	
+		<upgradeto>-99</upgradeto>		
+	</card>	
+	<card>
+		<id>315</id>
+		<magicid>54</magicid>
+		<name>דבורים</name>
+		<desc>"בזזז! בזז! בזזזז!" (מתוך משפטי חרקים מפורסמים)</desc>
+		<cost>35</cost>
+		<damage>25</damage>		
+		<upgradeto>316</upgradeto>
+		<upgradedesc>עבור עוד 5 נקודות קסם, הקסם מקבל תוספת של 5 נקודות לנזק</upgradedesc>
+		<ingredient1>60</ingredient1>
+		<ingredient2>80</ingredient2>
+		<ingredient3>50</ingredient3>
+		<ingredient4>100</ingredient4>		
+	</card>
+	<card>
+		<id>316</id>
+		<magicid>54</magicid>
+		<name>דבורים</name>
+		<upgradelevel>level2</upgradelevel>
+		<desc>"בזזז! בזז! בזזזז!" (מתוך משפטי חרקים מפורסמים)</desc>
+		<cost>40</cost>
+		<damage>30</damage>
+		<upgradeto>317</upgradeto>
+		<minlevel>7</minlevel>
+		<upgradedesc>עבור 5 נקודות קסם פחות, הקסם עושה אותה כמות של נזק</upgradedesc>
+		<ingredient1>205</ingredient1>
+		<ingredient2>225</ingredient2>
+		<ingredient3>220</ingredient3>
+		<ingredient4>250</ingredient4>	
+	</card>
+	<card>
+		<id>317</id>
+		<magicid>54</magicid>
+		<name>דבורים</name>
+		<upgradelevel>level4</upgradelevel>
+		<desc>"בזזז! בזז! בזזזז!" (מתוך משפטי חרקים מפורסמים)</desc>
+		<cost>35</cost>
+		<damage>30</damage>
+		<minlevel>11</minlevel>
+		<upgradeto>-99</upgradeto>			
+	</card>
+	<card>
+		<id>320</id>
+		<magicid>55</magicid>
+		<name>קיר קוצים</name>
+		<desc>"על כל קוץ שנפל - צמחו עשרה חדשים" (מתוך יומני מסעות גולגיבל)</desc>
+		<cost>40</cost>
+		<damage>35</damage>		
+		<upgradeto>321</upgradeto>
+		<upgradedesc>עבור עוד 5 נקודות קסם, הקסם מקבל תוספת של 5 נקודות לנזק</upgradedesc>
+		<ingredient1>95</ingredient1>
+		<ingredient2>175</ingredient2>
+		<ingredient3>80</ingredient3>
+		<ingredient4>190</ingredient4>		
+	</card>
+	<card>
+		<id>321</id>
+		<magicid>55</magicid>
+		<name>קיר קוצים</name>
+		<upgradelevel>level2</upgradelevel>
+		<desc>"על כל קוץ שנפל - צמחו עשרה חדשים" (מתוך יומני מסעות גולגיבל)</desc>
+		<cost>45</cost>
+		<damage>40</damage>
+		<minlevel>9</minlevel>
+		<upgradeto>322</upgradeto>
+		<upgradedesc>עבור 5 נקודות קסם פחות, הקסם עושה אותה כמות של נזק</upgradedesc>
+		<ingredient1>200</ingredient1>
+		<ingredient2>280</ingredient2>
+		<ingredient3>195</ingredient3>
+		<ingredient4>245</ingredient4>
+	</card>
+	<card>
+		<id>322</id>
+		<magicid>55</magicid>
+		<name>קיר קוצים</name>
+		<upgradelevel>level4</upgradelevel>
+		<desc>"על כל קוץ שנפל - צמחו עשרה חדשים" (מתוך יומני מסעות גולגיבל)</desc>
+		<cost>40</cost>
+		<damage>40</damage>
+		<minlevel>13</minlevel>
+		<upgradeto>-99</upgradeto>	
+	</card>
+	<card>
+		<id>325</id>
+		<magicid>56</magicid>
+		<name>מכת ברק</name>
+		<desc>"לא מומלץ להסתובב בשריון ברזל כשיורד גשם" (מתוך עצות לאביר מתחיל)</desc>
+		<cost>45</cost>
+		<damage>45</damage>		
+		<upgradeto>326</upgradeto>
+		<upgradedesc>עבור עוד 5 נקודות קסם, הקסם מקבל תוספת של 5 נקודות לנזק</upgradedesc>
+		<ingredient1>155</ingredient1>
+		<ingredient2>275</ingredient2>
+		<ingredient3>170</ingredient3>
+		<ingredient4>300</ingredient4>	
+	</card>
+	<card>
+		<id>326</id>
+		<magicid>56</magicid>
+		<name>מכת ברק</name>
+		<upgradelevel>level2</upgradelevel>
+		<desc>"לא מומלץ להסתובב בשריון ברזל כשיורד גשם" (מתוך עצות לאביר מתחיל)</desc>
+		<cost>50</cost>
+		<damage>50</damage>
+		<minlevel>11</minlevel>
+		<upgradeto>327</upgradeto>
+		<upgradedesc>עבור 5 נקודות קסם פחות, הקסם עושה אותה כמות של נזק</upgradedesc>
+		<ingredient1>120</ingredient1>
+		<ingredient2>300</ingredient2>
+		<ingredient3>120</ingredient3>
+		<ingredient4>200</ingredient4>
+	</card>
+	<card>
+		<id>327</id>
+		<magicid>56</magicid>
+		<name>מכת ברק</name>
+		<upgradelevel>level4</upgradelevel>
+		<desc>"לא מומלץ להסתובב בשריון ברזל כשיורד גשם" (מתוך עצות לאביר מתחיל)</desc>
+		<cost>45</cost>
+		<damage>50</damage>
+		<minlevel>14</minlevel>
+		<upgradeto>-99</upgradeto>	
+	</card>
+	<card>
+		<id>330</id>
+		<magicid>57</magicid>
+		<name>סופת גשם</name>
+		<desc>"גשם גשם משמים, כל המון טיפות המים" (שיר ילדים)</desc>
+		<cost>50</cost>
+		<damage>45</damage>
+		<upgradeto>331</upgradeto>
+		<upgradedesc>עבור עוד 5 נקודות קסם, הקסם מקבל תוספת של 5 נקודות לנזק</upgradedesc>
+		<ingredient1>150</ingredient1>
+		<ingredient2>330</ingredient2>
+		<ingredient3>145</ingredient3>
+		<ingredient4>295</ingredient4>
+	</card>
+	<card>
+		<id>331</id>
+		<magicid>57</magicid>
+		<name>סופת גשם</name>
+		<upgradelevel>level2</upgradelevel>
+		<desc>"גשם גשם משמים, כל המון טיפות המים" (שיר ילדים)</desc>
+		<cost>55</cost>
+		<damage>50</damage>
+		<minlevel>13</minlevel>
+		<upgradeto>332</upgradeto>
+		<upgradedesc>עבור 5 נקודות קסם פחות, הקסם עושה אותה כמות של נזק</upgradedesc>
+		<ingredient1>150</ingredient1>
+		<ingredient2>125</ingredient2>
+		<ingredient3>140</ingredient3>
+		<ingredient4>375</ingredient4>	
+	</card>
+	<card>
+		<id>332</id>
+		<magicid>57</magicid>
+		<name>סופת גשם</name>
+		<upgradelevel>level4</upgradelevel>
+		<desc>"גשם גשם משמים, כל המון טיפות המים" (שיר ילדים)</desc>
+		<cost>50</cost>
+		<damage>50</damage>
+		<minlevel>16</minlevel>
+		<upgradeto>-99</upgradeto>	
+	</card>
+	<card>
+		<id>335</id>
+		<magicid>58</magicid>
+		<name>בקע באדמה</name>
+		<desc>"ואז האדמה עצמה פערה את פיה..." (מתוך יומני הקוסם גרנדל)</desc>
+		<cost>55</cost>
+		<damage>50</damage>		
+		<upgradeto>336</upgradeto>
+		<upgradedesc>עבור עוד 5 נקודות קסם, הקסם מקבל תוספת של 5 נקודות לנזק</upgradedesc>
+		<ingredient1>150</ingredient1>
+		<ingredient2>185</ingredient2>
+		<ingredient3>165</ingredient3>
+		<ingredient4>75</ingredient4>
+	</card>
+	<card>
+		<id>336</id>
+		<magicid>58</magicid>
+		<name>בקע באדמה</name>
+		<upgradelevel>level2</upgradelevel>
+		<desc>"ואז האדמה עצמה פערה את פיה..." (מתוך יומני הקוסם גרנדל)</desc>
+		<cost>60</cost>
+		<damage>55</damage>
+		<minlevel>14</minlevel>
+		<upgradeto>337</upgradeto>
+		<upgradedesc>עבור 5 נקודות קסם פחות, הקסם עושה אותה כמות של נזק</upgradedesc>
+		<ingredient1>280</ingredient1>
+		<ingredient2>250</ingredient2>
+		<ingredient3>210</ingredient3>
+		<ingredient4>100</ingredient4>
+	</card>
+	<card>
+		<id>337</id>
+		<magicid>58</magicid>
+		<name>בקע באדמה</name>
+		<upgradelevel>level4</upgradelevel>
+		<desc>"ואז האדמה עצמה פערה את פיה..." (מתוך יומני הקוסם גרנדל)</desc>
+		<cost>55</cost>
+		<damage>55</damage>
+		<minlevel>16</minlevel>
+		<upgradeto>-99</upgradeto>	
+	</card>
+	<card>
+		<id>340</id>
+		<magicid>59</magicid>
+		<name>טורנאדו</name>
+		<desc>"טוטו, אני חושבת שאנחנו כבר לא בקנזס יותר" (מתוך אמרות מפורסמות)</desc>
+		<cost>60</cost>
+		<damage>55</damage>		
+		<upgradeto>341</upgradeto>
+		<upgradedesc>עבור עוד 5 נקודות קסם, הקסם מקבל תוספת של 5 נקודות לנזק</upgradedesc>
+		<ingredient1>190</ingredient1>
+		<ingredient2>375</ingredient2>
+		<ingredient3>160</ingredient3>
+		<ingredient4>330</ingredient4>
+	</card>
+	<card>
+		<id>341</id>
+		<magicid>59</magicid>
+		<name>טורנאדו</name>
+		<upgradelevel>level2</upgradelevel>
+		<desc>"טוטו, אני חושבת שאנחנו כבר לא בקנזס יותר" (מתוך אמרות מפורסמות)</desc>
+		<cost>65</cost>
+		<damage>60</damage>
+		<minlevel>17</minlevel>
+		<upgradeto>342</upgradeto>
+		<upgradedesc>עבור 5 נקודות קסם פחות, הקסם עושה אותה כמות של נזק</upgradedesc>
+		<ingredient1>220</ingredient1>
+		<ingredient2>350</ingredient2>
+		<ingredient3>230</ingredient3>
+		<ingredient4>370</ingredient4>
+	</card>
+	<card>
+		<id>342</id>
+		<magicid>59</magicid>
+		<name>טורנאדו</name>
+		<upgradelevel>level4</upgradelevel>
+		<desc>"טוטו, אני חושבת שאנחנו כבר לא בקנזס יותר" (מתוך אמרות מפורסמות)</desc>
+		<cost>60</cost>
+		<damage>60</damage>
+		<minlevel>19</minlevel>
+		<upgradeto>-99</upgradeto>	
+	</card>
+	<card>
+		<id>345</id>
+		<magicid>60</magicid>
+		<name>צונאמי</name>
+		<desc>"מים הם הדבר הכי קשה שקיים בטבע. נקודה." (מתוך הרצאות למתקדמים)</desc>
+		<cost>65</cost>
+		<damage>55</damage>		
+		<upgradeto>346</upgradeto>
+		<upgradedesc>עבור עוד 5 נקודות קסם, הקסם מקבל תוספת של 5 נקודות לנזק</upgradedesc>
+		<ingredient1>170</ingredient1>
+		<ingredient2>100</ingredient2>
+		<ingredient3>180</ingredient3>
+		<ingredient4>200</ingredient4>
+	</card>
+	<card>
+		<id>346</id>
+		<magicid>60</magicid>
+		<name>צונאמי</name>
+		<upgradelevel>level2</upgradelevel>
+		<desc>"מים הם הדבר הכי קשה שקיים בטבע. נקודה." (מתוך הרצאות למתקדמים)</desc>
+		<cost>70</cost>
+		<damage>60</damage>
+		<minlevel>19</minlevel>
+		<upgradeto>347</upgradeto>
+		<upgradedesc>עבור 5 נקודות קסם פחות, הקסם עושה אותה כמות של נזק</upgradedesc>
+		<ingredient1>300</ingredient1>
+		<ingredient2>550</ingredient2>
+		<ingredient3>275</ingredient3>
+		<ingredient4>500</ingredient4>
+	</card>
+	<card>
+		<id>347</id>
+		<magicid>60</magicid>
+		<name>צונאמי</name>
+		<upgradelevel>level4</upgradelevel>
+		<desc>"מים הם הדבר הכי קשה שקיים בטבע. נקודה." (מתוך הרצאות למתקדמים)</desc>
+		<cost>65</cost>
+		<damage>60</damage>
+		<minlevel>20</minlevel>
+		<upgradeto>-99</upgradeto>	
+	</card>	
+	<card>
+		<id>500</id>   <!-- stoneMan -->
+		<magicid>500</magicid>
+		<name>מפולת</name>		
+		<cost>20</cost>
+		<damage>10</damage>		
+	</card>
+	<card>
+		<id>501</id>
+		<magicid>501</magicid>
+		<name>אגרוף</name>
+		<cost>30</cost>
+		<damage>30</damage>	
+	</card>
+	<card>
+		<id>502</id>
+		<magicid>500</magicid>
+		<name>מפולת</name>		
+		<cost>30</cost>
+		<damage>15</damage>		
+	</card>
+	<card>
+		<id>503</id>
+		<magicid>501</magicid>
+		<name>אגרוף</name>		
+		<cost>40</cost>
+		<damage>40</damage>		
+	</card>
+	<card>
+		<id>504</id>
+		<magicid>500</magicid>
+		<name>מפולת</name>		
+		<cost>40</cost>
+		<damage>20</damage>		
+	</card>
+	<card>
+		<id>505</id>
+		<magicid>501</magicid>
+		<name>אגרוף</name>		
+		<cost>50</cost>
+		<damage>50</damage>		
+	</card>
+	<card>
+		<id>506</id>
+		<magicid>500</magicid>
+		<name>מפולת</name>		
+		<cost>50</cost>
+		<damage>25</damage>		
+	</card>
+	<card>
+		<id>507</id>
+		<magicid>501</magicid>
+		<name>אגרוף</name>		
+		<cost>60</cost>
+		<damage>60</damage>			
+	</card>
+	<card>
+		<id>508</id>
+		<magicid>500</magicid>
+		<name>מפולת</name>		
+		<cost>60</cost>
+		<damage>30</damage>		
+	</card>
+	<card>
+		<id>509</id>
+		<magicid>501</magicid>
+		<name>אגרוף</name>		
+		<cost>70</cost>
+		<damage>70</damage>		
+	</card>	
+	<card>
+		<id>510</id>   <!-- plant -->
+		<magicid>510</magicid>
+		<name>לשון</name>		
+		<cost>30</cost>
+		<damage>30</damage>		
+	</card>
+	<card>
+		<id>511</id>
+		<magicid>511</magicid>
+		<name>נשיכה</name>		
+		<cost>25</cost>
+		<damage>15</damage>		
+	</card>
+	<card>
+		<id>512</id>
+		<magicid>510</magicid>
+		<name>לשון</name>		
+		<cost>40</cost>
+		<damage>40</damage>		
+	</card>
+	<card>
+		<id>513</id>
+		<magicid>511</magicid>
+		<name>נשיכה</name>		
+		<cost>35</cost>
+		<damage>25</damage>			
+	</card>
+	<card>
+		<id>514</id>
+		<magicid>510</magicid>
+		<name>לשון</name>		
+		<cost>50</cost>
+		<damage>50</damage>		
+	</card>
+	<card>
+		<id>515</id>
+		<magicid>511</magicid>
+		<name>נשיכה</name>		
+		<cost>45</cost>
+		<damage>35</damage>			
+	</card>
+	<card>
+		<id>516</id>
+		<magicid>510</magicid>
+		<name>לשון</name>		
+		<cost>60</cost>
+		<damage>60</damage>		
+	</card>
+	<card>
+		<id>517</id>
+		<magicid>511</magicid>
+		<name>נשיכה</name>		
+		<cost>55</cost>
+		<damage>45</damage>			
+	</card>
+	<card>
+		<id>518</id>
+		<magicid>510</magicid>
+		<name>לשון</name>		
+		<cost>70</cost>
+		<damage>70</damage>		
+	</card>
+	<card>
+		<id>519</id>
+		<magicid>511</magicid>
+		<name>נשיכה</name>		
+		<cost>65</cost>
+		<damage>55</damage>				
+	</card>
+	<card>
+		<id>520</id>   <!-- Yetti -->
+		<magicid>520</magicid>
+		<name>מכת שלג</name>		
+		<cost>25</cost>
+		<damage>15</damage>	
+	</card>
+	<card>
+		<id>521</id>
+		<magicid>521</magicid>
+		<name>נשיפה</name>		
+		<cost>30</cost>
+		<damage>30</damage>			
+	</card>
+	<card>
+		<id>522</id>
+		<magicid>520</magicid>
+		<name>מכת שלג</name>		
+		<cost>35</cost>
+		<damage>25</damage>		
+	</card>
+	<card>
+		<id>523</id>
+		<magicid>521</magicid>
+		<name>נשיפה</name>		
+		<cost>40</cost>
+		<damage>40</damage>			
+	</card>
+	<card>
+		<id>524</id>
+		<magicid>520</magicid>
+		<name>מכת שלג</name>		
+		<cost>45</cost>
+		<damage>35</damage>		
+	</card>
+	<card>
+		<id>525</id>
+		<magicid>521</magicid>
+		<name>נשיפה</name>		
+		<cost>50</cost>
+		<damage>50</damage>			
+	</card>
+	<card>
+		<id>526</id>
+		<magicid>520</magicid>
+		<name>מכת שלג</name>		
+		<cost>55</cost>
+		<damage>45</damage>		
+	</card>
+	<card>
+		<id>527</id>
+		<magicid>521</magicid>
+		<name>נשיפה</name>		
+		<cost>60</cost>
+		<damage>60</damage>			
+	</card>
+	<card>
+		<id>528</id>
+		<magicid>520</magicid>
+		<name>מכת שלג</name>		
+		<cost>65</cost>
+		<damage>55</damage>	
+	</card>
+	<card>
+		<id>529</id>
+		<magicid>521</magicid>
+		<name>נשיפה</name>		
+		<cost>70</cost>
+		<damage>70</damage>			
+	</card>	
+	<card>
+		<id>530</id>  <!-- scareCrow -->
+		<magicid>530</magicid>
+		<name>עורב</name>		
+		<cost>25</cost>
+		<damage>15</damage>		
+	</card>
+	<card>
+		<id>531</id>
+		<magicid>531</magicid>
+		<name>הפחדה</name>		
+		<cost>30</cost>
+		<damage>30</damage>		
+	</card>
+	<card>
+		<id>532</id>
+		<magicid>530</magicid>
+		<name>עורב</name>		
+		<cost>35</cost>
+		<damage>25</damage>		
+	</card>
+	<card>
+		<id>533</id>
+		<magicid>531</magicid>
+		<name>הפחדה</name>		
+		<cost>40</cost>
+		<damage>40</damage>		
+	</card>
+	<card>
+		<id>534</id>
+		<magicid>530</magicid>
+		<name>עורב</name>		
+		<cost>45</cost>
+		<damage>35</damage>		
+	</card>
+	<card>
+		<id>535</id>
+		<magicid>531</magicid>
+		<name>הפחדה</name>		
+		<cost>50</cost>
+		<damage>50</damage>		
+	</card>
+	<card>
+		<id>536</id>
+		<magicid>530</magicid>
+		<name>עורב</name>		
+		<cost>55</cost>
+		<damage>45</damage>		
+	</card>
+	<card>
+		<id>537</id>
+		<magicid>531</magicid>
+		<name>הפחדה</name>		
+		<cost>60</cost>
+		<damage>60</damage>		
+	</card>
+	<card>
+		<id>538</id>
+		<magicid>530</magicid>
+		<name>עורב</name>		
+		<cost>65</cost>
+		<damage>55</damage>
+	</card>
+	<card>
+		<id>539</id>
+		<magicid>531</magicid>
+		<name>הפחדה</name>		
+		<cost>70</cost>
+		<damage>70</damage>		
+	</card>
+	<card>
+		<id>540</id>    <!-- EvilTree -->
+		<magicid>540</magicid>
+		<name>בלוט</name>	
+		<cost>25</cost>
+		<damage>15</damage>		
+	</card>
+	<card>
+		<id>541</id>
+		<magicid>541</magicid>
+		<name>ענף</name>		
+		<cost>30</cost>
+		<damage>30</damage>			
+	</card>
+	<card>
+		<id>542</id>
+		<magicid>540</magicid>
+		<name>בלוט</name>	
+		<cost>35</cost>
+		<damage>25</damage>		
+	</card>
+	<card>
+		<id>543</id>
+		<magicid>541</magicid>
+		<name>ענף</name>		
+		<cost>40</cost>
+		<damage>40</damage>				
+	</card>
+	<card>
+		<id>544</id>
+		<magicid>540</magicid>
+		<name>בלוט</name>	
+		<cost>45</cost>
+		<damage>35</damage>		
+	</card>
+	<card>
+		<id>545</id>
+		<magicid>541</magicid>
+		<name>ענף</name>		
+		<cost>50</cost>
+		<damage>50</damage>				
+	</card>
+	<card>
+		<id>546</id>
+		<magicid>540</magicid>
+		<name>בלוט</name>		
+		<cost>55</cost>
+		<damage>45</damage>		
+	</card>
+	<card>
+		<id>547</id>
+		<magicid>541</magicid>
+		<name>ענף</name>	
+		<cost>60</cost>
+		<damage>60</damage>		
+	</card>
+	<card>
+		<id>548</id>
+		<magicid>540</magicid>
+		<name>בלוט</name>		
+		<cost>65</cost>
+		<damage>55</damage>		
+	</card>
+	<card>
+		<id>549</id>
+		<magicid>541</magicid>
+		<name>ענף</name>		
+		<cost>70</cost>
+		<damage>70</damage>		
+	</card>
+	<card>
+		<id>550</id>   <!-- mosquito -->
+		<magicid>550</magicid>
+		<name>עוקץ</name>		
+		<cost>30</cost>
+		<damage>30</damage>		
+	</card>
+	<card>
+		<id>551</id>
+		<magicid>551</magicid>
+		<name>יתושונים</name>		
+		<cost>25</cost>
+		<damage>15</damage>		
+	</card>
+	<card>
+		<id>552</id>
+		<magicid>550</magicid>
+		<name>עוקץ</name>		
+		<cost>40</cost>
+		<damage>40</damage>		
+	</card>
+	<card>
+		<id>553</id>
+		<magicid>551</magicid>
+		<name>יתושונים</name>		
+		<cost>35</cost>
+		<damage>25</damage>			
+	</card>
+	<card>
+		<id>554</id>
+		<magicid>550</magicid>
+		<name>עוקץ</name>		
+		<cost>50</cost>
+		<damage>50</damage>		
+	</card>
+	<card>
+		<id>555</id>
+		<magicid>551</magicid>
+		<name>יתושונים</name>		
+		<cost>45</cost>
+		<damage>35</damage>			
+	</card>
+	<card>
+		<id>556</id>
+		<magicid>550</magicid>
+		<name>עוקץ</name>		
+		<cost>60</cost>
+		<damage>60</damage>		
+	</card>
+	<card>
+		<id>557</id>
+		<magicid>551</magicid>
+		<name>יתושונים</name>		
+		<cost>55</cost>
+		<damage>45</damage>			
+	</card>
+	<card>
+		<id>558</id>
+		<magicid>550</magicid>
+		<name>עוקץ</name>		
+		<cost>70</cost>
+		<damage>70</damage>		
+	</card>
+	<card>
+		<id>559</id>
+		<magicid>551</magicid>
+		<name>יתושונים</name>		
+		<cost>65</cost>
+		<damage>55</damage>				
+	</card>
+	<card>
+		<id>560</id>   <!-- dragon -->
+		<magicid>560</magicid>
+		<name>יריקת אש</name>		
+		<cost>30</cost>
+		<damage>30</damage>		
+	</card>
+	<card>
+		<id>561</id>
+		<magicid>561</magicid>
+		<name>מכת זנב</name>		
+		<cost>25</cost>
+		<damage>15</damage>		
+	</card>
+	<card>
+		<id>562</id>
+		<magicid>560</magicid>
+		<name>יריקת אש</name>		
+		<cost>40</cost>
+		<damage>40</damage>		
+	</card>
+	<card>
+		<id>563</id>
+		<magicid>561</magicid>
+		<name>מכת זנב</name>		
+		<cost>35</cost>
+		<damage>25</damage>			
+	</card>
+	<card>
+		<id>564</id>
+		<magicid>560</magicid>
+		<name>יריקת אש</name>		
+		<cost>50</cost>
+		<damage>50</damage>		
+	</card>
+	<card>
+		<id>565</id>
+		<magicid>561</magicid>
+		<name>מכת זנב</name>		
+		<cost>45</cost>
+		<damage>35</damage>			
+	</card>
+	<card>
+		<id>566</id>
+		<magicid>560</magicid>
+		<name>יריקת אש</name>		
+		<cost>60</cost>
+		<damage>60</damage>		
+	</card>
+	<card>
+		<id>567</id>
+		<magicid>561</magicid>
+		<name>מכת זנב</name>		
+		<cost>55</cost>
+		<damage>45</damage>			
+	</card>
+	<card>
+		<id>568</id>
+		<magicid>560</magicid>
+		<name>יריקת אש</name>		
+		<cost>70</cost>
+		<damage>70</damage>		
+	</card>
+	<card>
+		<id>569</id>
+		<magicid>561</magicid>
+		<name>מכת זנב</name>		
+		<cost>65</cost>
+		<damage>55</damage>				
+	</card>
+	<card>
+		<id>570</id>   <!-- ghost -->
+		<magicid>570</magicid>
+		<name>הפחדה</name>		
+		<cost>30</cost>
+		<damage>30</damage>		
+	</card>
+	<card>
+		<id>571</id>
+		<magicid>571</magicid>
+		<name>רוחות</name>		
+		<cost>25</cost>
+		<damage>15</damage>		
+	</card>
+	<card>
+		<id>572</id>
+		<magicid>570</magicid>
+		<name>הפחדה</name>		
+		<cost>40</cost>
+		<damage>40</damage>		
+	</card>
+	<card>
+		<id>573</id>
+		<magicid>571</magicid>
+		<name>רוחות</name>		
+		<cost>35</cost>
+		<damage>25</damage>			
+	</card>
+	<card>
+		<id>574</id>
+		<magicid>570</magicid>
+		<name>הפחדה</name>		
+		<cost>50</cost>
+		<damage>50</damage>		
+	</card>
+	<card>
+		<id>575</id>
+		<magicid>571</magicid>
+		<name>רוחות</name>		
+		<cost>45</cost>
+		<damage>35</damage>			
+	</card>
+	<card>
+		<id>576</id>
+		<magicid>570</magicid>
+		<name>הפחדה</name>		
+		<cost>60</cost>
+		<damage>60</damage>		
+	</card>
+	<card>
+		<id>577</id>
+		<magicid>571</magicid>
+		<name>רוחות</name>		
+		<cost>55</cost>
+		<damage>45</damage>			
+	</card>
+	<card>
+		<id>578</id>
+		<magicid>570</magicid>
+		<name>הפחדה</name>		
+		<cost>70</cost>
+		<damage>70</damage>		
+	</card>
+	<card>
+		<id>579</id>
+		<magicid>571</magicid>
+		<name>רוחות</name>		
+		<cost>65</cost>
+		<damage>55</damage>				
+	</card>	
+	<card>
+		<id>581</id>     <!-- ghost BOSS -->
+		<magicid>572</magicid>
+		<name>רוחות</name>		
+		<cost>25</cost>
+		<damage>15</damage>		
+	</card>	
+	<card>
+		<id>583</id>
+		<magicid>572</magicid>
+		<name>רוחות</name>		
+		<cost>35</cost>
+		<damage>25</damage>			
+	</card>	
+	<card>
+		<id>585</id>
+		<magicid>572</magicid>
+		<name>רוחות</name>		
+		<cost>45</cost>
+		<damage>35</damage>			
+	</card>	
+	<card>
+		<id>587</id>
+		<magicid>572</magicid>
+		<name>רוחות</name>		
+		<cost>55</cost>
+		<damage>45</damage>			
+	</card>	
+	<card>
+		<id>589</id>
+		<magicid>572</magicid>
+		<name>רוחות</name>		
+		<cost>65</cost>
+		<damage>55</damage>				
+	</card>
+	<card>
+		<id>590</id>   <!-- GooMan -->
+		<magicid>590</magicid>
+		<name>ריח רע</name>		
+		<cost>20</cost>
+		<damage>10</damage>		
+	</card>
+	<card>
+		<id>591</id>
+		<magicid>591</magicid>
+		<name>רפש</name>
+		<cost>30</cost>
+		<damage>30</damage>	
+	</card>
+	<card>
+		<id>592</id>
+		<magicid>590</magicid>
+		<name>ריח רע</name>		
+		<cost>30</cost>
+		<damage>15</damage>		
+	</card>
+	<card>
+		<id>593</id>
+		<magicid>591</magicid>
+		<name>רפש</name>		
+		<cost>40</cost>
+		<damage>40</damage>		
+	</card>
+	<card>
+		<id>594</id>
+		<magicid>590</magicid>
+		<name>ריח רע</name>		
+		<cost>40</cost>
+		<damage>20</damage>		
+	</card>
+	<card>
+		<id>595</id>
+		<magicid>591</magicid>
+		<name>רפש</name>		
+		<cost>50</cost>
+		<damage>50</damage>		
+	</card>
+	<card>
+		<id>596</id>
+		<magicid>590</magicid>
+		<name>ריח רע</name>		
+		<cost>50</cost>
+		<damage>25</damage>		
+	</card>
+	<card>
+		<id>597</id>
+		<magicid>591</magicid>
+		<name>רפש</name>		
+		<cost>60</cost>
+		<damage>60</damage>			
+	</card>
+	<card>
+		<id>598</id>
+		<magicid>590</magicid>
+		<name>ריח רע</name>		
+		<cost>60</cost>
+		<damage>30</damage>		
+	</card>
+	<card>
+		<id>599</id>
+		<magicid>591</magicid>
+		<name>רפש</name>		
+		<cost>70</cost>
+		<damage>70</damage>		
+	</card>
+	
+	<card>
+		<id>600</id>   <!-- scorpio -->
+		<magicid>600</magicid>
+		<name>זנב רעיל</name>		
+		<cost>30</cost>
+		<damage>30</damage>		
+	</card>
+	<card>
+		<id>601</id>
+		<magicid>601</magicid>
+		<name>צבתות</name>		
+		<cost>25</cost>
+		<damage>15</damage>		
+	</card>
+	<card>
+		<id>602</id>
+		<magicid>600</magicid>
+		<name>זנב רעיל</name>		
+		<cost>40</cost>
+		<damage>40</damage>		
+	</card>
+	<card>
+		<id>603</id>
+		<magicid>601</magicid>
+		<name>צבתות</name>		
+		<cost>35</cost>
+		<damage>25</damage>			
+	</card>
+	<card>
+		<id>604</id>
+		<magicid>600</magicid>
+		<name>זנב רעיל</name>		
+		<cost>50</cost>
+		<damage>50</damage>		
+	</card>
+	<card>
+		<id>605</id>
+		<magicid>601</magicid>
+		<name>צבתות</name>		
+		<cost>45</cost>
+		<damage>35</damage>			
+	</card>
+	<card>
+		<id>606</id>
+		<magicid>600</magicid>
+		<name>זנב רעיל</name>		
+		<cost>60</cost>
+		<damage>60</damage>		
+	</card>
+	<card>
+		<id>607</id>
+		<magicid>601</magicid>
+		<name>צבתות</name>		
+		<cost>55</cost>
+		<damage>45</damage>			
+	</card>
+	<card>
+		<id>608</id>
+		<magicid>600</magicid>
+		<name>זנב רעיל</name>		
+		<cost>70</cost>
+		<damage>70</damage>		
+	</card>
+	<card>
+		<id>609</id>
+		<magicid>601</magicid>
+		<name>צבתות</name>		
+		<cost>65</cost>
+		<damage>55</damage>				
+	</card>
+	
+	
+	
+	<card>
+		<id>610</id>   <!-- cooKoo -->
+		<magicid>610</magicid>
+		<name>קוקיה</name>		
+		<cost>30</cost>
+		<damage>30</damage>		
+	</card>
+	<card>
+		<id>611</id>
+		<magicid>611</magicid>
+		<name>דהירה</name>		
+		<cost>25</cost>
+		<damage>15</damage>		
+	</card>
+	<card>
+		<id>612</id>
+		<magicid>610</magicid>
+		<name>קוקיה</name>		
+		<cost>40</cost>
+		<damage>40</damage>		
+	</card>
+	<card>
+		<id>613</id>
+		<magicid>611</magicid>
+		<name>דהירה</name>		
+		<cost>35</cost>
+		<damage>25</damage>			
+	</card>
+	<card>
+		<id>614</id>
+		<magicid>610</magicid>
+		<name>קוקיה</name>		
+		<cost>50</cost>
+		<damage>50</damage>		
+	</card>
+	<card>
+		<id>615</id>
+		<magicid>611</magicid>
+		<name>דהירה</name>		
+		<cost>45</cost>
+		<damage>35</damage>			
+	</card>
+	<card>
+		<id>616</id>
+		<magicid>610</magicid>
+		<name>קוקיה</name>		
+		<cost>60</cost>
+		<damage>60</damage>		
+	</card>
+	<card>
+		<id>617</id>
+		<magicid>611</magicid>
+		<name>דהירה</name>		
+		<cost>55</cost>
+		<damage>45</damage>			
+	</card>
+	<card>
+		<id>618</id>
+		<magicid>610</magicid>
+		<name>קוקיה</name>		
+		<cost>70</cost>
+		<damage>70</damage>		
+	</card>
+	<card>
+		<id>619</id>
+		<magicid>611</magicid>
+		<name>דהירה</name>		
+		<cost>65</cost>
+		<damage>55</damage>				
+	</card>
+	
+	
+	
+	<card>
+		<id>620</id>   <!-- cactus -->
+		<magicid>620</magicid>
+		<name>סברס</name>		
+		<cost>30</cost>
+		<damage>30</damage>		
+	</card>
+	<card>
+		<id>621</id>
+		<magicid>621</magicid>
+		<name>קוצים</name>		
+		<cost>25</cost>
+		<damage>15</damage>		
+	</card>
+	<card>
+		<id>622</id>
+		<magicid>620</magicid>
+		<name>סברס</name>		
+		<cost>40</cost>
+		<damage>40</damage>		
+	</card>
+	<card>
+		<id>623</id>
+		<magicid>621</magicid>
+		<name>קוצים</name>		
+		<cost>35</cost>
+		<damage>25</damage>			
+	</card>
+	<card>
+		<id>624</id>
+		<magicid>620</magicid>
+		<name>סברס</name>		
+		<cost>50</cost>
+		<damage>50</damage>		
+	</card>
+	<card>
+		<id>625</id>
+		<magicid>621</magicid>
+		<name>קוצים</name>		
+		<cost>45</cost>
+		<damage>35</damage>			
+	</card>
+	<card>
+		<id>626</id>
+		<magicid>620</magicid>
+		<name>סברס</name>		
+		<cost>60</cost>
+		<damage>60</damage>		
+	</card>
+	<card>
+		<id>627</id>
+		<magicid>621</magicid>
+		<name>קוצים</name>		
+		<cost>55</cost>
+		<damage>45</damage>			
+	</card>
+	<card>
+		<id>628</id>
+		<magicid>620</magicid>
+		<name>סברס</name>		
+		<cost>70</cost>
+		<damage>70</damage>		
+	</card>
+	<card>
+		<id>629</id>
+		<magicid>621</magicid>
+		<name>קוצים</name>		
+		<cost>65</cost>
+		<damage>55</damage>				
+	</card>
+	
+	
+	<card>
+		<id>630</id>   <!-- mummy -->
+		<magicid>630</magicid>
+		<name>ידיים</name>		
+		<cost>30</cost>
+		<damage>30</damage>		
+	</card>
+	<card>
+		<id>631</id>
+		<magicid>631</magicid>
+		<name>הפחדה</name>		
+		<cost>25</cost>
+		<damage>15</damage>		
+	</card>
+	<card>
+		<id>632</id>
+		<magicid>630</magicid>
+		<name>ידיים</name>		
+		<cost>40</cost>
+		<damage>40</damage>		
+	</card>
+	<card>
+		<id>633</id>
+		<magicid>631</magicid>
+		<name>הפחדה</name>		
+		<cost>35</cost>
+		<damage>25</damage>			
+	</card>
+	<card>
+		<id>634</id>
+		<magicid>630</magicid>
+		<name>ידיים</name>		
+		<cost>50</cost>
+		<damage>50</damage>		
+	</card>
+	<card>
+		<id>635</id>
+		<magicid>631</magicid>
+		<name>הפחדה</name>		
+		<cost>45</cost>
+		<damage>35</damage>			
+	</card>
+	<card>
+		<id>636</id>
+		<magicid>630</magicid>
+		<name>ידיים</name>		
+		<cost>60</cost>
+		<damage>60</damage>		
+	</card>
+	<card>
+		<id>637</id>
+		<magicid>631</magicid>
+		<name>הפחדה</name>		
+		<cost>55</cost>
+		<damage>45</damage>			
+	</card>
+	<card>
+		<id>638</id>
+		<magicid>630</magicid>
+		<name>ידיים</name>		
+		<cost>70</cost>
+		<damage>70</damage>		
+	</card>
+	<card>
+		<id>639</id>
+		<magicid>631</magicid>
+		<name>הפחדה</name>		
+		<cost>65</cost>
+		<damage>55</damage>				
+	</card>	
+	
+	<card>
+		<id>640</id>   <!-- GripRipper -->
+		<magicid>640</magicid>
+		<name>חרמש</name>		
+		<cost>20</cost>
+		<damage>10</damage>		
+	</card>
+	<card>
+		<id>641</id>
+		<magicid>641</magicid>
+		<name>שעון חול</name>
+		<cost>30</cost>
+		<damage>30</damage>	
+	</card>
+	<card>
+		<id>642</id>
+		<magicid>640</magicid>
+		<name>חרמש</name>		
+		<cost>30</cost>
+		<damage>15</damage>		
+	</card>
+	<card>
+		<id>643</id>
+		<magicid>641</magicid>
+		<name>שעון חול</name>		
+		<cost>40</cost>
+		<damage>40</damage>		
+	</card>
+	<card>
+		<id>644</id>
+		<magicid>640</magicid>
+		<name>חרמש</name>		
+		<cost>40</cost>
+		<damage>20</damage>		
+	</card>
+	<card>
+		<id>645</id>
+		<magicid>641</magicid>
+		<name>שעון חול</name>		
+		<cost>50</cost>
+		<damage>50</damage>		
+	</card>
+	<card>
+		<id>646</id>
+		<magicid>640</magicid>
+		<name>חרמש</name>		
+		<cost>50</cost>
+		<damage>25</damage>		
+	</card>
+	<card>
+		<id>647</id>
+		<magicid>641</magicid>
+		<name>שעון חול</name>		
+		<cost>60</cost>
+		<damage>60</damage>			
+	</card>
+	<card>
+		<id>648</id>
+		<magicid>640</magicid>
+		<name>חרמש</name>		
+		<cost>60</cost>
+		<damage>30</damage>		
+	</card>
+	<card>
+		<id>649</id>
+		<magicid>641</magicid>
+		<name>שעון חול</name>		
+		<cost>70</cost>
+		<damage>70</damage>		
+	</card>	
+	
+	<card>
+		<id>650</id>   <!-- Crystall Troll -->
+		<magicid>650</magicid>
+		<name>קריסטלים</name>		
+		<cost>25</cost>
+		<damage>15</damage>		
+	</card>
+	<card>
+		<id>651</id>
+		<magicid>651</magicid>
+		<name>אגרוף</name>		
+		<cost>30</cost>
+		<damage>30</damage>		
+	</card>
+	<card>
+		<id>652</id>
+		<magicid>650</magicid>
+		<name>קריסטלים</name>		
+		<cost>35</cost>
+		<damage>25</damage>		
+	</card>
+	<card>
+		<id>653</id>
+		<magicid>651</magicid>
+		<name>אגרוף</name>		
+		<cost>40</cost>
+		<damage>40</damage>			
+	</card>
+	<card>
+		<id>654</id>
+		<magicid>650</magicid>
+		<name>קריסטלים</name>		
+		<cost>45</cost>
+		<damage>32</damage>		
+	</card>
+	<card>
+		<id>655</id>
+		<magicid>651</magicid>
+		<name>אגרוף</name>		
+		<cost>50</cost>
+		<damage>50</damage>			
+	</card>
+	<card>
+		<id>656</id>
+		<magicid>650</magicid>
+		<name>קריסטלים</name>		
+		<cost>55</cost>
+		<damage>45</damage>		
+	</card>
+	<card>
+		<id>657</id>
+		<magicid>651</magicid>
+		<name>אגרוף</name>		
+		<cost>60</cost>
+		<damage>60</damage>			
+	</card>
+	<card>
+		<id>658</id>
+		<magicid>650</magicid>
+		<name>קריסטלים</name>		
+		<cost>65</cost>
+		<damage>55</damage>		
+	</card>
+	<card>
+		<id>659</id>
+		<magicid>651</magicid>
+		<name>אגרוף</name>		
+		<cost>70</cost>
+		<damage>70</damage>				
+	</card>	
+	
+	
+	<card>
+		<id>660</id>   <!--Jinny-->
+		<magicid>660</magicid>
+		<name>ברק</name>		
+		<cost>30</cost>
+		<damage>30</damage>		
+	</card>
+	<card>
+		<id>661</id>
+		<magicid>661</magicid>
+		<name>ענן עשן</name>
+		<cost>20</cost>
+		<damage>10</damage>	
+	</card>
+	<card>
+		<id>662</id>
+		<magicid>660</magicid>
+		<name>ברק</name>		
+		<cost>40</cost>
+		<damage>40</damage>		
+	</card>
+	<card>
+		<id>663</id>
+		<magicid>661</magicid>
+		<name>ענן עשן</name>		
+		<cost>30</cost>
+		<damage>15</damage>		
+	</card>
+	<card>
+		<id>664</id>
+		<magicid>660</magicid>
+		<name>ברק</name>		
+		<cost>50</cost>
+		<damage>50</damage>		
+	</card>
+	<card>
+		<id>665</id>
+		<magicid>661</magicid>
+		<name>ענן עשן</name>		
+		<cost>40</cost>
+		<damage>20</damage>		
+	</card>
+	<card>
+		<id>666</id>
+		<magicid>660</magicid>
+		<name>ברק</name>		
+		<cost>60</cost>
+		<damage>60</damage>		
+	</card>
+	<card>
+		<id>667</id>
+		<magicid>661</magicid>
+		<name>ענן עשן</name>		
+		<cost>50</cost>
+		<damage>25</damage>			
+	</card>
+	<card>
+		<id>668</id>
+		<magicid>660</magicid>
+		<name>ברק</name>		
+		<cost>70</cost>
+		<damage>70</damage>		
+	</card>
+	<card>
+		<id>669</id>
+		<magicid>661</magicid>
+		<name>ענן עשן</name>		
+		<cost>60</cost>
+		<damage>30</damage>		
+	</card>	
+	
+	
+	<card>
+		<id>670</id>   <!--Vampire Bat -->
+		<magicid>670</magicid>
+		<name>סונאר</name>		
+		<cost>30</cost>
+		<damage>30</damage>		
+	</card>
+	<card>
+		<id>671</id>
+		<magicid>671</magicid>
+		<name>נשיכה</name>		
+		<cost>25</cost>
+		<damage>15</damage>		
+	</card>
+	<card>
+		<id>672</id>
+		<magicid>670</magicid>
+		<name>סונאר</name>		
+		<cost>40</cost>
+		<damage>40</damage>		
+	</card>
+	<card>
+		<id>673</id>
+		<magicid>671</magicid>
+		<name>נשיכה</name>		
+		<cost>35</cost>
+		<damage>25</damage>			
+	</card>
+	<card>
+		<id>674</id>
+		<magicid>670</magicid>
+		<name>סונאר</name>		
+		<cost>50</cost>
+		<damage>50</damage>		
+	</card>
+	<card>
+		<id>675</id>
+		<magicid>671</magicid>
+		<name>נשיכה</name>		
+		<cost>45</cost>
+		<damage>35</damage>			
+	</card>
+	<card>
+		<id>676</id>
+		<magicid>670</magicid>
+		<name>סונאר</name>		
+		<cost>60</cost>
+		<damage>60</damage>		
+	</card>
+	<card>
+		<id>677</id>
+		<magicid>671</magicid>
+		<name>נשיכה</name>		
+		<cost>55</cost>
+		<damage>45</damage>			
+	</card>
+	<card>
+		<id>678</id>
+		<magicid>670</magicid>
+		<name>סונאר</name>		
+		<cost>70</cost>
+		<damage>70</damage>		
+	</card>
+	<card>
+		<id>679</id>
+		<magicid>671</magicid>
+		<name>נשיכה</name>		
+		<cost>65</cost>
+		<damage>55</damage>				
+	</card>
+	
+	
+		<card>
+		<id>680</id>   <!--Big Foot-->
+		<magicid>680</magicid>
+		<name>נטיפים</name>		
+		<cost>30</cost>
+		<damage>30</damage>		
+	</card>
+	<card>
+		<id>681</id>
+		<magicid>681</magicid>
+		<name>ברד</name>		
+		<cost>25</cost>
+		<damage>15</damage>		
+	</card>
+	<card>
+		<id>682</id>
+		<magicid>680</magicid>
+		<name>נטיפים</name>		
+		<cost>40</cost>
+		<damage>40</damage>		
+	</card>
+	<card>
+		<id>683</id>
+		<magicid>681</magicid>
+		<name>ברד</name>		
+		<cost>35</cost>
+		<damage>25</damage>			
+	</card>
+	<card>
+		<id>684</id>
+		<magicid>680</magicid>
+		<name>נטיפים</name>		
+		<cost>50</cost>
+		<damage>50</damage>		
+	</card>
+	<card>
+		<id>685</id>
+		<magicid>681</magicid>
+		<name>ברד</name>		
+		<cost>45</cost>
+		<damage>35</damage>			
+	</card>
+	<card>
+		<id>686</id>
+		<magicid>680</magicid>
+		<name>נטיפים</name>		
+		<cost>60</cost>
+		<damage>60</damage>		
+	</card>
+	<card>
+		<id>687</id>
+		<magicid>681</magicid>
+		<name>ברד</name>		
+		<cost>55</cost>
+		<damage>45</damage>			
+	</card>
+	<card>
+		<id>688</id>
+		<magicid>680</magicid>
+		<name>נטיפים</name>		
+		<cost>70</cost>
+		<damage>70</damage>		
+	</card>
+	<card>
+		<id>689</id>
+		<magicid>681</magicid>
+		<name>ברד</name>		
+		<cost>65</cost>
+		<damage>55</damage>				
+	</card>
+	
+	
+	<card>
+		<id>690</id>   <!-- Cyclops -->
+		<magicid>690</magicid>
+		<name>קפיצה</name>		
+		<cost>20</cost>
+		<damage>10</damage>		
+	</card>
+	<card>
+		<id>691</id>
+		<magicid>691</magicid>
+		<name>אבן</name>
+		<cost>30</cost>
+		<damage>30</damage>	
+	</card>
+	<card>
+		<id>692</id>
+		<magicid>690</magicid>
+		<name>קפיצה</name>		
+		<cost>30</cost>
+		<damage>15</damage>		
+	</card>
+	<card>
+		<id>693</id>
+		<magicid>691</magicid>
+		<name>אבן</name>		
+		<cost>40</cost>
+		<damage>40</damage>		
+	</card>
+	<card>
+		<id>694</id>
+		<magicid>690</magicid>
+		<name>קפיצה</name>		
+		<cost>40</cost>
+		<damage>20</damage>		
+	</card>
+	<card>
+		<id>695</id>
+		<magicid>691</magicid>
+		<name>אבן</name>		
+		<cost>50</cost>
+		<damage>50</damage>		
+	</card>
+	<card>
+		<id>696</id>
+		<magicid>690</magicid>
+		<name>קפיצה</name>		
+		<cost>50</cost>
+		<damage>25</damage>		
+	</card>
+	<card>
+		<id>697</id>
+		<magicid>691</magicid>
+		<name>אבן</name>		
+		<cost>60</cost>
+		<damage>60</damage>			
+	</card>
+	<card>
+		<id>698</id>
+		<magicid>690</magicid>
+		<name>קפיצה</name>		
+		<cost>60</cost>
+		<damage>30</damage>		
+	</card>
+	<card>
+		<id>699</id>
+		<magicid>691</magicid>
+		<name>אבן</name>		
+		<cost>70</cost>
+		<damage>70</damage>		
+	</card>	
+
+	
+	<card>
+		<id>700</id>   <!-- BoB -->
+		<magicid>700</magicid>
+		<name>בננות</name>		
+		<cost>20</cost>
+		<damage>10</damage>		
+	</card>
+	<card>
+		<id>701</id>
+		<magicid>701</magicid>
+		<name>צרחה</name>
+		<cost>30</cost>
+		<damage>30</damage>	
+	</card>
+	<card>
+		<id>702</id>
+		<magicid>700</magicid>
+		<name>בננות</name>		
+		<cost>30</cost>
+		<damage>15</damage>		
+	</card>
+	<card>
+		<id>703</id>
+		<magicid>701</magicid>
+		<name>צרחה</name>		
+		<cost>40</cost>
+		<damage>40</damage>		
+	</card>
+	<card>
+		<id>704</id>
+		<magicid>700</magicid>
+		<name>בננות</name>		
+		<cost>40</cost>
+		<damage>20</damage>		
+	</card>
+	<card>
+		<id>705</id>
+		<magicid>701</magicid>
+		<name>צרחה</name>		
+		<cost>50</cost>
+		<damage>50</damage>		
+	</card>
+	<card>
+		<id>706</id>
+		<magicid>700</magicid>
+		<name>בננות</name>		
+		<cost>50</cost>
+		<damage>25</damage>		
+	</card>
+	<card>
+		<id>707</id>
+		<magicid>701</magicid>
+		<name>צרחה</name>		
+		<cost>60</cost>
+		<damage>60</damage>			
+	</card>
+	<card>
+		<id>708</id>
+		<magicid>700</magicid>
+		<name>בננות</name>		
+		<cost>60</cost>
+		<damage>30</damage>		
+	</card>
+	<card>
+		<id>709</id>
+		<magicid>701</magicid>
+		<name>צרחה</name>		
+		<cost>70</cost>
+		<damage>70</damage>		
+	</card>	
+
+	
+</cards>

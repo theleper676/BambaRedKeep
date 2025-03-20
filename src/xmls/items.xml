@@ -1,0 +1,2346 @@
+﻿<items>	
+	<!--
+	<item>
+		<id>1</id>
+		<base>500</base>
+		<graphicsName>stick1</graphicsName>
+	</item>
+	-->
+	<item>
+		<id>100</id>
+		<base>100</base>
+		<name>קסדה פשוטה</name>
+		
+		<graphicsname>hat1</graphicsname>		
+	</item>
+	<item>
+		<id>101</id>
+		<base>100</base>
+		<name>קסדה פשוטה</name>
+		
+		<graphicsname>hat2</graphicsname>
+	</item>
+	<item>
+		<id>102</id>
+		<base>100</base>
+		<name>קסדה פשוטה</name>
+		
+		<graphicsname>hat3</graphicsname>
+	</item>
+	<item>
+		<id>103</id>
+		<base>100</base>
+		<name>קסדה פשוטה</name>
+		
+		<graphicsname>hat4</graphicsname>
+	</item>
+	<item>
+		<id>104</id>
+		<base>100</base>
+		<name>קסדה פשוטה</name>
+		
+		<graphicsname>hat5</graphicsname>
+	</item>
+	<item>
+		<id>105</id>
+		<base>100</base>
+		<name>קסדה פשוטה</name>
+		
+		<graphicsname>hat6</graphicsname>
+	</item>
+	<item>
+		<id>110</id>
+		<base>110</base>
+		<name>קסדה ויקינגית</name>
+		
+		<graphicsname>hat11</graphicsname>		
+	</item>
+	<item>
+		<id>111</id>
+		<base>110</base>
+		<name>קסדה ויקינגית</name>
+		
+		<graphicsname>hat12</graphicsname>
+	</item>
+	<item>
+		<id>112</id>
+		<base>110</base>
+		<name>קסדה ויקינגית</name>
+		
+		<graphicsname>hat13</graphicsname>
+	</item>
+	<item>
+		<id>113</id>
+		<base>110</base>
+		<name>קסדה ויקינגית</name>
+		
+		<graphicsname>hat14</graphicsname>
+	</item>
+	<item>
+		<id>114</id>
+		<base>110</base>
+		<name>קסדה ויקינגית</name>
+		
+		<graphicsname>hat15</graphicsname>
+	</item>
+	<item>
+		<id>115</id>
+		<base>110</base>
+		<name>קסדה ויקינגית</name>
+		
+		<graphicsname>hat16</graphicsname>
+	</item>
+	<item>
+		<id>120</id>
+		<base>120</base>
+		<name>כובע מכשפה</name>
+		
+		<graphicsname>hat21</graphicsname>		
+	</item>
+	<item>
+		<id>121</id>
+		<base>120</base>
+		<name>כובע מכשפה</name>
+		
+		<graphicsname>hat22</graphicsname>
+	</item>
+	<item>
+		<id>122</id>
+		<base>120</base>
+		<name>כובע מכשפה</name>
+		
+		<graphicsname>hat23</graphicsname>
+	</item>
+	<item>
+		<id>123</id>
+		<base>120</base>
+		<name>כובע מכשפה</name>
+		
+		<graphicsname>hat24</graphicsname>
+	</item>
+	<item>
+		<id>124</id>
+		<base>120</base>
+		<name>כובע מכשפה</name>
+		
+		<graphicsname>hat25</graphicsname>
+	</item>
+	<item>
+		<id>125</id>
+		<base>120</base>
+		<name>כובע מכשפה</name>
+		
+		<graphicsname>hat26</graphicsname>
+	</item>
+	<item>
+		<id>130</id>
+		<base>130</base>
+		<name>כובע קוסם</name>
+		
+		<graphicsname>hat31</graphicsname>		
+	</item>
+	<item>
+		<id>131</id>
+		<base>130</base>
+		<name>כובע קוסם</name>
+		
+		<graphicsname>hat32</graphicsname>
+	</item>
+	<item>
+		<id>132</id>
+		<base>130</base>
+		<name>כובע קוסם</name>
+		
+		<graphicsname>hat33</graphicsname>
+	</item>
+	<item>
+		<id>133</id>
+		<base>130</base>
+		<name>כובע קוסם</name>
+		
+		<graphicsname>hat34</graphicsname>
+	</item>
+	<item>
+		<id>134</id>
+		<base>130</base>
+		<name>כובע קוסם</name>
+		
+		<graphicsname>hat35</graphicsname>
+	</item>
+	<item>
+		<id>135</id>
+		<base>130</base>
+		<name>כובע קוסם</name>
+		
+		<graphicsname>hat36</graphicsname>
+	</item>
+	<item>
+		<id>140</id>
+		<base>140</base>
+		<name>כובע סייף</name>
+		<desc>פרט לבוש בסיסי</desc>
+		<graphicsname>hat41</graphicsname>		
+	</item>
+	<item>
+		<id>141</id>
+		<base>140</base>
+		<name>כובע סייף</name>
+		
+		<graphicsname>hat42</graphicsname>
+	</item>
+	<item>
+		<id>142</id>
+		<base>140</base>
+		<name>כובע סייף</name>
+		
+		<graphicsname>hat43</graphicsname>
+	</item>
+	<item>
+		<id>143</id>
+		<base>140</base>
+		<name>כובע סייף</name>
+		
+		<graphicsname>hat44</graphicsname>
+	</item>
+	<item>
+		<id>144</id>
+		<base>140</base>
+		<name>כובע סייף</name>
+		
+		<graphicsname>hat45</graphicsname>
+	</item>
+	<item>
+		<id>145</id>
+		<base>140</base>
+		<name>כובע סייף</name>
+		
+		<graphicsname>hat46</graphicsname>
+	</item>
+	<item>
+		<id>150</id>
+		<base>150</base>
+		<name>כובע אציל</name>
+		<desc>פרט לבוש בסיסי</desc>
+		<graphicsname>hat51</graphicsname>		
+	</item>
+	<item>
+		<id>151</id>
+		<base>150</base>
+		<name>כובע אציל</name>
+		
+		<graphicsname>hat52</graphicsname>
+	</item>
+	<item>
+		<id>152</id>
+		<base>150</base>
+		<name>כובע אציל</name>
+		
+		<graphicsname>hat53</graphicsname>
+	</item>
+	<item>
+		<id>153</id>
+		<base>150</base>
+		<name>כובע אציל</name>
+		
+		<graphicsname>hat54</graphicsname>
+	</item>
+	<item>
+		<id>154</id>
+		<base>150</base>
+		<name>כובע אציל</name>
+		
+		<graphicsname>hat55</graphicsname>
+	</item>
+	<item>
+		<id>155</id>
+		<base>150</base>
+		<name>כובע אציל</name>
+		
+		<graphicsname>hat56</graphicsname>
+	</item>
+	<item>
+		<id>160</id>
+		<base>160</base>
+		<name>כובע ליצן</name>
+		<desc>פרט לבוש בסיסי</desc>
+		<graphicsname>hat61</graphicsname>		
+	</item>
+	<item>
+		<id>161</id>
+		<base>160</base>
+		<name>כובע ליצן</name>
+		
+		<graphicsname>hat62</graphicsname>
+	</item>
+	<item>
+		<id>162</id>
+		<base>160</base>
+		<name>כובע ליצן</name>
+		
+		<graphicsname>hat63</graphicsname>
+	</item>
+	<item>
+		<id>163</id>
+		<base>160</base>
+		<name>כובע ליצן</name>
+		
+		<graphicsname>hat64</graphicsname>
+	</item>
+	<item>
+		<id>164</id>
+		<base>160</base>
+		<name>כובע ליצן</name>
+		
+		<graphicsname>hat65</graphicsname>
+	</item>
+	<item>
+		<id>165</id>
+		<base>160</base>
+		<name>כובע ליצן</name>
+		
+		<graphicsname>hat66</graphicsname>
+	</item>
+	<item>
+		<id>170</id>
+		<base>170</base>
+		<name>כובע שודד ים</name>
+		<desc>פרט לבוש בסיסי</desc>
+		<graphicsname>hat71</graphicsname>		
+	</item>
+	<item>
+		<id>171</id>
+		<base>170</base>
+		<name>כובע שודד ים</name>
+		
+		<graphicsname>hat72</graphicsname>
+	</item>
+	<item>
+		<id>172</id>
+		<base>170</base>
+		<name>כובע שודד ים</name>
+		
+		<graphicsname>hat73</graphicsname>
+	</item>
+	<item>
+		<id>173</id>
+		<base>170</base>
+		<name>כובע שודד ים</name>
+		
+		<graphicsname>hat74</graphicsname>
+	</item>
+	<item>
+		<id>174</id>
+		<base>170</base>
+		<name>כובע שודד ים</name>
+		
+		<graphicsname>hat75</graphicsname>
+	</item>
+	<item>
+		<id>175</id>
+		<base>170</base>
+		<name>כובע שודד ים</name>
+		
+		<graphicsname>hat76</graphicsname>
+	</item>
+	<item>
+		<id>180</id>
+		<base>180</base>
+		<name>כובע אינדי</name>
+		<desc>פרט לבוש בסיסי</desc>
+		<graphicsname>hat81</graphicsname>		
+	</item>
+	<item>
+		<id>181</id>
+		<base>180</base>
+		<name>כובע אינדי</name>
+		
+		<graphicsname>hat82</graphicsname>
+	</item>
+	<item>
+		<id>182</id>
+		<base>180</base>
+		<name>כובע אינדי</name>
+		
+		<graphicsname>hat83</graphicsname>
+	</item>
+	<item>
+		<id>183</id>
+		<base>180</base>
+		<name>כובע אינדי</name>
+		
+		<graphicsname>hat84</graphicsname>
+	</item>
+	<item>
+		<id>184</id>
+		<base>180</base>
+		<name>כובע אינדי</name>
+		
+		<graphicsname>hat85</graphicsname>
+	</item>
+	<item>
+		<id>185</id>
+		<base>180</base>
+		<name>כובע אינדי</name>
+		
+		<graphicsname>hat86</graphicsname>
+	</item>
+	<item>
+		<id>190</id>
+		<base>190</base>
+		<name>כובע מכשף</name>
+		<desc>פרט לבוש בסיסי</desc>
+		<graphicsname>hat91</graphicsname>		
+	</item>
+	<item>
+		<id>191</id>
+		<base>190</base>
+		<name>כובע מכשף</name>
+		
+		<graphicsname>hat92</graphicsname>
+	</item>
+	<item>
+		<id>192</id>
+		<base>190</base>
+		<name>כובע מכשף</name>
+		
+		<graphicsname>hat93</graphicsname>
+	</item>
+	<item>
+		<id>193</id>
+		<base>190</base>
+		<name>כובע מכשף</name>
+		
+		<graphicsname>hat94</graphicsname>
+	</item>
+	<item>
+		<id>194</id>
+		<base>190</base>
+		<name>כובע מכשף</name>
+		
+		<graphicsname>hat95</graphicsname>
+	</item>
+	<item>
+		<id>195</id>
+		<base>190</base>
+		<name>כובע מכשף</name>
+		
+		<graphicsname>hat96</graphicsname>
+	</item>
+	
+	
+	
+	
+	<item>
+		<id>200</id>
+		<base>200</base>
+		<name>גלימת בד</name>
+		<desc>פרט לבוש בסיסי</desc>
+		<type>2</type>		
+		<graphicsname>cape1</graphicsname>		
+	</item>
+	<item>
+		<id>201</id>
+		<base>200</base>
+		<name>גלימת בד</name>
+		
+		<graphicsname>cape2</graphicsname>
+	</item>
+	<item>
+		<id>202</id>
+		<base>200</base>
+		<name>גלימת בד</name>
+			
+		<graphicsname>cape3</graphicsname>		
+	</item>
+	<item>
+		<id>203</id>
+		<base>200</base>
+		<name>גלימת בד</name>
+		<desc>פרט לבוש בסיסי</desc>
+		<type>2</type>		
+		<graphicsname>cape4</graphicsname>
+	</item>
+	<item>
+		<id>204</id>
+		<base>200</base>
+		<name>גלימת בד</name>
+				
+		<graphicsname>cape5</graphicsname>		
+	</item>
+	<item>
+		<id>205</id>
+		<base>200</base>
+		<name>גלימת בד</name>
+		
+		<graphicsname>cape6</graphicsname>
+	</item>
+	<item>
+		<id>210</id>
+		<base>210</base>
+		<name>גלימה רקומה</name>
+		
+		<graphicsname>cape11</graphicsname>
+	</item>
+	<item>
+		<id>211</id>
+		<base>210</base>
+		<name>גלימה רקומה</name>
+			
+		<graphicsname>cape12</graphicsname>		
+	</item>
+	<item>
+		<id>212</id>
+		<base>210</base>
+		<name>גלימה רקומה</name>
+		
+		<graphicsname>cape13</graphicsname>
+	</item>
+	<item>
+		<id>213</id>
+		<base>210</base>
+		<name>גלימה רקומה</name>
+			
+		<graphicsname>cape14</graphicsname>		
+	</item>
+	<item>
+		<id>214</id>
+		<base>210</base>
+		<name>גלימה רקומה</name>
+		
+		<graphicsname>cape15</graphicsname>
+	</item>
+	<item>
+		<id>215</id>
+		<base>210</base>
+		<name>גלימה רקומה</name>
+		
+		<graphicsname>cape16</graphicsname>
+	</item>
+	<item>
+		<id>220</id>
+		<base>220</base>
+		<name>גלימת ערפד</name>
+		
+		<graphicsname>cape21</graphicsname>		
+	</item>
+	<item>
+		<id>221</id>
+		<base>220</base>
+		<name>גלימת ערפד</name>
+		
+		<graphicsname>cape22</graphicsname>
+	</item>
+	<item>
+		<id>222</id>
+		<base>220</base>
+		<name>גלימת ערפד</name>
+		
+		<graphicsname>cape23</graphicsname>		
+	</item>
+	<item>
+		<id>223</id>
+		<base>220</base>
+		<name>גלימת ערפד</name>
+		
+		<graphicsname>cape24</graphicsname>
+	</item>
+	<item>
+		<id>224</id>
+		<base>220</base>
+		<name>גלימת ערפד</name>
+		
+		<graphicsname>cape25</graphicsname>		
+	</item>
+	<item>
+		<id>225</id>
+		<base>220</base>
+		<name>גלימת ערפד</name>
+		
+		<graphicsname>cape26</graphicsname>
+	</item>
+	<item>
+		<id>230</id>
+		<base>230</base>
+		<name>גלימת כוכבים</name>
+		
+		<graphicsname>cape31</graphicsname>		
+	</item>
+	<item>
+		<id>231</id>
+		<base>230</base>
+		<name>גלימת כוכבים</name>
+		
+		<graphicsname>cape32</graphicsname>
+	</item>
+	<item>
+		<id>232</id>
+		<base>230</base>
+		<name>גלימת כוכבים</name>
+			
+		<graphicsname>cape33</graphicsname>		
+	</item>
+	<item>
+		<id>233</id>
+		<base>230</base>
+		<name>גלימת כוכבים</name>
+		
+		<graphicsname>cape34</graphicsname>
+	</item>
+	<item>
+		<id>234</id>
+		<base>230</base>
+		<name>גלימת כוכבים</name>
+		
+		<graphicsname>cape35</graphicsname>		
+	</item>
+	<item>
+		<id>235</id>
+		<base>230</base>
+		<name>גלימת כוכבים</name>
+		
+		<graphicsname>cape36</graphicsname>
+	</item>
+	<item>
+		<id>240</id>
+		<base>240</base>
+		<name>גלימת עוף השמיים</name>
+		
+		<graphicsname>cape41</graphicsname>		
+	</item>
+	<item>
+		<id>241</id>
+		<base>240</base>
+		<name>גלימת עוף השמיים</name>
+		
+		<graphicsname>cape42</graphicsname>
+	</item>
+	<item>
+		<id>242</id>
+		<base>240</base>
+		<name>גלימת עוף השמיים</name>
+			
+		<graphicsname>cape43</graphicsname>		
+	</item>
+	<item>
+		<id>243</id>
+		<base>240</base>
+		<name>גלימת עוף השמיים</name>
+		
+		<graphicsname>cape44</graphicsname>
+	</item>
+	<item>
+		<id>244</id>
+		<base>240</base>
+		<name>גלימת עוף השמיים</name>
+		
+		<graphicsname>cape45</graphicsname>		
+	</item>
+	<item>
+		<id>245</id>
+		<base>240</base>
+		<name>גלימת עוף השמיים</name>
+		
+		<graphicsname>cape46</graphicsname>
+	</item>
+	
+	
+	<item>
+		<id>250</id>
+		<base>250</base>
+		<name>גלימת כנפי עטלף</name>
+		
+		<graphicsname>cape51</graphicsname>		
+	</item>
+	<item>
+		<id>251</id>
+		<base>250</base>
+		<name>גלימת כנפי עטלף</name>
+		
+		<graphicsname>cape52</graphicsname>
+	</item>
+	<item>
+		<id>252</id>
+		<base>250</base>
+		<name>גלימת כנפי עטלף</name>
+			
+		<graphicsname>cape53</graphicsname>		
+	</item>
+	<item>
+		<id>253</id>
+		<base>250</base>
+		<name>גלימת כנפי עטלף</name>
+		
+		<graphicsname>cape54</graphicsname>
+	</item>
+	<item>
+		<id>254</id>
+		<base>250</base>
+		<name>גלימת כנפי עטלף</name>
+		
+		<graphicsname>cape55</graphicsname>		
+	</item>
+	<item>
+		<id>255</id>
+		<base>250</base>
+		<name>גלימת כנפי עטלף</name>
+		
+		<graphicsname>cape56</graphicsname>
+	</item>	
+	<item>
+		<id>260</id>
+		<base>260</base>
+		<name>גלימה מלאה</name>
+		
+		<graphicsname>cape61</graphicsname>		
+	</item>
+	<item>
+		<id>261</id>
+		<base>260</base>
+		<name>גלימה מלאה</name>
+		
+		<graphicsname>cape62</graphicsname>
+	</item>
+	<item>
+		<id>262</id>
+		<base>260</base>
+		<name>גלימה מלאה</name>
+			
+		<graphicsname>cape63</graphicsname>		
+	</item>
+	<item>
+		<id>263</id>
+		<base>260</base>
+		<name>גלימה מלאה</name>
+		
+		<graphicsname>cape64</graphicsname>
+	</item>
+	<item>
+		<id>264</id>
+		<base>260</base>
+		<name>גלימה מלאה</name>
+		
+		<graphicsname>cape65</graphicsname>		
+	</item>
+	<item>
+		<id>265</id>
+		<base>260</base>
+		<name>גלימה מלאה</name>
+		
+		<graphicsname>cape66</graphicsname>
+	</item>	
+	<item>
+		<id>270</id>
+		<base>270</base>
+		<name>גלימת ברדס</name>
+		
+		<graphicsname>cape71</graphicsname>		
+	</item>
+	<item>
+		<id>271</id>
+		<base>270</base>
+		<name>גלימת ברדס</name>
+		
+		<graphicsname>cape72</graphicsname>
+	</item>
+	<item>
+		<id>272</id>
+		<base>270</base>
+		<name>גלימת ברדס</name>
+			
+		<graphicsname>cape73</graphicsname>		
+	</item>
+	<item>
+		<id>273</id>
+		<base>270</base>
+		<name>גלימת ברדס</name>
+		
+		<graphicsname>cape74</graphicsname>
+	</item>
+	<item>
+		<id>274</id>
+		<base>270</base>
+		<name>גלימת ברדס</name>
+		
+		<graphicsname>cape75</graphicsname>		
+	</item>
+	<item>
+		<id>275</id>
+		<base>270</base>
+		<name>גלימת ברדס</name>
+		
+		<graphicsname>cape76</graphicsname>
+	</item>	
+	<item>
+		<id>280</id>
+		<base>280</base>
+		<name>גלימת קוסם</name>
+		
+		<graphicsname>cape81</graphicsname>		
+	</item>
+	<item>
+		<id>281</id>
+		<base>280</base>
+		<name>גלימת קוסם</name>
+		
+		<graphicsname>cape82</graphicsname>
+	</item>
+	<item>
+		<id>282</id>
+		<base>280</base>
+		<name>גלימת קוסם</name>
+			
+		<graphicsname>cape83</graphicsname>		
+	</item>
+	<item>
+		<id>283</id>
+		<base>280</base>
+		<name>גלימת קוסם</name>
+		
+		<graphicsname>cape84</graphicsname>
+	</item>
+	<item>
+		<id>284</id>
+		<base>280</base>
+		<name>גלימת קוסם</name>
+		
+		<graphicsname>cape85</graphicsname>		
+	</item>
+	<item>
+		<id>285</id>
+		<base>280</base>
+		<name>גלימת קוסם</name>
+		
+		<graphicsname>cape86</graphicsname>
+	</item>
+	
+	<item>
+		<id>290</id>
+		<base>290</base>
+		<name>גלימת מכשף</name>
+		
+		<graphicsname>cape91</graphicsname>		
+	</item>
+	<item>
+		<id>291</id>
+		<base>290</base>
+		<name>גלימת מכשף</name>
+		
+		<graphicsname>cape92</graphicsname>
+	</item>
+	<item>
+		<id>292</id>
+		<base>290</base>
+		<name>גלימת מכשף</name>
+			
+		<graphicsname>cape93</graphicsname>		
+	</item>
+	<item>
+		<id>293</id>
+		<base>290</base>
+		<name>גלימת מכשף</name>
+		
+		<graphicsname>cape94</graphicsname>
+	</item>
+	<item>
+		<id>294</id>
+		<base>290</base>
+		<name>גלימת מכשף</name>
+		
+		<graphicsname>cape95</graphicsname>		
+	</item>
+	<item>
+		<id>295</id>
+		<base>290</base>
+		<name>גלימת מכשף</name>
+		
+		<graphicsname>cape96</graphicsname>
+	</item>	
+	
+	
+	
+	
+	
+	
+	
+	
+		
+	<item>
+		<id>300</id>
+		<base>300</base>
+		<name>חגורת אבזם</name>
+		
+		<graphicsname>belt1</graphicsname>		
+	</item>
+	<item>
+		<id>301</id>
+		<base>300</base>
+		<name>חגורת אבזם</name>
+		
+		<graphicsname>belt2</graphicsname>		
+	</item>
+	<item>
+		<id>302</id>
+		<base>300</base>
+		<name>חגורת אבזם</name>
+		
+		<graphicsname>belt3</graphicsname>		
+	</item>
+	<item>
+		<id>303</id>
+		<base>300</base>
+		<name>חגורת אבזם</name>
+		
+		<graphicsname>belt4</graphicsname>		
+	</item>
+	<item>
+		<id>304</id>
+		<base>300</base>
+		<name>חגורת אבזם</name>
+		
+		<graphicsname>belt5</graphicsname>		
+	</item>
+	<item>
+		<id>305</id>
+		<base>300</base>
+		<name>חגורת אבזם</name>
+		
+		<graphicsname>belt6</graphicsname>		
+	</item>
+	<item>
+		<id>310</id>
+		<base>310</base>
+		<name>חגורת אבן חן</name>
+		
+		<graphicsname>belt11</graphicsname>
+	</item>
+	<item>
+		<id>311</id>
+		<base>310</base>
+		<name>חגורת אבן חן</name>
+		
+		<graphicsname>belt12</graphicsname>
+	</item>
+	<item>
+		<id>312</id>
+		<base>310</base>
+		<name>חגורת אבן חן</name>
+		
+		<graphicsname>belt13</graphicsname>
+	</item>
+	<item>
+		<id>313</id>
+		<base>310</base>
+		<name>חגורת אבן חן</name>
+		
+		<graphicsname>belt14</graphicsname>
+	</item>
+	<item>
+		<id>314</id>
+		<base>310</base>
+		<name>חגורת אבן חן</name>
+		
+		<graphicsname>belt15</graphicsname>
+	</item>
+	<item>
+		<id>315</id>
+		<base>310</base>
+		<name>חגורת אבן חן</name>
+		
+		<graphicsname>belt16</graphicsname>
+	</item>
+	<item>
+		<id>320</id>
+		<base>320</base>
+		<name>חגורת ברזל</name>
+		
+		<graphicsname>belt21</graphicsname>
+	</item>
+	<item>
+		<id>321</id>
+		<base>320</base>
+		<name>חגורת ברזל</name>
+		
+		<graphicsname>belt22</graphicsname>
+	</item>
+	<item>
+		<id>322</id>
+		<base>320</base>
+		<name>חגורת ברזל</name>
+		
+		<graphicsname>belt23</graphicsname>
+	</item>
+	<item>
+		<id>323</id>
+		<base>320</base>
+		<name>חגורת ברזל</name>
+		
+		<graphicsname>belt24</graphicsname>
+	</item>
+	<item>
+		<id>324</id>
+		<base>320</base>
+		<name>חגורת ברזל</name>
+		
+		<graphicsname>belt25</graphicsname>
+	</item>
+	<item>
+		<id>325</id>
+		<base>320</base>
+		<name>חגורת ברזל</name>
+		
+		<graphicsname>belt26</graphicsname>
+	</item>
+	<item>
+		<id>330</id>
+		<base>330</base>
+		<name>חגורת בד</name>
+		
+		<graphicsname>belt31</graphicsname>
+	</item>
+	<item>
+		<id>331</id>
+		<base>330</base>
+		<name>חגורת בד</name>
+		
+		<graphicsname>belt32</graphicsname>
+	</item>
+	<item>
+		<id>332</id>
+		<base>330</base>
+		<name>חגורת בד</name>
+		
+		<graphicsname>belt33</graphicsname>
+	</item>
+	<item>
+		<id>333</id>
+		<base>330</base>
+		<name>חגורת בד</name>
+		
+		<graphicsname>belt34</graphicsname>
+	</item>
+	<item>
+		<id>334</id>
+		<base>330</base>
+		<name>חגורת בד</name>
+		
+		<graphicsname>belt35</graphicsname>
+	</item>
+	<item>
+		<id>335</id>
+		<base>330</base>
+		<name>חגורת בד</name>
+		
+		<graphicsname>belt36</graphicsname>
+	</item>
+	<item>
+		<id>340</id>
+		<base>340</base>
+		<name>חבל נזיר</name>
+		
+		<graphicsname>belt41</graphicsname>
+	</item>
+	<item>
+		<id>341</id>
+		<base>340</base>
+		<name>חבל נזיר</name>
+		
+		<graphicsname>belt42</graphicsname>
+	</item>
+	<item>
+		<id>342</id>
+		<base>340</base>
+		<name>חבל נזיר</name>
+		
+		<graphicsname>belt43</graphicsname>
+	</item>
+	<item>
+		<id>343</id>
+		<base>340</base>
+		<name>חבל נזיר</name>
+		
+		<graphicsname>belt44</graphicsname>
+	</item>
+	<item>
+		<id>344</id>
+		<base>340</base>
+		<name>חבל נזיר</name>
+		
+		<graphicsname>belt45</graphicsname>
+	</item>
+	<item>
+		<id>345</id>
+		<base>340</base>
+		<name>חבל נזיר</name>
+		
+		<graphicsname>belt46</graphicsname>
+	</item>
+	
+	
+	<item>
+		<id>350</id>
+		<base>350</base>
+		<name>חגורת פרשים</name>
+		
+		<graphicsname>belt51</graphicsname>
+	</item>
+	<item>
+		<id>351</id>
+		<base>350</base>
+		<name>חגורת פרשים</name>
+		
+		<graphicsname>belt52</graphicsname>
+	</item>
+	<item>
+		<id>352</id>
+		<base>350</base>
+		<name>חגורת פרשים</name>
+		
+		<graphicsname>belt53</graphicsname>
+	</item>
+	<item>
+		<id>353</id>
+		<base>350</base>
+		<name>חגורת פרשים</name>
+		
+		<graphicsname>belt54</graphicsname>
+	</item>
+	<item>
+		<id>354</id>
+		<base>350</base>
+		<name>חגורת פרשים</name>
+		
+		<graphicsname>belt55</graphicsname>
+	</item>
+	<item>
+		<id>355</id>
+		<base>350</base>
+		<name>חגורת פרשים</name>
+		
+		<graphicsname>belt56</graphicsname>
+	</item>
+	
+	
+	
+	<item>
+		<id>360</id>
+		<base>360</base>
+		<name>חגורת סרט</name>
+		
+		<graphicsname>belt61</graphicsname>
+	</item>	
+	<item>
+		<id>361</id>
+		<base>360</base>
+		<name>חגורת סרט</name>
+		
+		<graphicsname>belt62</graphicsname>
+	</item>
+	<item>
+		<id>362</id>
+		<base>360</base>
+		<name>חגורת סרט</name>
+		
+		<graphicsname>belt63</graphicsname>
+	</item>
+	<item>
+		<id>363</id>
+		<base>360</base>
+		<name>חגורת סרט</name>
+		
+		<graphicsname>belt64</graphicsname>
+	</item>
+	<item>
+		<id>364</id>
+		<base>360</base>
+		<name>חגורת סרט</name>
+		
+		<graphicsname>belt65</graphicsname>
+	</item>
+	<item>
+		<id>365</id>
+		<base>360</base>
+		<name>חגורת סרט</name>
+		
+		<graphicsname>belt66</graphicsname>
+	</item>
+	
+	
+	<item>
+		<id>370</id>
+		<base>370</base>
+		<name>חגורת סארונג</name>
+		
+		<graphicsname>belt71</graphicsname>
+	</item>	
+	<item>
+		<id>371</id>
+		<base>370</base>
+		<name>חגורת סארונג</name>
+		
+		<graphicsname>belt72</graphicsname>
+	</item>
+	<item>
+		<id>372</id>
+		<base>370</base>
+		<name>חגורת סארונג</name>
+		
+		<graphicsname>belt73</graphicsname>
+	</item>
+	<item>
+		<id>373</id>
+		<base>370</base>
+		<name>חגורת סארונג</name>
+		
+		<graphicsname>belt74</graphicsname>
+	</item>
+	<item>
+		<id>374</id>
+		<base>370</base>
+		<name>חגורת סארונג</name>
+		
+		<graphicsname>belt75</graphicsname>
+	</item>
+	<item>
+		<id>375</id>
+		<base>370</base>
+		<name>חגורת סארונג</name>
+		
+		<graphicsname>belt76</graphicsname>
+	</item>
+	
+	
+	<item>
+		<id>380</id>
+		<base>380</base>
+		<name>חגורה יוונית</name>
+		
+		<graphicsname>belt81</graphicsname>
+	</item>	
+	<item>
+		<id>381</id>
+		<base>380</base>
+		<name>חגורה יוונית</name>
+		
+		<graphicsname>belt82</graphicsname>
+	</item>
+	<item>
+		<id>382</id>
+		<base>380</base>
+		<name>חגורה יוונית</name>
+		
+		<graphicsname>belt83</graphicsname>
+	</item>
+	<item>
+		<id>383</id>
+		<base>380</base>
+		<name>חגורה יוונית</name>
+		
+		<graphicsname>belt84</graphicsname>
+	</item>
+	<item>
+		<id>384</id>
+		<base>380</base>
+		<name>חגורה יוונית</name>
+		
+		<graphicsname>belt85</graphicsname>
+	</item>
+	<item>
+		<id>385</id>
+		<base>380</base>
+		<name>חגורה יוונית</name>
+		
+		<graphicsname>belt86</graphicsname>
+	</item>
+	
+	<item>
+		<id>390</id>
+		<base>390</base>
+		<name>חגורת עוף השמיים</name>
+		
+		<graphicsname>belt91</graphicsname>
+	</item>
+	<item>
+		<id>391</id>
+		<base>390</base>
+		<name>חגורת עוף השמיים</name>
+		
+		<graphicsname>belt92</graphicsname>
+	</item>
+	<item>
+		<id>392</id>
+		<base>390</base>
+		<name>חגורת עוף השמיים</name>
+		
+		<graphicsname>belt93</graphicsname>
+	</item>
+	<item>
+		<id>393</id>
+		<base>390</base>
+		<name>חגורת עוף השמיים</name>
+		
+		<graphicsname>belt94</graphicsname>
+	</item>
+	<item>
+		<id>394</id>
+		<base>390</base>
+		<name>חגורת עוף השמיים</name>
+		<graphicsname>belt95</graphicsname>
+	</item>
+	<item>
+		<id>395</id>
+		<base>390</base>
+		<name>חגורת עוף השמיים</name>		
+		<graphicsname>belt96</graphicsname>
+	</item>
+	
+	
+	
+	
+		
+	<item>
+		<id>400</id>
+		<base>400</base>
+		<name>נעליים פשוטות</name>		
+		<graphicsname>shoe1</graphicsname>		
+	</item>
+	<item>
+		<id>401</id>
+		<base>400</base>
+		<name>נעליים פשוטות</name>		
+		<graphicsname>shoe2</graphicsname>
+	</item>
+	<item>
+		<id>402</id>
+		<base>400</base>
+		<name>נעליים פשוטות</name>		
+		<graphicsname>shoe3</graphicsname>		
+	</item>
+	<item>
+		<id>403</id>
+		<base>400</base>
+		<name>נעליים פשוטות</name>		
+		<graphicsname>shoe4</graphicsname>
+	</item>
+	<item>
+		<id>404</id>
+		<base>400</base>
+		<name>נעליים פשוטות</name>		
+		<graphicsname>shoe5</graphicsname>		
+	</item>
+	<item>
+		<id>405</id>
+		<base>400</base>
+		<name>נעליים פשוטות</name>		
+		<graphicsname>shoe6</graphicsname>
+	</item>
+	<item>
+		<id>410</id>
+		<base>410</base>
+		<name>מגפי ברזל</name>		
+		<graphicsname>shoe11</graphicsname>		
+	</item>
+	<item>
+		<id>411</id>
+		<base>410</base>
+		<name>מגפי ברזל</name>		
+		<graphicsname>shoe12</graphicsname>
+	</item>
+	<item>
+		<id>412</id>
+		<base>410</base>
+		<name>מגפי ברזל</name>		
+		<graphicsname>shoe13</graphicsname>		
+	</item>
+	<item>
+		<id>413</id>
+		<base>410</base>
+		<name>מגפי ברזל</name>		
+		<graphicsname>shoe14</graphicsname>
+	</item>
+	<item>
+		<id>414</id>
+		<base>410</base>
+		<name>מגפי ברזל</name>		
+		<graphicsname>shoe15</graphicsname>		
+	</item>
+	<item>
+		<id>415</id>
+		<base>410</base>
+		<name>מגפי ברזל</name>		
+		<graphicsname>shoe16</graphicsname>
+	</item>
+	<item>
+		<id>420</id>
+		<base>420</base>
+		<name>נעלי מוקסינים</name>		
+		<graphicsname>shoe21</graphicsname>		
+	</item>
+	<item>
+		<id>421</id>
+		<base>420</base>
+		<name>נעלי מוקסינים</name>		
+		<graphicsname>shoe22</graphicsname>
+	</item>
+	<item>
+		<id>422</id>
+		<base>420</base>
+		<name>נעלי מוקסינים</name>		
+		<graphicsname>shoe23</graphicsname>		
+	</item>
+	<item>
+		<id>423</id>
+		<base>420</base>
+		<name>נעלי מוקסינים</name>		
+		<graphicsname>shoe24</graphicsname>
+	</item>
+	<item>
+		<id>424</id>
+		<base>420</base>
+		<name>נעלי מוקסינים</name>		
+		<graphicsname>shoe25</graphicsname>		
+	</item>
+	<item>
+		<id>425</id>
+		<base>420</base>
+		<name>נעלי מוקסינים</name>		
+		<graphicsname>shoe26</graphicsname>
+	</item>
+	<item>
+		<id>430</id>
+		<base>430</base>
+		<name>נעל אינדיאנית</name>		
+		<graphicsname>shoe31</graphicsname>		
+	</item>
+	<item>
+		<id>431</id>
+		<base>430</base>
+		<name>נעל אינדיאנית</name>		
+		<graphicsname>shoe32</graphicsname>
+	</item>
+	<item>
+		<id>432</id>
+		<base>430</base>
+		<name>נעל אינדיאנית</name>		
+		<graphicsname>shoe33</graphicsname>		
+	</item>
+	<item>
+		<id>433</id>
+		<base>430</base>
+		<name>נעל אינדיאנית</name>		
+		<graphicsname>shoe34</graphicsname>
+	</item>
+	<item>
+		<id>434</id>
+		<base>430</base>
+		<name>נעל אינדיאנית</name>		
+		<graphicsname>shoe35</graphicsname>		
+	</item>
+	<item>
+		<id>435</id>
+		<base>430</base>
+		<name>נעל אינדיאנית</name>		
+		<graphicsname>shoe36</graphicsname>
+	</item>
+	<item>
+		<id>440</id>
+		<base>440</base>
+		<name>נעל יוונית</name>		
+		<graphicsname>shoe41</graphicsname>		
+	</item>
+	<item>
+		<id>441</id>
+		<base>440</base>
+		<name>נעל יוונית</name>		
+		<graphicsname>shoe42</graphicsname>
+	</item>
+	<item>
+		<id>442</id>
+		<base>440</base>
+		<name>נעל יוונית</name>		
+		<graphicsname>shoe43</graphicsname>		
+	</item>
+	<item>
+		<id>443</id>
+		<base>440</base>
+		<name>נעל יוונית</name>		
+		<graphicsname>shoe44</graphicsname>
+	</item>
+	<item>
+		<id>444</id>
+		<base>440</base>
+		<name>נעל יוונית</name>		
+		<graphicsname>shoe45</graphicsname>		
+	</item>
+	<item>
+		<id>445</id>
+		<base>440</base>
+		<name>נעל יוונית</name>		
+		<graphicsname>shoe46</graphicsname>
+	</item>
+	
+	
+	<item>
+		<id>450</id>
+		<base>450</base>
+		<name>מגפי אבירים</name>		
+		<graphicsname>shoe51</graphicsname>		
+	</item>
+	<item>
+		<id>451</id>
+		<base>450</base>
+		<name>מגפי אבירים</name>		
+		<graphicsname>shoe52</graphicsname>
+	</item>
+	<item>
+		<id>452</id>
+		<base>450</base>
+		<name>מגפי אבירים</name>		
+		<graphicsname>shoe53</graphicsname>		
+	</item>
+	<item>
+		<id>453</id>
+		<base>450</base>
+		<name>מגפי אבירים</name>		
+		<graphicsname>shoe54</graphicsname>
+	</item>
+	<item>
+		<id>454</id>
+		<base>450</base>
+		<name>מגפי אבירים</name>		
+		<graphicsname>shoe55</graphicsname>		
+	</item>
+	<item>
+		<id>455</id>
+		<base>450</base>
+		<name>מגפי אבירים</name>		
+		<graphicsname>shoe56</graphicsname>
+	</item>
+	
+	<item>
+		<id>460</id>
+		<base>460</base>
+		<name>סנדלי ברזל</name>		
+		<graphicsname>shoe61</graphicsname>		
+	</item>
+	<item>
+		<id>461</id>
+		<base>460</base>
+		<name>סנדלי ברזל</name>		
+		<graphicsname>shoe62</graphicsname>
+	</item>
+	<item>
+		<id>462</id>
+		<base>460</base>
+		<name>סנדלי ברזל</name>		
+		<graphicsname>shoe63</graphicsname>		
+	</item>
+	<item>
+		<id>463</id>
+		<base>460</base>
+		<name>סנדלי ברזל</name>		
+		<graphicsname>shoe64</graphicsname>
+	</item>
+	<item>
+		<id>464</id>
+		<base>460</base>
+		<name>סנדלי ברזל</name>		
+		<graphicsname>shoe65</graphicsname>		
+	</item>
+	<item>
+		<id>465</id>
+		<base>460</base>
+		<name>סנדלי ברזל</name>		
+		<graphicsname>shoe66</graphicsname>
+	</item>
+	
+	<item>
+		<id>470</id>
+		<base>470</base>
+		<name>סנדלי עץ</name>		
+		<graphicsname>shoe71</graphicsname>		
+	</item>
+	<item>
+		<id>471</id>
+		<base>470</base>
+		<name>סנדלי עץ</name>		
+		<graphicsname>shoe72</graphicsname>
+	</item>
+	<item>
+		<id>472</id>
+		<base>470</base>
+		<name>סנדלי עץ</name>		
+		<graphicsname>shoe73</graphicsname>		
+	</item>
+	<item>
+		<id>473</id>
+		<base>470</base>
+		<name>סנדלי עץ</name>		
+		<graphicsname>shoe74</graphicsname>
+	</item>
+	<item>
+		<id>474</id>
+		<base>470</base>
+		<name>סנדלי עץ</name>		
+		<graphicsname>shoe75</graphicsname>		
+	</item>
+	<item>
+		<id>475</id>
+		<base>470</base>
+		<name>סנדלי עץ</name>		
+		<graphicsname>shoe76</graphicsname>
+	</item>
+	
+	
+	<item>
+		<id>480</id>
+		<base>480</base>
+		<name>מגפי קוסם</name>		
+		<graphicsname>shoe81</graphicsname>		
+	</item>
+	<item>
+		<id>481</id>
+		<base>480</base>
+		<name>מגפי קוסם</name>		
+		<graphicsname>shoe82</graphicsname>
+	</item>
+	<item>
+		<id>482</id>
+		<base>480</base>
+		<name>מגפי קוסם</name>		
+		<graphicsname>shoe83</graphicsname>		
+	</item>
+	<item>
+		<id>483</id>
+		<base>480</base>
+		<name>מגפי קוסם</name>		
+		<graphicsname>shoe84</graphicsname>
+	</item>
+	<item>
+		<id>484</id>
+		<base>480</base>
+		<name>מגפי קוסם</name>		
+		<graphicsname>shoe85</graphicsname>		
+	</item>
+	<item>
+		<id>485</id>
+		<base>480</base>
+		<name>מגפי קוסם</name>		
+		<graphicsname>shoe86</graphicsname>
+	</item>
+	
+	
+	<item>
+		<id>490</id>
+		<base>490</base>
+		<name>מגפי פרשים</name>		
+		<graphicsname>shoe91</graphicsname>		
+	</item>
+	<item>
+		<id>491</id>
+		<base>490</base>
+		<name>מגפי פרשים</name>		
+		<graphicsname>shoe92</graphicsname>
+	</item>
+	<item>
+		<id>492</id>
+		<base>490</base>
+		<name>מגפי פרשים</name>		
+		<graphicsname>shoe93</graphicsname>		
+	</item>
+	<item>
+		<id>493</id>
+		<base>490</base>
+		<name>מגפי פרשים</name>		
+		<graphicsname>shoe94</graphicsname>
+	</item>
+	<item>
+		<id>494</id>
+		<base>490</base>
+		<name>מגפי פרשים</name>		
+		<graphicsname>shoe95</graphicsname>		
+	</item>
+	<item>
+		<id>495</id>
+		<base>490</base>
+		<name>מגפי פרשים</name>		
+		<graphicsname>shoe96</graphicsname>
+	</item>
+	
+	
+	<item>
+		<id>500</id>
+		<base>500</base>
+		<name>מטה פשוט</name>		
+		<graphicsname>stick1</graphicsname>
+	</item>
+	<item>
+		<id>501</id>
+		<base>500</base>
+		<name>מטה פשוט</name>		
+		<graphicsname>stick2</graphicsname>
+	</item>
+	<item>
+		<id>502</id>
+		<base>500</base>
+		<name>מטה פשוט</name>		
+		<graphicsname>stick3</graphicsname>
+	</item>
+	<item>
+		<id>503</id>
+		<base>500</base>
+		<name>מטה פשוט</name>		
+		<graphicsname>stick4</graphicsname>
+	</item>
+	<item>
+		<id>504</id>
+		<base>500</base>
+		<name>מטה פשוט</name>		
+		<graphicsname>stick5</graphicsname>
+	</item>
+	<item>
+		<id>505</id>
+		<base>500</base>
+		<name>מטה פשוט</name>		
+		<graphicsname>stick6</graphicsname>
+	</item>	
+	<item>
+		<id>510</id>
+		<base>510</base>
+		<name>מטה כסוף</name>		
+		<graphicsname>stick11</graphicsname>
+	</item>
+	<item>
+		<id>511</id>
+		<base>510</base>
+		<name>מטה כסוף</name>		
+		<graphicsname>stick12</graphicsname>
+	</item>
+	<item>
+		<id>512</id>
+		<base>510</base>
+		<name>מטה כסוף</name>		
+		<graphicsname>stick13</graphicsname>
+	</item>
+	<item>
+		<id>513</id>
+		<base>510</base>
+		<name>מטה כסוף</name>		
+		<graphicsname>stick14</graphicsname>
+	</item>
+	<item>
+		<id>514</id>
+		<base>510</base>
+		<name>מטה כסוף</name>		
+		<graphicsname>stick15</graphicsname>
+	</item>
+	<item>
+		<id>515</id>
+		<base>510</base>
+		<name>מטה כסוף</name>		
+		<graphicsname>stick16</graphicsname>
+	</item>
+	<item>
+		<id>520</id>
+		<base>520</base>
+		<name>מטה נחש הקוברה</name>		
+		<graphicsname>stick21</graphicsname>
+	</item>
+	<item>
+		<id>521</id>
+		<base>520</base>
+		<name>מטה נחש הקוברה</name>		
+		<graphicsname>stick22</graphicsname>
+	</item>
+	<item>
+		<id>522</id>
+		<base>520</base>
+		<name>מטה נחש הקוברה</name>		
+		<graphicsname>stick23</graphicsname>
+	</item>
+	<item>
+		<id>523</id>
+		<base>520</base>
+		<name>מטה נחש הקוברה</name>		
+		<graphicsname>stick24</graphicsname>
+	</item>
+	<item>
+		<id>524</id>
+		<base>520</base>
+		<name>מטה נחש הקוברה</name>		
+		<graphicsname>stick25</graphicsname>
+	</item>
+	<item>
+		<id>525</id>
+		<base>520</base>
+		<name>מטה נחש הקוברה</name>		
+		<graphicsname>stick26</graphicsname>
+	</item>
+	<item>
+		<id>530</id>
+		<base>530</base>
+		<name>מטה כוכב</name>		
+		<graphicsname>stick31</graphicsname>
+	</item>
+	<item>
+		<id>531</id>
+		<base>530</base>
+		<name>מטה כוכב</name>		
+		<graphicsname>stick32</graphicsname>
+	</item>
+	<item>
+		<id>532</id>
+		<base>530</base>
+		<name>מטה כוכב</name>		
+		<graphicsname>stick33</graphicsname>
+	</item>
+	<item>
+		<id>533</id>
+		<base>530</base>
+		<name>מטה כוכב</name>		
+		<graphicsname>stick34</graphicsname>
+	</item>
+	<item>
+		<id>534</id>
+		<base>530</base>
+		<name>מטה כוכב</name>		
+		<graphicsname>stick35</graphicsname>
+	</item>
+	<item>
+		<id>535</id>
+		<base>530</base>
+		<name>מטה כוכב</name>		
+		<graphicsname>stick36</graphicsname>
+	</item>
+	<item>
+		<id>540</id>
+		<base>540</base>
+		<name>מטה ורד</name>		
+		<graphicsname>stick41</graphicsname>
+	</item>
+	<item>
+		<id>541</id>
+		<base>540</base>
+		<name>מטה ורד</name>		
+		<graphicsname>stick42</graphicsname>
+	</item>
+	<item>
+		<id>542</id>
+		<base>540</base>
+		<name>מטה ורד</name>		
+		<graphicsname>stick43</graphicsname>
+	</item>
+	<item>
+		<id>543</id>
+		<base>540</base>
+		<name>מטה ורד</name>		
+		<graphicsname>stick44</graphicsname>
+	</item>
+	<item>
+		<id>544</id>
+		<base>540</base>
+		<name>מטה ורד</name>		
+		<graphicsname>stick45</graphicsname>
+	</item>
+	<item>
+		<id>545</id>
+		<base>540</base>
+		<name>מטה ורד</name>		
+		<graphicsname>stick46</graphicsname>
+	</item>	
+	
+	<item>
+		<id>550</id>
+		<base>550</base>
+		<name>מטה שאמאן</name>		
+		<graphicsname>stick51</graphicsname>
+	</item>
+	<item>
+		<id>551</id>
+		<base>550</base>
+		<name>מטה שאמאן</name>		
+		<graphicsname>stick52</graphicsname>
+	</item>
+	<item>
+		<id>552</id>
+		<base>550</base>
+		<name>מטה שאמאן</name>		
+		<graphicsname>stick53</graphicsname>
+	</item>
+	<item>
+		<id>553</id>
+		<base>550</base>
+		<name>מטה שאמאן</name>		
+		<graphicsname>stick54</graphicsname>
+	</item>
+	<item>
+		<id>554</id>
+		<base>550</base>
+		<name>מטה שאמאן</name>		
+		<graphicsname>stick55</graphicsname>
+	</item>
+	<item>
+		<id>555</id>
+		<base>550</base>
+		<name>מטה שאמאן</name>		
+		<graphicsname>stick56</graphicsname>
+	</item>
+	
+	
+	<item>
+		<id>560</id>
+		<base>560</base>
+		<name>מטה שמש</name>		
+		<graphicsname>stick61</graphicsname>
+	</item>
+	<item>
+		<id>561</id>
+		<base>560</base>
+		<name>מטה שמש</name>		
+		<graphicsname>stick62</graphicsname>
+	</item>
+	<item>
+		<id>562</id>
+		<base>560</base>
+		<name>מטה שמש</name>		
+		<graphicsname>stick63</graphicsname>
+	</item>
+	<item>
+		<id>563</id>
+		<base>560</base>
+		<name>מטה שמש</name>		
+		<graphicsname>stick64</graphicsname>
+	</item>
+	<item>
+		<id>564</id>
+		<base>560</base>
+		<name>מטה שמש</name>		
+		<graphicsname>stick65</graphicsname>
+	</item>
+	<item>
+		<id>565</id>
+		<base>560</base>
+		<name>מטה שמש</name>		
+		<graphicsname>stick66</graphicsname>
+	</item>
+
+	<item>
+		<id>570</id>
+		<base>570</base>
+		<name>מטה ירח</name>		
+		<graphicsname>stick71</graphicsname>
+	</item>
+	<item>
+		<id>571</id>
+		<base>570</base>
+		<name>מטה ירח</name>		
+		<graphicsname>stick72</graphicsname>
+	</item>
+	<item>
+		<id>572</id>
+		<base>570</base>
+		<name>מטה ירח</name>		
+		<graphicsname>stick73</graphicsname>
+	</item>
+	<item>
+		<id>573</id>
+		<base>570</base>
+		<name>מטה ירח</name>		
+		<graphicsname>stick74</graphicsname>
+	</item>
+	<item>
+		<id>574</id>
+		<base>570</base>
+		<name>מטה ירח</name>		
+		<graphicsname>stick75</graphicsname>
+	</item>
+	<item>
+		<id>575</id>
+		<base>570</base>
+		<name>מטה ירח</name>		
+		<graphicsname>stick76</graphicsname>
+	</item>
+	
+	<item>
+		<id>580</id>
+		<base>580</base>
+		<name>מטה נובה</name>		
+		<graphicsname>stick81</graphicsname>
+	</item>
+	<item>
+		<id>581</id>
+		<base>580</base>
+		<name>מטה נובה</name>		
+		<graphicsname>stick82</graphicsname>
+	</item>
+	<item>
+		<id>582</id>
+		<base>580</base>
+		<name>מטה נובה</name>		
+		<graphicsname>stick83</graphicsname>
+	</item>
+	<item>
+		<id>583</id>
+		<base>580</base>
+		<name>מטה נובה</name>		
+		<graphicsname>stick84</graphicsname>
+	</item>
+	<item>
+		<id>584</id>
+		<base>580</base>
+		<name>מטה נובה</name>		
+		<graphicsname>stick85</graphicsname>
+	</item>
+	<item>
+		<id>585</id>
+		<base>580</base>
+		<name>מטה נובה</name>		
+		<graphicsname>stick86</graphicsname>
+	</item>
+	
+	<item>
+		<id>590</id>
+		<base>590</base>
+		<name>מטה קוסם</name>		
+		<graphicsname>stick91</graphicsname>
+	</item>
+	<item>
+		<id>591</id>
+		<base>590</base>
+		<name>מטה קוסם</name>		
+		<graphicsname>stick92</graphicsname>
+	</item>
+	<item>
+		<id>592</id>
+		<base>590</base>
+		<name>מטה קוסם</name>		
+		<graphicsname>stick93</graphicsname>
+	</item>
+	<item>
+		<id>593</id>
+		<base>590</base>
+		<name>מטה קוסם</name>		
+		<graphicsname>stick94</graphicsname>
+	</item>
+	<item>
+		<id>594</id>
+		<base>590</base>
+		<name>מטה קוסם</name>		
+		<graphicsname>stick95</graphicsname>
+	</item>
+	<item>
+		<id>595</id>
+		<base>590</base>
+		<name>מטה קוסם</name>		
+		<graphicsname>stick96</graphicsname>
+	</item>
+	
+
+	
+	<item>
+		<id>600</id>
+		<base>600</base>
+		<graphicsname>hair1</graphicsname>
+	</item>
+	<item>
+		<id>601</id>
+		<base>600</base>
+		<graphicsname>hair2</graphicsname>
+	</item>
+	<item>
+		<id>602</id>
+		<base>600</base>
+		<graphicsname>hair3</graphicsname>
+	</item>
+	<item>
+		<id>603</id>
+		<base>600</base>
+		<graphicsname>hair4</graphicsname>
+	</item>	
+	<item>
+		<id>604</id>
+		<base>600</base>
+		<graphicsname>hair5</graphicsname>
+	</item>
+	<item>
+		<id>605</id>
+		<base>600</base>
+		<graphicsname>hair6</graphicsname>
+	</item>
+	<item>
+		<id>610</id>
+		<base>610</base>
+		<graphicsname>hair11</graphicsname>
+	</item>
+	<item>
+		<id>611</id>
+		<base>610</base>
+		<graphicsname>hair12</graphicsname>
+	</item>
+	<item>
+		<id>612</id>
+		<base>610</base>
+		<graphicsname>hair13</graphicsname>
+	</item>
+	<item>
+		<id>613</id>
+		<base>610</base>
+		<graphicsname>hair14</graphicsname>
+	</item>	
+	<item>
+		<id>614</id>
+		<base>610</base>
+		<graphicsname>hair15</graphicsname>
+	</item>
+	<item>
+		<id>615</id>
+		<base>610</base>
+		<graphicsname>hair16</graphicsname>
+	</item>	
+	<item>
+		<id>620</id>
+		<base>620</base>
+		<graphicsname>hair21</graphicsname>
+	</item>
+	<item>
+		<id>621</id>
+		<base>620</base>
+		<graphicsname>hair22</graphicsname>
+	</item>
+	<item>
+		<id>622</id>
+		<base>620</base>
+		<graphicsname>hair23</graphicsname>
+	</item>
+	<item>
+		<id>623</id>
+		<base>620</base>
+		<graphicsname>hair24</graphicsname>
+	</item>	
+	<item>
+		<id>624</id>
+		<base>620</base>
+		<graphicsname>hair25</graphicsname>
+	</item>
+	<item>
+		<id>625</id>
+		<base>620</base>
+		<graphicsname>hair26</graphicsname>
+	</item>	
+	<item>
+		<id>630</id>
+		<base>630</base>
+		<graphicsname>hair31</graphicsname>
+	</item>
+	<item>
+		<id>631</id>
+		<base>630</base>
+		<graphicsname>hair32</graphicsname>
+	</item>
+	<item>
+		<id>632</id>
+		<base>630</base>
+		<graphicsname>hair33</graphicsname>
+	</item>
+	<item>
+		<id>633</id>
+		<base>630</base>
+		<graphicsname>hair34</graphicsname>
+	</item>	
+	<item>
+		<id>634</id>
+		<base>630</base>
+		<graphicsname>hair35</graphicsname>
+	</item>
+	<item>
+		<id>635</id>
+		<base>630</base>
+		<graphicsname>hair36</graphicsname>
+	</item>		
+	
+	<item>
+		<id>640</id>
+		<base>640</base>
+		<graphicsname>hair41</graphicsname>
+	</item>
+	<item>
+		<id>641</id>
+		<base>640</base>
+		<graphicsname>hair42</graphicsname>
+	</item>
+	<item>
+		<id>642</id>
+		<base>640</base>
+		<graphicsname>hair43</graphicsname>
+	</item>
+	<item>
+		<id>643</id>
+		<base>640</base>
+		<graphicsname>hair44</graphicsname>
+	</item>	
+	<item>
+		<id>644</id>
+		<base>640</base>
+		<graphicsname>hair45</graphicsname>
+	</item>
+	<item>
+		<id>645</id>
+		<base>640</base>
+		<graphicsname>hair46</graphicsname>
+	</item>		
+	
+	<item>
+		<id>650</id>
+		<base>650</base>
+		<graphicsname>hair51</graphicsname>
+	</item>
+	<item>
+		<id>651</id>
+		<base>650</base>
+		<graphicsname>hair52</graphicsname>
+	</item>
+	<item>
+		<id>652</id>
+		<base>650</base>
+		<graphicsname>hair53</graphicsname>
+	</item>
+	<item>
+		<id>653</id>
+		<base>650</base>
+		<graphicsname>hair54</graphicsname>
+	</item>	
+	<item>
+		<id>654</id>
+		<base>650</base>
+		<graphicsname>hair55</graphicsname>
+	</item>
+	<item>
+		<id>655</id>
+		<base>650</base>
+		<graphicsname>hair56</graphicsname>
+	</item>	
+
+<item>
+		<id>660</id>
+		<base>660</base>
+		<graphicsname>hair61</graphicsname>
+	</item>
+	<item>
+		<id>661</id>
+		<base>660</base>
+		<graphicsname>hair62</graphicsname>
+	</item>
+	<item>
+		<id>662</id>
+		<base>660</base>
+		<graphicsname>hair63</graphicsname>
+	</item>
+	<item>
+		<id>663</id>
+		<base>660</base>
+		<graphicsname>hair64</graphicsname>
+	</item>	
+	<item>
+		<id>664</id>
+		<base>660</base>
+		<graphicsname>hair65</graphicsname>
+	</item>
+	<item>
+		<id>665</id>
+		<base>660</base>
+		<graphicsname>hair66</graphicsname>
+	</item>	
+
+	<item>
+		<id>670</id>
+		<base>670</base>
+		<graphicsname>hair71</graphicsname>
+	</item>
+	<item>
+		<id>671</id>
+		<base>670</base>
+		<graphicsname>hair72</graphicsname>
+	</item>
+	<item>
+		<id>672</id>
+		<base>670</base>
+		<graphicsname>hair73</graphicsname>
+	</item>
+	<item>
+		<id>673</id>
+		<base>670</base>
+		<graphicsname>hair74</graphicsname>
+	</item>	
+	<item>
+		<id>674</id>
+		<base>670</base>
+		<graphicsname>hair75</graphicsname>
+	</item>
+	<item>
+		<id>675</id>
+		<base>670</base>
+		<graphicsname>hair76</graphicsname>
+	</item>		
+	
+	
+	
+	<item>
+		<id>700</id>
+		<base>700</base>
+		<graphicsname>eyes1</graphicsname>
+	</item>
+	<item>
+		<id>701</id>
+		<base>700</base>
+		<graphicsname>eyes2</graphicsname>
+	</item>
+	<item>
+		<id>702</id>
+		<base>700</base>
+		<graphicsname>eyes3</graphicsname>
+	</item>
+	<item>
+		<id>703</id>
+		<base>700</base>
+		<graphicsname>eyes4</graphicsname>
+	</item>
+	<item>
+		<id>704</id>
+		<base>700</base>
+		<graphicsname>eyes5</graphicsname>
+	</item>
+	<item>
+		<id>705</id>
+		<base>700</base>
+		<graphicsname>eyes6</graphicsname>
+	</item>
+	<item>
+		<id>800</id>
+		<base>800</base>
+		<graphicsname>diaper1</graphicsname>
+	</item>
+	<item>
+		<id>801</id>
+		<base>800</base>
+		<graphicsname>diaper2</graphicsname>
+	</item>
+	<item>
+		<id>802</id>
+		<base>800</base>
+		<graphicsname>diaper3</graphicsname>
+	</item>
+	<item>
+		<id>803</id>
+		<base>800</base>
+		<graphicsname>diaper4</graphicsname>
+	</item>
+	<item>
+		<id>804</id>
+		<base>800</base>
+		<graphicsname>diaper5</graphicsname>
+	</item>
+	<item>
+		<id>805</id>
+		<base>800</base>
+		<graphicsname>diaper6</graphicsname>
+	</item>
+</items>

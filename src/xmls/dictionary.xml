@@ -1,0 +1,94 @@
+﻿<dictionary>
+	<new_player_name_existing>שם המשתמש תפוס, בחר שם אחר</new_player_name_existing>
+	<new_player_min_name>על שם המשתמש להיות לפחות 3 תווים</new_player_min_name>
+	<new_player_min_pass>על הסיסמא להיות לפחות 3 תווים</new_player_min_pass>
+	<new_player_no_identic_pass>על שתי הסיסמאות להיות זהות</new_player_no_identic_pass>
+	<new_player_illegal_mail>כתובת המייל אינה חוקית</new_player_illegal_mail>
+	<new_player_mail_existing>כתובת המייל כבר בשימוש, יש להשתמש בכתובת אחרת</new_player_mail_existing>
+	
+	<ch_b_no_order>נא לבחור מסדר קסם!</ch_b_no_order>
+	<ch_b_min_name>יש לבחור שם בן שלושה תווים לפחות</ch_b_min_name>
+	
+	<win_fight_msg>כל הכבוד, ניצחת!</win_fight_msg>
+	<found_treasure_msg>מצאת אוצר!</found_treasure_msg>
+	<close_dungeon_msg>לא ניצחת הפעם, נסה שוב...</close_dungeon_msg>
+	
+	<magic_not_enough_money>אין לך מספיק במבה בשביל קסם זה</magic_not_enough_money>
+	<magic_must_pick_one>לא בחרת קסם</magic_must_pick_one>
+	
+	<upgrade_cant_upgrade_card>לא ניתן לשפר קסם זה יותר</upgrade_cant_upgrade_card>
+	<upgrade_level_to_low>אתה לא ברמה מספיק גבוהה בכדי לשפר את הקסם</upgrade_level_to_low>
+	<upgrade_no_ingredients>אין לך את כל הרכיבים הדרושים לשיפור הקסם</upgrade_no_ingredients>
+	<upgrade_must_pick_one>לא בחרת קסם</upgrade_must_pick_one>
+	
+	<store_no_money>אין לך מספיק במבה כדי לקנות את החפץ</store_no_money>
+	<store_must_pick_one>לא בחרת חפץ</store_must_pick_one>
+	<store_sell_item>האם אתה בטוח שאתה רוצה למכור את החפץ? השווי שלו הוא</store_sell_item>
+	<store_buy_item>האם אתה בטוח שאתה רוצה לקנות את החפץ? המחיר שלו הוא</store_buy_item>
+	
+	<level_up_msg_head>עלית רמה!</level_up_msg_head>
+	<level_up_msg>כל הכבוד! עכשיו אתה קוסם ברמה</level_up_msg>
+	<quest_msg_head>השלמת את המשימה!</quest_msg_head>
+	
+	<msg_win1>אתה זוכה ב:</msg_win1>
+	<!-- <MSG_WIN2> וגם עלית רמה, כל הכבוד. </MSG_WIN2> --> 	
+	<msg_win2></msg_win2>
+	
+	<character_name>שם</character_name>
+	<character_order>מסדר</character_order>
+	<character_level>רמה</character_level>
+	
+	<menu_new_character>האם אתה בטוח? ברגע שתלחץ על כפתור האישור, תתחיל בבניית דמות חדשה, והדמות הקיימת תמחק.</menu_new_character>
+	<menu_no_character>עדיין לא בנית דמות, תוכל להתחיל לשחק רק אחרי שתסיים את בניית הדמות</menu_no_character>
+	
+	<fight_must_pick_3>עליך לבחור 3 קלפים</fight_must_pick_3>
+	
+	<life>אנרגיה</life>
+	<magic>נקודות קסם</magic>
+	<regeneration>חידוש קסם</regeneration>
+	<expoints>נקודות נסיון</expoints>	
+	<price>מחיר</price>
+	<price_sell>שווי</price_sell>
+	<min_level>רמה דרושה</min_level>
+	<next_level>רמה הבאה</next_level>
+	<dungeon_difficulty>רמת קושי</dungeon_difficulty>
+	
+	<money_name>במבה</money_name>
+	<ingredient1_name>במבה צהובה</ingredient1_name>
+	<ingredient2_name>במבה נוגט</ingredient2_name>
+	<ingredient3_name>במבה אדומה</ingredient3_name>
+	<ingredient4_name>בוטנים</ingredient4_name>
+	
+	
+	
+	<!-- Build Character Screen -->
+	<ch_b_title>בחר מסדר קסם</ch_b_title>
+	<ch_b_text>הקוסם שלך יהיה שייך לאחד משלושת מסדרי הקסם המוכרים בממלכה. בחר את המסדר המתאים לקוסם שלך. בחירה זו תלווה אותך למשך כל המשחק.</ch_b_text>
+	<ch_b_oreder_pre>מסדר ה</ch_b_oreder_pre>
+	<ch_b_orders_descs>שלוט בקסמים החמים ביותר בעזרת כוחו האימתני של יסוד האש., היה הקוסם הכי קול בממלכה בעזרת יכולות הכפור המרתיעות שלך., הפוך לבעל שליטה מוחלטת בכוחות הטבע שירתמו לעזרתך.</ch_b_orders_descs>
+
+	<ch_b_tabs>צבע,שיער,כובע,גלימה,חגורה,נעליים</ch_b_tabs>
+	<ch_b_first_line>עיניים,שיער,כובע,גלימה,חגורה,נעליים</ch_b_first_line>
+	<ch_b_second_line>חיתול,צבע,צבע,צבע,צבע,צבע,צבע</ch_b_second_line>
+	<ch_b_custom_head>הלבש את הקוסם שלך</ch_b_custom_head>
+	
+	<ch_b_name_title>שם</ch_b_name_title>
+	<ch_b_name_desc>תן שם לקוסם</ch_b_name_desc>
+	<ch_b_name_ques>סיימת לבנות את הדמות. האם לאשר אותה?</ch_b_name_ques>
+	
+	<!-- translation tables -->
+	<orders>אש,קרח,טבע</orders>
+	<areas>הממלכה הקסומה, הצםון הקר,הר הגעש, האגם</areas>
+	<colors>0XDB1C00,0X1283A0,0X5F7F0B,0X5C14AD,0X563C0E</colors> <!--  the last one is brown for enemy cards -->	
+	<dungeon_difficulties>קל,בינוני,קשה,מתחיל</dungeon_difficulties>
+	
+	<!-- loading msgs-->
+	<loading_msgs>טוען קובץ הגדרות כלליות,מגלה יבשות,מייבש ביצות,אוכל במבה,דורך על הדשא,ישן צהריים, בונה ארמון בחול,מניח גבולות,סולל שבילים,בונה סוכת מציל,תופר בגדים,מנקה את המגדל,מבריק מדליות,אופה פשטידה,משתעמם,מצחצח נעליים,קם שעה קודם,קורא ספר,מאכיל את הדגים,מנקה מאחורי האזניים,מחליף חיתול,בולס שקמים,לוקח אחריות,מחכה בסבלנות,שותה מים,סופר עד 100,בונה מגדלים,שואף לגדולות,מנבא טובות,מביט לאחור,מודה להוריי</loading_msgs>
+	<loading_file_sizes>5,13,32,78,46,8,20,46,15,6,1,38,69,31,212,77,210,191,149,566,107,343,903,549,106,7</loading_file_sizes>
+	<!-- <LOADING_FILE_SIZES>13,52,28,21,8,19,55,15,6,1,17,7,19,122,77,221,66,123,473,91,308,602,244,68</LOADING_FILE_SIZES> -->
+	<loading_dungeon_msg>טוען מבוך</loading_dungeon_msg>
+	<loading_enemy_msg>טוען מפלצות</loading_enemy_msg>
+	<loading_dungeon_music_msg>טוען מוסיקת מבוך</loading_dungeon_music_msg>
+	<loading_end_msg>סיימתי, תורך</loading_end_msg>
+	<loading_movie_msg>טוען סרטון פתיחה</loading_movie_msg>
+</dictionary>
