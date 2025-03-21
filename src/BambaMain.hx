@@ -12,11 +12,13 @@ import general.Heb;
 import general.MsgBox;
 import general.PlayerDataUpdater;
 
-class BambaMain extends MovieClip {
+class BambaMain extends DisplayObjectContainer {
 	var currDungeonDifficulty:Float;
-	var gameMap:BambaMap;
+	var gameMap:Null<Dynamic>;
+	// var gameMap:BambaMap;
 
 	public var msgShown:Bool;
+
 
 	var gameAssets:BambaAssets;
 
@@ -24,49 +26,65 @@ class BambaMain extends MovieClip {
 
 	var currDongeonId:Float;
 
-	var magicBook:BambaMagicBook;
+	var magicBook:Null<Dynamic>;
+	//var magicBook:BambaMagicBook;
 
 	var currEnemyId:Float;
 
 	public var didLogin:Bool;
 
-	var questManager:BambaQuestManager;
+	var questManager:Null<Dynamic>;
+	//var questManager:BambaQuestManager;
 
-	var newPlayer:BambaNewPlayerScreen;
+	var newPlayer:Null<Dynamic>;
+	//var newPlayer:BambaNewPlayerScreen;
 
-	var gameLoader:BambaLoader;
+	var gameLoader:Null<Dynamic>;
+	//var gameLoader:BambaLoader;
 
 	var eventTypeNames:Dynamic;
 
-	public var gameData:BambaData;
+	public var gameData:Null<Dynamic>;
+	//public var gameData:BambaData;
 
-	var characterBuild:BambaCharacterBuildScreen;
+	var characterBuild:Null<Dynamic>;
+	//var characterBuild:BambaCharacterBuildScreen;
 
 	public var ToolID:Dynamic;
 
-	var store:BambaStore;
+	var store:Null<Dynamic>;
+	//var store:BambaStore;
 
 	public var autoLogin:Bool;
 
-	var tower:BambaTower;
+	var tower:Null<Dynamic>;
+	//var tower:BambaTower;
 
-	var aDungeon:BambaDungeon;
+	var aDungeon:Null<Dynamic>;
+	//var aDungeon:BambaDungeon;
 
-	public var sound:BambaSoundManager;
+	public var sound:Null<Dynamic>;
+	//public var sound:BambaSoundManager;
 
-	var character:BambaCharacterScreen;
+	var character:Null<Dynamic>;
+	//var character:BambaCharacterScreen;
 
-	var movie:BambaMovie;
+	var movie:Null<Dynamic>;
+	//var movie:BambaMovie;
 
 	public var finishLoading:Bool;
 
-	var help:BambaHelp;
+	var help:Null<Dynamic>;
+	//var help:BambaHelp;
 
-	var opening:BambaOpeningScreen;
+	var opening:Null<Dynamic>;
+	//var opening:BambaOpeningScreen;
 
-	var menu:BambaMenuScreen;
+	var menu:Null<Dynamic>;
+	//var menu:BambaMenuScreen;
 
-	var upgradeSystem:BambaUpgradeSystem;
+	var upgradeSystem:Null<Dynamic>;
+	//var upgradeSystem:BambaUpgradeSystem;
 
 	public var userSharedObject:SharedObject;
 
@@ -74,11 +92,12 @@ class BambaMain extends MovieClip {
 
 	var eventTypeCodes:Dynamic;
 
-	var frameMC:MovieClip;
+	var frameMC:Null<Dynamic>;
 
 	var dungeonMC:MovieClip;
 
 	public function new() {
+		super();
 		eventTypeCodes = [1, 3, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23, 24, 25, 26, 27, 28];
 		eventTypeNames = [
 			"hasifa",
@@ -104,7 +123,7 @@ class BambaMain extends MovieClip {
 			"main"
 		];
 		getHTMLvars();
-		//checkUser();
+		checkUser();
 		gameData = new BambaData(this);
 		gameAssets = new BambaAssets(this);
 		sound = new BambaSoundManager(this);
@@ -117,7 +136,7 @@ class BambaMain extends MovieClip {
 		autoLogin = true;
 	}
 
-	function hideCharacter():Dynamic {
+	function hideCharacter():Void {
 		if (character != null) {
 			if (this.contains(character.mc)) {
 				help.showTutorial(11);
@@ -126,7 +145,7 @@ class BambaMain extends MovieClip {
 		}
 	}
 
-	function showQuestManager():Dynamic {
+	function showQuestManager():Void {
 		this.addChild(questManager.mc);
 		questManager.update();
 		questManager.showFog();
@@ -139,8 +158,8 @@ class BambaMain extends MovieClip {
 		trace("innerCountIOError:" + param1);
 	}
 
-	function showTower():Dynamic {
-		var _loc1_:Dynamic = undefined;
+	function showTower():Void {
+		var _loc1_:Null<Dynamic> = null;
 		hideMap();
 		hideMenuScreen();
 		this.addChild(tower.mc);
@@ -158,7 +177,7 @@ class BambaMain extends MovieClip {
 		}
 	}
 
-	function showNewPlayer():Dynamic {
+	function showNewPlayer():Void {
 		hideOpeningScreen();
 		newPlayer = new BambaNewPlayerScreen(this);
 		this.addChild(newPlayer.mc);
@@ -168,13 +187,13 @@ class BambaMain extends MovieClip {
 		frameMC.holesMC.gotoAndStop("no_order");
 	}
 
-	function exitToOpeningScreen():Dynamic {
+	function exitToOpeningScreen():Void {
 		autoLogin = false;
 		showOpeningScreen();
 		opening.setOnStart();
 	}
 
-	function startNewPlayer():Dynamic {
+	function startNewPlayer():Void {
 		if (finishLoading) {
 			if (didLogin) {
 				showCharacterBuild();
@@ -186,15 +205,15 @@ class BambaMain extends MovieClip {
 		}
 	}
 
-	function innerCount(param1:Dynamic):Dynamic {
-		var _loc2_:Dynamic = undefined;
-		var _loc3_:Dynamic = undefined;
-		var _loc4_:Dynamic = undefined;
+	function innerCount(param1:Int):Void {
+		var _loc2_:Null<Dynamic> = null;
+		var _loc3_:Null<Dynamic> = null;
+		var _loc4_:Null<Dynamic> = null;
 		ERate.sendEvent(ToolID, param1);
 		_loc2_ = "edcount";
 		_loc3_ = eventTypeCodes.indexOf(param1);
 		_loc4_ = eventTypeNames[_loc3_];
-		fscommand(_loc2_, _loc4_);
+		//fscommand(_loc2_, _loc4_);
 	}
 
 	public function makeFullScreen(param1:MouseEvent):Void {
@@ -202,7 +221,7 @@ class BambaMain extends MovieClip {
 		if (stage.displayState == StageDisplayState.NORMAL) {
 			try {
 				stage.displayState = StageDisplayState.FULL_SCREEN;
-			} catch (e:SecurityError) {
+			} catch (e:Dynamic) {
 				trace("an error has occured. please modify the html file to allow fullscreen mode");
 			}
 		}
@@ -215,7 +234,7 @@ class BambaMain extends MovieClip {
 		}
 	}
 
-	public function showMovie(param1:Dynamic):Dynamic {
+	public function showMovie(param1:Dynamic):Void {
 		hideAllScreens();
 		this.addChild(param1);
 		param1.x = 30;
@@ -225,7 +244,7 @@ class BambaMain extends MovieClip {
 		sound.stopAll();
 	}
 
-	function hideCharacterBuild():Dynamic {
+	function hideCharacterBuild():Void {
 		if (characterBuild != null) {
 			if (this.contains(characterBuild.mc)) {
 				this.removeChild(characterBuild.mc);
@@ -240,14 +259,14 @@ class BambaMain extends MovieClip {
 		}
 	}
 
-	function showCharacter():Dynamic {
+	function showCharacter():Void {
 		this.addChild(character.mc);
 		help.showTutorial(10);
 		centerScreen(character.mc);
 		character.update();
 	}
 
-	function finishFilesLoad():Dynamic {
+	function finishFilesLoad():Void {
 		finishLoading = true;
 		opening.hideLoadingBar();
 		trace("BambaMain.finishFilesLoad");
@@ -260,7 +279,7 @@ class BambaMain extends MovieClip {
 		trace("innerCountComplete");
 	}
 
-	function hideMap():Dynamic {
+	function hideMap():Void {
 		if (gameMap != null) {
 			if (this.contains(gameMap.mc)) {
 				this.removeChild(gameMap.mc);
@@ -268,7 +287,7 @@ class BambaMain extends MovieClip {
 		}
 	}
 
-	function hideStore():Dynamic {
+	function hideStore():Void {
 		if (store != null) {
 			if (this.contains(store.mc)) {
 				help.showTutorial(14);
@@ -277,14 +296,14 @@ class BambaMain extends MovieClip {
 		}
 	}
 
-	function finishEnemyAssetLoad():Dynamic {
+	function finishEnemyAssetLoad():Void {
 		sound.setLoadDungeonMusic([
 			gameData.getCatalogDungeonData(currDongeonId).music,
 			gameData.getCatalogDungeonData(currDongeonId).fightMusic
 		]);
 	}
 
-	function showUpgradeCrads():Dynamic {
+	function showUpgradeCrads():Void {
 		this.addChild(upgradeSystem.mc);
 		upgradeSystem.update();
 		help.showTutorial(22);
@@ -292,7 +311,7 @@ class BambaMain extends MovieClip {
 		centerScreen(upgradeSystem.mc);
 	}
 
-	function hideQuestManager():Dynamic {
+	function hideQuestManager():Void {
 		var _loc1_:Bool = false;
 		if (questManager != null) {
 			if (this.contains(questManager.mc)) {
@@ -307,7 +326,7 @@ class BambaMain extends MovieClip {
 		}
 	}
 
-	public function showMainMenu():Dynamic {
+	public function showMainMenu():Void {
 		innerCount(28);
 		hideMovie();
 		if (didLogin) {
@@ -322,7 +341,7 @@ class BambaMain extends MovieClip {
 		}
 	}
 
-	function showMapContinue():Dynamic {
+	function showMapContinue():Void {
 		clearInterval(soundTimingInterval);
 		hideTower();
 		this.addChild(gameMap.mc);
@@ -332,7 +351,7 @@ class BambaMain extends MovieClip {
 		msgShown = false;
 	}
 
-	function hideTower():Dynamic {
+	function hideTower():Void {
 		if (tower != null) {
 			if (this.contains(tower.mc)) {
 				this.removeChild(tower.mc);
@@ -340,7 +359,7 @@ class BambaMain extends MovieClip {
 		}
 	}
 
-	function checkUser():Dynamic {
+	function checkUser():Void {
 		innerCount(1);
 		userSharedObject = SharedObject.getLocal("Rlofe54836");
 		if (userSharedObject.data.Rlofe54836 != 78512963482) {
@@ -351,8 +370,8 @@ class BambaMain extends MovieClip {
 		innerCount(10);
 	}
 
-	function showDungeon():Dynamic {
-		var _loc1_:Dynamic = undefined;
+	function showDungeon():Void {
+		var _loc1_:Null<Dynamic> = null;
 		clearInterval(soundTimingInterval);
 		MsgBox.closeWaitBox();
 		hideAllScreens(false);
@@ -364,11 +383,11 @@ class BambaMain extends MovieClip {
 		}
 	}
 
-	public function hideMovie():Dynamic {
+	public function hideMovie():Void {
 		movie.stopMovie();
 	}
 
-	function hideMagicBook():Dynamic {
+	function hideMagicBook():Void {
 		if (magicBook != null) {
 			if (this.contains(magicBook.mc)) {
 				this.removeChild(magicBook.mc);
@@ -376,7 +395,7 @@ class BambaMain extends MovieClip {
 		}
 	}
 
-	public function endMovie(param1:Dynamic):Dynamic {
+	public function endMovie(param1:Dynamic):Void {
 		this.removeChild(param1);
 		if (didLogin) {
 			showMainMenu();
@@ -385,8 +404,8 @@ class BambaMain extends MovieClip {
 		}
 	}
 
-	function showCharacterBuild():Dynamic {
-		if (!isNaN(showCharacterBuildInteval)) {
+	function showCharacterBuild():Void {
+		if (!Math.isNaN(showCharacterBuildInteval)) {
 			clearInterval(showCharacterBuildInteval);
 		}
 		help.resetTutorial();
@@ -403,7 +422,7 @@ class BambaMain extends MovieClip {
 		characterBuild.slideIn();
 	}
 
-	function showMap():Dynamic {
+	function showMap():Void {
 		if (this.contains(tower.mc)) {
 			sound.playEffect("TOWER_TO_MAP");
 			msgShown = true;
@@ -413,10 +432,10 @@ class BambaMain extends MovieClip {
 		}
 	}
 
-	function finishDungeonAssetLoad():Dynamic {
+	function finishDungeonAssetLoad():Void {
 		var _loc1_:BambaDungeonData = null;
 		var _loc2_:BambaEnemy = null;
-		var _loc3_:Dynamic = undefined;
+		var _loc3_:Null<Dynamic> = null;
 		_loc1_ = gameData.getCatalogDungeonData(currDongeonId);
 		if (questManager.currQuestDungeonId == currDongeonId) {
 			currEnemyId = questManager.currQuestEnemyId;
@@ -428,7 +447,7 @@ class BambaMain extends MovieClip {
 			currEnemyId = _loc1_.enemiesIds[Math.floor(Math.random() * _loc1_.enemiesIds.length)];
 			currDungeonDifficulty = Math.floor(Math.random() * 3) + 1;
 		}
-		if (isNaN(currEnemyId)) {
+		if (Math.isNaN(currEnemyId)) {
 			finishEnemyAssetLoad();
 		} else {
 			_loc2_ = gameData.getCatalogEnemy(currEnemyId, 1);
@@ -437,7 +456,7 @@ class BambaMain extends MovieClip {
 		}
 	}
 
-	function finishLoadPlayerData():Dynamic {
+	function finishLoadPlayerData():Void {
 		didLogin = true;
 		Heb.setText(opening.mc.loadingBarMC.msgDT, "...שם המשתמש נמצא. טוען משחק");
 		trace("BambaMain.finishLoadPlayerData");
@@ -446,11 +465,11 @@ class BambaMain extends MovieClip {
 		}
 	}
 
-	public function centerScreen(param1:Dynamic):Dynamic {
+	public function centerScreen(param1:Dynamic):Void {
 		if (frameMC != null) {
 			this.setChildIndex(frameMC, this.numChildren - 1);
 		}
-		if (param1.orgWidth == undefined) {
+		if (param1.orgWidth == null) {
 			param1.x = (945 - param1.width) / 2;
 			param1.y = (650 - param1.height) / 2;
 		} else {
@@ -459,7 +478,7 @@ class BambaMain extends MovieClip {
 		}
 	}
 
-	public function cornerScreen(param1:Dynamic):Dynamic {
+	public function cornerScreen(param1:Dynamic):Void {
 		if (frameMC != null) {
 			this.setChildIndex(frameMC, this.numChildren - 1);
 		}
@@ -467,7 +486,7 @@ class BambaMain extends MovieClip {
 		param1.y = 72;
 	}
 
-	function addFrame():Dynamic {
+	function addFrame():Void {
 		if (frameMC == null) {
 			frameMC = BambaAssets.generalFrame();
 			ButtonUpdater.setButton(frameMC.helpMC, openHelp);
@@ -480,14 +499,14 @@ class BambaMain extends MovieClip {
 		}
 	}
 
-	function hideFrame():Dynamic {
+	function hideFrame():Void {
 		if (frameMC != null) {
 			frameMC.visible = false;
 		}
 	}
 
-	function startGame():Dynamic {
-		var _loc1_:Dynamic = undefined;
+	function startGame():Void {
+		var _loc1_:Null<Dynamic> = null;
 		if (finishLoading && didLogin) {
 			if (gameData.playerData.pName == "") {
 				startNewPlayer();
@@ -517,7 +536,7 @@ class BambaMain extends MovieClip {
 		}
 	}
 
-	function hideNewPlayer():Dynamic {
+	function hideNewPlayer():Void {
 		if (newPlayer != null) {
 			if (this.contains(newPlayer.mc)) {
 				this.removeChild(newPlayer.mc);
@@ -525,7 +544,7 @@ class BambaMain extends MovieClip {
 		}
 	}
 
-	function hideUpgradeCrads():Dynamic {
+	function hideUpgradeCrads():Void {
 		if (upgradeSystem != null) {
 			if (this.contains(upgradeSystem.mc)) {
 				this.removeChild(upgradeSystem.mc);
@@ -533,7 +552,7 @@ class BambaMain extends MovieClip {
 		}
 	}
 
-	function showMenuScreen():Dynamic {
+	function showMenuScreen():Void {
 		hideCharacterBuild();
 		hideMenuScreen();
 		sound.playMusic("MAP_MUSIC");
@@ -546,7 +565,7 @@ class BambaMain extends MovieClip {
 		menu.slideIn();
 	}
 
-	public function hideAllScreens(param1:Bool = true):Dynamic {
+	public function hideAllScreens(param1:Bool = true):Void {
 		if (param1) {
 			if (aDungeon != null) {
 				aDungeon.exitDungeon();
@@ -565,7 +584,7 @@ class BambaMain extends MovieClip {
 		hideNewPlayer();
 	}
 
-	function hideMenuScreen():Dynamic {
+	function hideMenuScreen():Void {
 		if (menu != null) {
 			if (this.contains(menu.mc)) {
 				this.removeChild(menu.mc);
@@ -573,7 +592,7 @@ class BambaMain extends MovieClip {
 		}
 	}
 
-	function closeDungeon():Dynamic {
+	function closeDungeon():Void {
 		if (this.contains(dungeonMC)) {
 			this.removeChild(dungeonMC);
 			gameLoader.savePlayerData();
@@ -594,7 +613,7 @@ class BambaMain extends MovieClip {
 		}
 	}
 
-	function showMagicBook():Dynamic {
+	function showMagicBook():Void {
 		this.addChild(magicBook.mc);
 		magicBook.update();
 		help.showTutorial(20);
@@ -602,7 +621,7 @@ class BambaMain extends MovieClip {
 		centerScreen(magicBook.mc);
 	}
 
-	function hideOpeningScreen():Dynamic {
+	function hideOpeningScreen():Void {
 		if (opening != null) {
 			if (this.contains(opening.mc)) {
 				this.removeChild(opening.mc);
@@ -610,7 +629,7 @@ class BambaMain extends MovieClip {
 		}
 	}
 
-	function finishDungeonMusicLoad():Dynamic {
+	function finishDungeonMusicLoad():Void {
 		if (aDungeon != null) {
 			aDungeon.clearEvents();
 		}
@@ -628,12 +647,12 @@ class BambaMain extends MovieClip {
 		soundTimingInterval = setInterval(showDungeon, 1200);
 	}
 
-	public function initGeneral():Dynamic {
+	public function initGeneral():Void {
 		MsgBox.init(this);
 		PlayerDataUpdater.init(this);
 	}
 
-	function showStore():Dynamic {
+	function showStore():Void {
 		this.addChild(store.mc);
 		help.showTutorial(12);
 		centerScreen(store.mc);
@@ -641,7 +660,7 @@ class BambaMain extends MovieClip {
 		sound.playLoopEffect("TOWER_STORE_MUSIC");
 	}
 
-	function showOpeningScreen():Dynamic {
+	function showOpeningScreen():Void {
 		sound.stopAll();
 		didLogin = false;
 		if (opening == null) {
@@ -650,13 +669,13 @@ class BambaMain extends MovieClip {
 		this.addChild(opening.mc);
 	}
 
-	function showCharacterBuildAfterNewPlayer():Dynamic {
+	function showCharacterBuildAfterNewPlayer():Void {
 		newPlayer.slideOut();
 		showCharacterBuildInteval = setInterval(showCharacterBuild, 600);
 	}
 
-	function startDungeon(param1:Dynamic):Dynamic {
-		var _loc2_:Float = NaN;
+	function startDungeon(param1:Dynamic):Void {
+		var _loc2_:Float = Math.NaN;
 		var _loc3_:BambaDungeonData = null;
 		_loc2_ = 100 + param1;
 		currDongeonId = param1;

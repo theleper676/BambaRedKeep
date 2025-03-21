@@ -4,10 +4,10 @@ import lime.app.Application;
 
 class Main extends Application
 {
-	var mainGame: BambaMovie;
+	var mainGame: BambaMain;
 	public function new()
 	{
 		super();
-		mainGame = new BambaMovie(1);
+		new BambaMain();
 	}
 }

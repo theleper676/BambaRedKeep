@@ -2,11 +2,12 @@ package erate;
 
 import openfl.net.*;
 import openfl.utils.Dictionary;
+import openfl.display.DisplayObjectContainer;
 
-class ERate {
+class ERate extends DisplayObjectContainer {
 	public static var allowMultipleShowEvent:Bool = false;
 
-	private static var params_dic:Dictionary<Dynamic, Dynamic> = new Dictionary(true);
+	private static var params_dic:Dictionary<Dynamic, Dynamic> = new Dictionary<Dynamic,Dynamic>(true);
 
 	public function new() {
 		super();
@@ -21,7 +22,7 @@ class ERate {
 		var request:URLRequest = null;
 		var erateID:String = param1;
 		var eventType:Float = param2;
-		if (erateID == "" || isNaN(eventType) == true) {
+		if (erateID == "" || Math.isNaN(eventType) == true) {
 			return;
 		}
 		if (getParam("erateFlag_" + erateID) == null && eventType == 1 || allowMultipleShowEvent || eventType != 1) {

@@ -3,30 +3,31 @@ package general;
 import openfl.display.*;
 import openfl.events.MouseEvent;
 
-class MsgBox  {
-	static var yesNoBoxLink:MovieClip;
+class MsgBox extends DisplayObject  {
+	static var yesNoBoxLink:Null<Dynamic>;
 
-	static var msgBoxCloseFunction:Dynamic;
+	static var msgBoxCloseFunction:Null<Dynamic>;
 
-	static var waitBoxCloseFunction:Dynamic;
+	static var waitBoxCloseFunction:Null<Dynamic>;
 
 	static var needToShowLevelBox:Bool;
 
-	static var yesNoConfirmFunction:Dynamic;
+	static var yesNoConfirmFunction:Null<Dynamic>;
 
-	static var yesNoCancelFunction:Dynamic;
+	static var yesNoCancelFunction:Null<Dynamic>;
 
-	static var game:Dynamic;
+	static var game:Null<Dynamic>;
 
-	static var waitBoxLink:Dynamic;
+	static var waitBoxLink:Null<Dynamic>;
 
-	static var msgBoxMCLink:MovieClip;
+	static var msgBoxMCLink:Null<Dynamic>;
 
 	public static var version:Float = 1;
 
-	static var bambaAssets: BambaAssets;
+	static var bambaAssets: Dynamic;
 
 	public function new() {
+		super();
 		needToShowLevelBox = false;
 	}
 
@@ -99,7 +100,7 @@ class MsgBox  {
 
 	public static function showWaitBox(param1:String, param2:Dynamic = null):Void {
 		var _loc3_:Dynamic = null;
-		_loc3_ = BambaAssets.waitBox();
+		_loc3_ = BambaAssets.waitBox;
 		waitBoxLink = _loc3_;
 		waitBoxCloseFunction = param2;
 		updateWaitBox(0);
@@ -123,13 +124,13 @@ class MsgBox  {
 	}
 
 	public static function showWin(param1:String, param2:Array<Dynamic>, param3:Dynamic = null, param4:Float = 1):Void {
-		var _loc5_:Dynamic = null;
-		var _loc6_:Dynamic = null;
-		var _loc7_:Dynamic = null;
-		var _loc8_:Dynamic = null;
-		var _loc9_:Dynamic = null;
-		var _loc10_:BambaItem = null;
-		_loc5_ = BambaAssets.winBox();
+		var _loc5_:Null<Dynamic> = null;
+		var _loc6_:Null<Dynamic> = null;
+		var _loc7_:Null<Dynamic> = null;
+		var _loc8_:Null<Dynamic> = null;
+		var _loc9_:Null<Dynamic> = null;
+		var _loc10_:Null<Dynamic> = null;
+		_loc5_ = BambaAssets.winBox;
 		msgBoxMCLink = _loc5_;
 		msgBoxCloseFunction = param3;
 		game.addChild(_loc5_);
@@ -269,7 +270,7 @@ class MsgBox  {
 
 	public static function show(param1:String, param2:Dynamic = null, param3:Float = 4):Void {
 		var _loc4_:Null<Dynamic> = null;
-		_loc4_ = BambaAssets.msgBox();
+		_loc4_ = BambaAssets.msgBox;
 		msgBoxMCLink = _loc4_;
 		msgBoxCloseFunction = param2;
 		game.addChild(_loc4_);

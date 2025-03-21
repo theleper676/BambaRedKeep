@@ -1,6 +1,5 @@
 package general;
 
-import openfl.display.*;
 import openfl.events.MouseEvent;
 
 class ButtonUpdater {
