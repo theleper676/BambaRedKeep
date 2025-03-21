@@ -4,9 +4,6 @@ import erate.ERate;
 import openfl.display.*;
 import openfl.net.SharedObject;
 import openfl.events.*;
-import openfl.external.*;
-import openfl.system.*;
-import openfl.utils.*;
 import general.ButtonUpdater;
 import general.Heb;
 import general.MsgBox;
@@ -599,18 +596,20 @@ class BambaMain extends DisplayObjectContainer {
 			showMap();
 		}
 		try {
-			new LocalConnection().connect("foo");
-			new LocalConnection().connect("foo");
-		} catch (e:Dynamic) {}
+			//new LocalConnection().connect("foo");
+			//new LocalConnection().connect("foo");
+		} catch (e:Dynamic) {
+			trace("close doungen error" + e);
+		}
 	}
 
 	public function getHTMLvars():Void {
 		var _loc1_:Dynamic = null;
-		_loc1_ = LoaderInfo(this.root.loaderInfo).parameters;
-		ToolID = Std.string(_loc1_.ToolID);
-		if (ToolID == "undefined") {
+		// _loc1_ = LoaderInfo(this.root.loaderInfo).parameters;
+		ToolID = "SBCKOS";
+		/* if (ToolID == "undefined") {
 			ToolID = "SBCKOS";
-		}
+		} */
 	}
 
 	function showMagicBook():Void {
