@@ -1,5 +1,6 @@
 package;
 
+import openfl.Lib;
 import haxe.Timer;
 import haxe.DynamicAccess;
 import openfl.display.*;
@@ -131,14 +132,15 @@ class BambaLoader extends EventDispatcher {
 	}
 
 	function loadPlayerDataComplete(param1:Event):Void {
-		var _loc2_:Null<Dynamic> = null;
+		var _loc2_:Xml = null;
 		_loc2_ = Xml.parse(param1.target.data);
-		if (_loc2_.errorCode == 0) {
+		var errorCode = Std.parseInt(_loc2_.get("errorCode"));
+		if ( errorCode != null && errorCode == 0) {
 			game.innerCount(14);
 			game.gameData.loadPlayerData(_loc2_);
 			game.finishLoadPlayerData();
 		} else {
-			game.opening.showErrorMsg(_loc2_.errorCode);
+			game.opening.showErrorMsg(errorCode);
 		}
 	}
 
@@ -435,7 +437,7 @@ class BambaLoader extends EventDispatcher {
 		// clearInterval(continueLoadingInterval);
 	}
 
-	public function savePlayerData():Dynamic {
+	public function savePlayerData():Void {
 		var _loc1_:URLRequest = null;
 		var _loc2_:URLVariables = null;
 		var _loc3_:URLLoader = null;
@@ -459,7 +461,7 @@ class BambaLoader extends EventDispatcher {
 		_loc2_.CQI = game.gameData.playerData.currentQuestId;
 		_loc2_.PQI = game.gameData.playerData.pastQuestsIds.toString();
 		_loc2_.PDI = game.gameData.playerData.pastDungeonsIds.toString();
-		_loc2_.dummy = Std.string(getTimer()) + Std.string(Math.random());
+		_loc2_.dummy = Std.string(Math.random());
 		if (_loc1_.url != "local") {
 			_loc1_.data = _loc2_;
 			_loc3_ = new URLLoader();
@@ -481,6 +483,7 @@ class BambaLoader extends EventDispatcher {
 		_loc2_.load(_loc1_);
 	}
 
+	
 	function continueLoading():Void {
 		var currCompleteFunctionName:Dynamic = null;
 		try {
@@ -492,13 +495,14 @@ class BambaLoader extends EventDispatcher {
 		trace("BambaLoader.continueLoading:" + currFunctionName);
 		continueLoadingIntervalTimer.stop();
 		//clearInterval(continueLoadingInterval);
+		var arrayAccess:Function = Reflect.field(this, currCompleteFunctionName);
 		currCompleteFunctionName = currFunctionName + "Complete";
-		currLoader.removeEventListener(Event.COMPLETE, this[currCompleteFunctionName]());
+		currLoader.removeEventListener(Event.COMPLETE, arrayAccess());
 		continueTime += 500;
 		continueLoadingIntervalTimer = new Timer(continueTime);
 		continueLoadingIntervalTimer.run = chackContinueLoadingNeeded;
 		// continueLoadingInterval = setInterval(chackContinueLoadingNeeded, continueTime);
-		this[currFunctionName]();
+		arrayAccess();
 	}
 
 	function sendNewPlayerDataComplete(param1:Event):Void {
@@ -542,13 +546,14 @@ class BambaLoader extends EventDispatcher {
 	}
 
 	function loadXMLComplete(param1:Event):Void {
-		var _loc2_:Xml = null;
+		var _loc2_:Null<Dynamic> = null;
+		var gameDataAccessFunction:Function = Reflect.field(game.gameData,currLoadXMLFunctionName);
 		++loadingCounter;
 		currBytes += Std.parseFloat(fileSizes[msgCounter]);
 		setLoaderGraphics(currBytes / totalBytes);
 		++msgCounter;
 		_loc2_ = Xml.parse(param1.target.data);
-		game.gameData[currLoadXMLFunctionName](_loc2_.children());
+		gameDataAccessFunction(_loc2_.children());
 		++xmlFilesIndex;
 		loadXMLFile();
 	}
@@ -566,8 +571,8 @@ class BambaLoader extends EventDispatcher {
 
 	function loadEnemyAssetsComplete(param1:Event):Void {
 		var _loc2_:Array<Dynamic> = null;
-		var _loc3_:Dynamic = undefined;
-		var _loc4_:Dynamic = undefined;
+		var _loc3_:Null<Dynamic> = null;
+		var _loc4_:Null<Dynamic> = null;
 		++loadingCounter;
 		_loc2_ = enemyAssetsNames.split(",");
 		_loc3_ = 0;
@@ -580,17 +585,18 @@ class BambaLoader extends EventDispatcher {
 		game.finishEnemyAssetLoad();
 	}
 
-	function setLoaderGraphics(param1:Float):Dynamic {
+	function setLoaderGraphics(param1:Float):Void {
 		game.opening.mc.loadingBarMC.flareMC.x = 800 - 800 * param1;
 		game.opening.mc.loadingBarMC.maskMC.width = 800 * param1;
 		game.opening.mc.loadingBarMC.maskMC.x = 800 - 800 * param1;
 	}
 
-	function showSecurityError(param1:SecurityErrorEvent):Void {
-		game.errorDT.text = "SecurityErrorEvent";
+	function showSecurityError(error:SecurityErrorEvent):Void {
+		trace("security error:" + error.target.toString() );
+		//game.errorDT.text = "SecurityErrorEvent";
 	}
 
-	public function loadPlayerData(param1:Dynamic, param2:Dynamic):Dynamic {
+	public function loadPlayerData(param1:Dynamic, param2:Dynamic):Void {
 		var _loc3_:URLRequest = null;
 		var _loc4_:URLLoader = null;
 		var _loc5_:URLVariables = null;
@@ -599,7 +605,7 @@ class BambaLoader extends EventDispatcher {
 		if (_loc3_.url != "xmls/playerData.xml") {
 			(_loc5_ = new URLVariables()).PlayerName = param1;
 			_loc5_.Password = param2;
-			_loc5_.dummy = Std.string(getTimer()) + Std.string(Math.random());
+			_loc5_.dummy = Std.string(Math.random()) ;
 			_loc3_.data = _loc5_;
 		}
 		_loc4_ = new URLLoader();
@@ -631,28 +637,31 @@ class BambaLoader extends EventDispatcher {
 	}
 
 	function loadEnemyAssetsProgress(param1:ProgressEvent):Void {
-		var _loc2_:Float = NaN;
+		var _loc2_:Float = Math.NaN;
 		_loc2_ = Math.floor(param1.bytesLoaded / param1.bytesTotal * 100);
 		++loadingCounter;
 		MsgBox.updateWaitBox(_loc2_);
 	}
 
 	function savePlayerDataComplete(param1:Event):Void {
-		var _loc2_:XML = null;
-		_loc2_ = XML(param1.target.data);
+		var _loc2_:Xml = null;
+		_loc2_ = Xml.parse(param1.target.data);
+		var errorCode:Int = Std.parseInt(_loc2_.get("errorCode"));
+		var message:String = _loc2_.get("msg");
 		trace("3 savePlayerDataComplete:" + _loc2_);
-		if (_loc2_.errorCode == 0) {
+		if (errorCode == 0) {
 			trace("savePlayerDataComplete:A OK");
 		} else {
-			MsgBox.show(_loc2_.msg);
+			MsgBox.show(message);
 		}
 	}
 
-	function showIOError(param1:IOErrorEvent):Void {
-		game.errorDT.text = "IOErrorEvent";
+	function showIOError(error:IOErrorEvent):Void {
+		trace("IO Error:" + error.target.toString());
+		//game.errorDT.text = "IOErrorEvent";
 	}
 
-	function loadGeneralData():Dynamic {
+	function loadGeneralData():Void {
 		var _loc1_:URLRequest = null;
 		var _loc2_:URLLoader = null;
 		currFunctionName = "loadGeneralData";
@@ -666,18 +675,18 @@ class BambaLoader extends EventDispatcher {
 	}
 
 	function loadSoundsDataComplete(param1:Event):Void {
-		var _loc2_:XML = null;
+		var _loc2_:Xml = null;
 		++loadingCounter;
 		++msgCounter;
-		_loc2_ = XML(param1.target.data);
+		_loc2_ = Xml.parse(param1.target.data);
 		game.sound.loadSoundsStart(_loc2_);
 		loadFinished();
 	}
 
 	function loadDungeonAssetsComplete(param1:Event):Void {
-		var _loc2_:Array<Dynamic> = null;
-		var _loc3_:Dynamic = undefined;
-		var _loc4_:Dynamic = undefined;
+		var _loc2_:Array<String> = null;
+		var _loc3_:Null<Dynamic> = null; 
+		var _loc4_:Null<Dynamic> = null; 
 		++loadingCounter;
 		_loc2_ = dungeonAssetsNames.split(",");
 		_loc3_ = 0;
@@ -694,26 +703,29 @@ class BambaLoader extends EventDispatcher {
 		var _loc3_:URLRequest = null;
 		var _loc4_:URLVariables = null;
 		var _loc5_:URLLoader = null;
-		_loc2_ = Xml(param1.target.data);
+		_loc2_ = Xml.parse(param1.target.data);
+		var errorCode:Int = Std.parseInt(_loc2_.get("errorCode"));
+		var playerName:String = _loc2_.get("playerName");
+		var password:String = _loc2_.get("password");
 		trace("forgetPassComplete:" + _loc2_);
 		trace("forgetPassComplete:" + sendPassSource + ":" + tempMail);
-		if (_loc2_.errorCode == 0) {
+		if (errorCode == 0) {
 			_loc3_ = new URLRequest(sendPassSource);
 			(_loc4_ = new URLVariables()).email = tempMail;
-			_loc4_.user = _loc2_.playerName;
-			_loc4_.pass = _loc2_.password;
-			_loc4_.dummy = Std.string(getTimer()) + Std.string(Math.random());
+			_loc4_.user = playerName;
+			_loc4_.pass = password;
+			_loc4_.dummy = Std.string(Lib.getTimer()) + Std.string(Math.random());
 			_loc3_.data = _loc4_;
 			_loc5_ = new URLLoader();
 			_loc5_.load(_loc3_);
 			game.opening.showPassSendMsg();
 		} else {
-			game.opening.showForgetPassErrorMsg(_loc2_.errorCode);
+			game.opening.showForgetPassErrorMsg(errorCode);
 		}
 	}
 
 	function loadDungeonAssetsProgress(param1:ProgressEvent):Void {
-		var _loc2_:Float = NaN;
+		var _loc2_:Float = Math.NaN;
 		_loc2_ = Math.floor(param1.bytesLoaded / param1.bytesTotal * 100);
 		++loadingCounter;
 		MsgBox.updateWaitBox(_loc2_);

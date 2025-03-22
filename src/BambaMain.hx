@@ -187,7 +187,7 @@ class BambaMain extends DisplayObjectContainer {
 		frameMC.holesMC.gotoAndStop("no_order");
 	}
 
-	function exitToOpeningScreen():Void {
+	public function exitToOpeningScreen():Void {
 		autoLogin = false;
 		showOpeningScreen();
 		opening.setOnStart();
@@ -296,7 +296,7 @@ class BambaMain extends DisplayObjectContainer {
 		}
 	}
 
-	function finishEnemyAssetLoad():Void {
+	public function finishEnemyAssetLoad():Void {
 		sound.setLoadDungeonMusic([
 			gameData.getCatalogDungeonData(currDongeonId).music,
 			gameData.getCatalogDungeonData(currDongeonId).fightMusic
@@ -436,7 +436,7 @@ class BambaMain extends DisplayObjectContainer {
 		}
 	}
 
-	function finishDungeonAssetLoad():Void {
+	public function finishDungeonAssetLoad():Void {
 		var _loc1_:BambaDungeonData = null;
 		var _loc2_:BambaEnemy = null;
 		var _loc3_:Null<Dynamic> = null;

@@ -65,7 +65,7 @@ class BambaAssets extends DisplayObject {
 
 	public static var generalFrame:Dynamic;
 
-	public static var newPlayerScreen:MovieClip;
+	public static var newPlayerScreen:Dynamic;
 
 	public static var hatMC:MovieClip;
 
