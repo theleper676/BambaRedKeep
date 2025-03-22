@@ -1,9 +1,10 @@
 package;
 
+import openfl.display.DisplayObject;
 import general.MsgBox;
 import openfl.display.MovieClip;
 import openfl.display.Sprite;
-class BambaAssets extends Sprite {
+class BambaAssets extends DisplayObject {
 	public static var cardBase:Dynamic;
 
 	public static var help02:Dynamic;
@@ -418,7 +419,7 @@ class BambaAssets extends Sprite {
 	 * @param param1 
 	 * @param param2 
 	 */
-	function defineAsset(param1:String, param2:Dynamic):Void {
+	public function defineAsset(param1:String, param2:Dynamic):Void {
 		var _loc3_:String = "define_" + param1;
 		var method = Reflect.field(this, _loc3_);
 

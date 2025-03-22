@@ -1,5 +1,6 @@
 package;
 
+import haxe.Timer;
 import erate.ERate;
 import openfl.display.*;
 import openfl.net.SharedObject;
@@ -10,6 +11,8 @@ import general.MsgBox;
 import general.PlayerDataUpdater;
 
 class BambaMain extends DisplayObjectContainer {
+	var soundTimer: Timer = null;
+	var characterBuildTimer: Timer = null;
 	var currDungeonDifficulty:Float;
 	var gameMap:Null<Dynamic>;
 	// var gameMap:BambaMap;
@@ -17,9 +20,9 @@ class BambaMain extends DisplayObjectContainer {
 	public var msgShown:Bool;
 
 
-	var gameAssets:BambaAssets;
+	public var gameAssets:BambaAssets;
 
-	public var soundTimingInterval:Float;
+	//public var soundTimingInterval:Float;
 
 	var currDongeonId:Float;
 
@@ -36,12 +39,12 @@ class BambaMain extends DisplayObjectContainer {
 	var newPlayer:Null<Dynamic>;
 	//var newPlayer:BambaNewPlayerScreen;
 
-	var gameLoader:Null<Dynamic>;
+	public var gameLoader:Null<Dynamic>;
 	//var gameLoader:BambaLoader;
 
 	var eventTypeNames:Dynamic;
 
-	public var gameData:Null<Dynamic>;
+	public var gameData:BambaData;
 	//public var gameData:BambaData;
 
 	var characterBuild:Null<Dynamic>;
@@ -66,7 +69,7 @@ class BambaMain extends DisplayObjectContainer {
 	var character:Null<Dynamic>;
 	//var character:BambaCharacterScreen;
 
-	var movie:Null<Dynamic>;
+	public var movie:BambaMovie;
 	//var movie:BambaMovie;
 
 	public var finishLoading:Bool;
@@ -74,7 +77,7 @@ class BambaMain extends DisplayObjectContainer {
 	var help:Null<Dynamic>;
 	//var help:BambaHelp;
 
-	var opening:Null<Dynamic>;
+	public var opening:Null<Dynamic>;
 	//var opening:BambaOpeningScreen;
 
 	var menu:Null<Dynamic>;
@@ -85,11 +88,11 @@ class BambaMain extends DisplayObjectContainer {
 
 	public var userSharedObject:SharedObject;
 
-	var showCharacterBuildInteval:Float;
+	//var showCharacterBuildInteval:Float;
 
 	var eventTypeCodes:Dynamic;
 
-	var frameMC:Null<Dynamic>;
+	public var frameMC:Null<Dynamic>;
 
 	var dungeonMC:MovieClip;
 
@@ -202,7 +205,7 @@ class BambaMain extends DisplayObjectContainer {
 		}
 	}
 
-	function innerCount(param1:Int):Void {
+	public function innerCount(param1:Int):Void {
 		var _loc2_:Null<Dynamic> = null;
 		var _loc3_:Null<Dynamic> = null;
 		var _loc4_:Null<Dynamic> = null;
@@ -263,7 +266,7 @@ class BambaMain extends DisplayObjectContainer {
 		character.update();
 	}
 
-	function finishFilesLoad():Void {
+	public function finishFilesLoad():Void {
 		finishLoading = true;
 		opening.hideLoadingBar();
 		trace("BambaMain.finishFilesLoad");
@@ -339,7 +342,8 @@ class BambaMain extends DisplayObjectContainer {
 	}
 
 	function showMapContinue():Void {
-		clearInterval(soundTimingInterval);
+		soundTimer.stop();
+		// clearInterval(soundTimingInterval);
 		hideTower();
 		this.addChild(gameMap.mc);
 		gameMap.setMap();
@@ -369,7 +373,8 @@ class BambaMain extends DisplayObjectContainer {
 
 	function showDungeon():Void {
 		var _loc1_:Null<Dynamic> = null;
-		clearInterval(soundTimingInterval);
+		soundTimer.stop();
+		//clearInterval(soundTimingInterval);
 		MsgBox.closeWaitBox();
 		hideAllScreens(false);
 		aDungeon.MC.visible = true;
@@ -402,8 +407,8 @@ class BambaMain extends DisplayObjectContainer {
 	}
 
 	function showCharacterBuild():Void {
-		if (!Math.isNaN(showCharacterBuildInteval)) {
-			clearInterval(showCharacterBuildInteval);
+		if (characterBuildTimer != null) {
+			characterBuildTimer.stop();
 		}
 		help.resetTutorial();
 		frameMC.holesMC.gotoAndStop("no_order");
@@ -423,7 +428,9 @@ class BambaMain extends DisplayObjectContainer {
 		if (this.contains(tower.mc)) {
 			sound.playEffect("TOWER_TO_MAP");
 			msgShown = true;
-			soundTimingInterval = setInterval(showMapContinue, 1500);
+			soundTimer = new Timer(1500);
+			soundTimer.run = showMapContinue;
+			//soundTimingInterval = setInterval(showMapContinue, 1500);
 		} else {
 			showMapContinue();
 		}
@@ -453,7 +460,7 @@ class BambaMain extends DisplayObjectContainer {
 		}
 	}
 
-	function finishLoadPlayerData():Void {
+	public function finishLoadPlayerData():Void {
 		didLogin = true;
 		Heb.setText(opening.mc.loadingBarMC.msgDT, "...שם המשתמש נמצא. טוען משחק");
 		trace("BambaMain.finishLoadPlayerData");
@@ -502,7 +509,7 @@ class BambaMain extends DisplayObjectContainer {
 		}
 	}
 
-	function startGame():Void {
+	public function startGame():Void {
 		var _loc1_:Null<Dynamic> = null;
 		if (finishLoading && didLogin) {
 			if (gameData.playerData.pName == "") {
@@ -549,7 +556,7 @@ class BambaMain extends DisplayObjectContainer {
 		}
 	}
 
-	function showMenuScreen():Void {
+	public function showMenuScreen():Void {
 		hideCharacterBuild();
 		hideMenuScreen();
 		sound.playMusic("MAP_MUSIC");
@@ -628,7 +635,7 @@ class BambaMain extends DisplayObjectContainer {
 		}
 	}
 
-	function finishDungeonMusicLoad():Void {
+	public function finishDungeonMusicLoad():Void {
 		if (aDungeon != null) {
 			aDungeon.clearEvents();
 		}
@@ -643,7 +650,9 @@ class BambaMain extends DisplayObjectContainer {
 		}
 		sound.playEffect("MAP_TO_MAZE");
 		aDungeon.MC.visible = false;
-		soundTimingInterval = setInterval(showDungeon, 1200);
+		soundTimer = new Timer(1200);
+		soundTimer.run = showDungeon;
+		// soundTimingInterval = setInterval(showDungeon, 1200);
 	}
 
 	public function initGeneral():Void {
@@ -659,7 +668,7 @@ class BambaMain extends DisplayObjectContainer {
 		sound.playLoopEffect("TOWER_STORE_MUSIC");
 	}
 
-	function showOpeningScreen():Void {
+	public function showOpeningScreen():Void {
 		sound.stopAll();
 		didLogin = false;
 		if (opening == null) {
@@ -668,9 +677,11 @@ class BambaMain extends DisplayObjectContainer {
 		this.addChild(opening.mc);
 	}
 
-	function showCharacterBuildAfterNewPlayer():Void {
+	public function showCharacterBuildAfterNewPlayer():Void {
 		newPlayer.slideOut();
-		showCharacterBuildInteval = setInterval(showCharacterBuild, 600);
+		characterBuildTimer = new Timer(600);
+		characterBuildTimer.run = showCharacterBuild;
+		//showCharacterBuildInteval = setInterval(showCharacterBuild, 600);
 	}
 
 	function startDungeon(param1:Dynamic):Void {

@@ -1,7 +1,5 @@
 package;
 
-import flash.display.*;
-
 class BambaData {
 	public var questsCatalog:Array<Dynamic>;
 
@@ -132,7 +130,7 @@ class BambaData {
 		}
 	}
 
-	function loadDictionary(param1:Xml):Void {
+	public function loadDictionary(param1:Xml):Void {
 		dictionary.load(param1);
 	}
 
@@ -191,8 +189,9 @@ class BambaData {
 		}
 	}
 
-	public function getCatalogPlayerLevel(param1:Dynamic):BambaPlayerLevel {
-		var _loc2_:Dynamic = undefined;
+	//TODO: RETURN TYPE BambaPlayerLevel
+	public function getCatalogPlayerLevel(param1:Dynamic):Dynamic {
+		var _loc2_:Dynamic = null;
 		_loc2_ = 0;
 		while (_loc2_ < playerLevelsCatalog.length) {
 			if (playerLevelsCatalog[_loc2_].level == param1) {
@@ -203,7 +202,7 @@ class BambaData {
 		return null;
 	}
 
-	function buildMagicCatalog(param1:Array<Xml>):Dynamic {
+	function buildMagicCatalog(param1:Array<Xml>):Void {
 		var _loc2_:Xml = null;
 		var _loc3_:BambaMagic = null;
 		for (_loc2_ in param1) {
@@ -212,7 +211,7 @@ class BambaData {
 		}
 	}
 
-	function buildHelpCatalog(param1:Array<Xml>):Dynamic {
+	function buildHelpCatalog(param1:Array<Xml>):Void {
 		var _loc2_:Xml = null;
 		var _loc3_:BambaHelpPage = null;
 		for (_loc2_ in param1) {
@@ -222,10 +221,10 @@ class BambaData {
 	}
 
 	function getSuitableItemId():Float {
-		var _loc1_:Float = NaN;
-		var _loc2_:Dynamic = undefined;
+		var _loc1_:Float = Math.NaN;
+		var _loc2_:Dynamic = null;
 		var _loc3_:Array<Dynamic> = null;
-		var _loc4_:Dynamic = undefined;
+		var _loc4_:Dynamic = null;
 		_loc1_ = playerData.level + Std.parseFloat(itemsLevels[Math.floor(Math.random() * itemsLevels.length)]);
 		if (_loc1_ < minLevel) {
 			_loc1_ = minLevel;
@@ -260,7 +259,7 @@ class BambaData {
 		return _loc4_;
 	}
 
-	function buildQuestsCatalog(param1:Array<Xml>):Dynamic {
+	function buildQuestsCatalog(param1:Array<Xml>):Void {
 		var _loc2_:Xml = null;
 		var _loc3_:BambaQuest = null;
 		for (_loc2_ in param1) {
@@ -269,8 +268,9 @@ class BambaData {
 		}
 	}
 
-	public function getCatalogEnemy(param1:Dynamic, param2:Dynamic):BambaEnemy {
-		var _loc3_:Dynamic = undefined;
+	//TODO: ReturnType BambaEnemy
+	public function getCatalogEnemy(param1:Dynamic, param2:Dynamic):Dynamic {
+		var _loc3_:Dynamic = null;
 		_loc3_ = 0;
 		while (_loc3_ < enemiesCatalog.length) {
 			if (enemiesCatalog[_loc3_].id == param1 && enemiesCatalog[_loc3_].type == param2) {
@@ -281,7 +281,7 @@ class BambaData {
 		return null;
 	}
 
-	function buildPrizesCatalog(param1:Array<Xml>):Dynamic {
+	function buildPrizesCatalog(param1:Array<Xml>):Void {
 		var _loc2_:Xml = null;
 		var _loc3_:BambaPrize = null;
 		for (_loc2_ in param1) {
@@ -290,8 +290,9 @@ class BambaData {
 		}
 	}
 
+	//TODO: return type BambaHelpPage
 	public function getCatalogHelpPage(param1:Dynamic):BambaHelpPage {
-		var _loc2_:Dynamic = undefined;
+		var _loc2_:Dynamic = null;
 		_loc2_ = 0;
 		while (_loc2_ < helpCatalog.length) {
 			if (helpCatalog[_loc2_].id == param1) {
@@ -302,8 +303,9 @@ class BambaData {
 		return null;
 	}
 
-	public function getCatalogItemBase(param1:Dynamic):BambaItemBase {
-		var _loc2_:Dynamic = undefined;
+	//Rturn type BambaItemBase
+	public function getCatalogItemBase(param1:Dynamic):Dynamic {
+		var _loc2_:Dynamic = null;
 		_loc2_ = 0;
 		while (_loc2_ < itemsBaseCatalog.length) {
 			if (itemsBaseCatalog[_loc2_].id == param1) {
@@ -314,8 +316,9 @@ class BambaData {
 		return null;
 	}
 
-	function getCatalogMagic(param1:Dynamic):BambaMagic {
-		var _loc2_:Dynamic = undefined;
+	//Retrun type BambaMagic
+	function getCatalogMagic(param1:Dynamic):Dynamic {
+		var _loc2_:Dynamic = null;
 		_loc2_ = 0;
 		while (_loc2_ < magicCatalog.length) {
 			if (magicCatalog[_loc2_].id == param1) {
@@ -326,7 +329,8 @@ class BambaData {
 		return null;
 	}
 
-	function getCatalogCard(param1:Dynamic):BambaCard {
+	//Rreturn type BambaCard
+	function getCatalogCard(param1:Dynamic):Dynamic {
 		var _loc2_:Dynamic = undefined;
 		_loc2_ = 0;
 		while (_loc2_ < cardsCatalog.length) {
@@ -338,8 +342,9 @@ class BambaData {
 		return null;
 	}
 
-	function getNewCard(param1:Dynamic):BambaCard {
-		var _loc2_:Dynamic = undefined;
+	//Rreturn type BambaCard
+	function getNewCard(param1:Dynamic):Dynamic {
+		var _loc2_:Dynamic = null;
 		var _loc3_:BambaCard = null;
 		var _loc4_:BambaCard = null;
 		_loc2_ = 0;
@@ -355,8 +360,9 @@ class BambaData {
 		return null;
 	}
 
-	public function getCatalogDungeonData(param1:Dynamic):BambaDungeonData {
-		var _loc2_:Dynamic = undefined;
+	//Return Type BambaDungeonData
+	public function getCatalogDungeonData(param1:Dynamic):Dynamic {
+		var _loc2_:Null<Dynamic> = null;
 		_loc2_ = 0;
 		while (_loc2_ < dungeonsDataCatalog.length) {
 			if (dungeonsDataCatalog[_loc2_].id == param1) {
@@ -367,8 +373,9 @@ class BambaData {
 		return null;
 	}
 
-	function getCatalogStoreItems(param1:Dynamic, param2:Dynamic):BambaStoreItems {
-		var _loc3_:Dynamic = undefined;
+	//Rerturn type BambaStoreItems
+	function getCatalogStoreItems(param1:Dynamic, param2:Dynamic):Dynamic {
+		var _loc3_:Dynamic = null;
 		_loc3_ = 0;
 		while (_loc3_ < storeItemsCatalog.length) {
 			if (storeItemsCatalog[_loc3_].level == param1 && storeItemsCatalog[_loc3_].order == param2) {
@@ -379,16 +386,16 @@ class BambaData {
 		return null;
 	}
 
-	public function loadFightData(param1:String, param2:String, param3:String, param4:String):Dynamic {
-		var _loc5_:Dynamic = undefined;
-		var _loc6_:Dynamic = undefined;
+	public function loadFightData(param1:String, param2:String, param3:String, param4:String):Void {
+		var _loc5_:Dynamic = null;
+		var _loc6_:Dynamic = null;
 		var _loc7_:Array<Dynamic> = null;
 		var _loc8_:Array<Dynamic> = null;
 		var _loc9_:Array<Dynamic> = null;
-		var _loc10_:Dynamic = undefined;
+		var _loc10_:Dynamic = null;
 		var _loc11_:Array<Dynamic> = null;
 		var _loc12_:Array<Dynamic> = null;
-		var _loc13_:Dynamic = undefined;
+		var _loc13_:Dynamic = null;
 		var _loc14_:Array<Dynamic> = null;
 		fightBoardXY = [];
 		_loc7_ = param1.split("*");
@@ -424,8 +431,9 @@ class BambaData {
 		}
 	}
 
-	public function getCatalogItem(param1:Dynamic):BambaItem {
-		var _loc2_:Dynamic = undefined;
+	//Return type: BambaItem
+	public function getCatalogItem(param1:Dynamic):Dynamic {
+		var _loc2_:Dynamic = null;
 		_loc2_ = 0;
 		while (_loc2_ < itemsCatalog.length) {
 			if (itemsCatalog[_loc2_].id == param1) {
@@ -436,47 +444,56 @@ class BambaData {
 		return null;
 	}
 
-	public function loadDungeonDifficulties(param1:Array<Xml>):Dynamic {
-		var _loc2_:Xml = null;
-		var _loc3_:Dynamic = undefined;
-		var _loc4_:Dynamic = undefined;
-		var _loc5_:Dynamic = undefined;
-		var _loc6_:Dynamic = undefined;
+	public function loadDungeonDifficulties(param1:Dynamic):Void {
+		var _loc2_:Dynamic = null;
+		var _loc3_:Dynamic = null;
+		var _loc4_:Dynamic = null;
+		var _loc5_:Dynamic = null;
+		var _loc6_:Dynamic = null;
 		dungeonDifficulties = [];
-		for (_loc2_ in param1) {
-			_loc3_ = [];
-			_loc4_ = Std.string(_loc2_.enemyLevels).split(",");
-			_loc5_ = Std.string(_loc2_.bossLevels).split(",");
-			_loc6_ = _loc2_.prizePrc;
-			_loc3_.push(_loc4_);
-			_loc3_.push(_loc5_);
-			_loc3_.push(_loc6_);
-			dungeonDifficulties.push(_loc3_);
+
+		if(param1 != null) {
+			var iterable:Array<Dynamic> = cast(param1, Array<Dynamic>);
+			for (_loc2_ in iterable) {
+				_loc3_ = [];
+				_loc4_ = Std.string(_loc2_.enemyLevels).split(",");
+				_loc5_ = Std.string(_loc2_.bossLevels).split(",");
+				_loc6_ = _loc2_.prizePrc;
+				_loc3_.push(_loc4_);
+				_loc3_.push(_loc5_);
+				_loc3_.push(_loc6_);
+				dungeonDifficulties.push(_loc3_);
+			}
 		}
 	}
 
-	function loadPlayerData(param1:Xml):Dynamic {
+	public function loadPlayerData(param1:Xml):Void {
 		playerData.updatePlayerData(param1);
 	}
 
-	function buildEnemiesLevelsCatalog(param1:Array<Xml>):Dynamic {
+	function buildEnemiesLevelsCatalog(param1:Dynamic):Void {
 		var _loc2_:Xml = null;
 		var _loc3_:BambaEnemyLevel = null;
 		minEnemyLevel = 99;
 		maxEnemyLevel = -99;
-		for (_loc2_ in param1) {
-			_loc3_ = new BambaEnemyLevel(_loc2_);
-			enemiesLevelsCatalog.push(_loc3_);
-			if (minEnemyLevel > _loc3_.level) {
-				minEnemyLevel = _loc3_.level;
-			}
-			if (maxEnemyLevel < _loc3_.level) {
-				maxEnemyLevel = _loc3_.level;
+
+		if(param1 != null) {
+			var iterable:Array<Dynamic> = cast(param1, Array<Dynamic>);
+			for (_loc2_ in iterable) {
+				_loc3_ = new BambaEnemyLevel(_loc2_);
+				enemiesLevelsCatalog.push(_loc3_);
+				if (minEnemyLevel > _loc3_.level) {
+					minEnemyLevel = _loc3_.level;
+				}
+				if (maxEnemyLevel < _loc3_.level) {
+					maxEnemyLevel = _loc3_.level;
+				}
 			}
 		}
+		
 	}
 
-	function buildSurprisesCatalog(param1:Array<Xml>):Dynamic {
+	function buildSurprisesCatalog(param1:Array<Xml>):Void {
 		var _loc2_:Xml = null;
 		var _loc3_:BambaSurprise = null;
 		for (_loc2_ in param1) {
@@ -485,7 +502,7 @@ class BambaData {
 		}
 	}
 
-	function buildItemsBaseCatalog(param1:Array<Xml>):Dynamic {
+	function buildItemsBaseCatalog(param1:Array<Xml>):Void {
 		var _loc2_:Xml = null;
 		var _loc3_:BambaItemBase = null;
 		for (_loc2_ in param1) {
@@ -494,8 +511,9 @@ class BambaData {
 		}
 	}
 
-	public function getCatalogQuest(param1:Dynamic):BambaQuest {
-		var _loc2_:Dynamic = undefined;
+	//TODO: RETURN TYPE BambaQuest
+	public function getCatalogQuest(param1:Dynamic):Dynamic {
+		var _loc2_:Dynamic = null;
 		_loc2_ = 0;
 		while (_loc2_ < questsCatalog.length) {
 			if (questsCatalog[_loc2_].id == param1) {
@@ -559,7 +577,7 @@ class BambaData {
 		} */
 	}
 
-	function loadGeneralData(param1:Dynamic):Void {
+	public function loadGeneralData(param1:Dynamic):Void {
 		var _loc2_:Null<Dynamic> = null;
 		var _loc3_:Null<Dynamic> = null;
 		var _loc4_:Null<Dynamic> = null;
